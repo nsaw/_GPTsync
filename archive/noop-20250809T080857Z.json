@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "id": "noop-20250809T080857Z",
+  "issued_at": "2025-08-09T08:08:57Z",
+  "expires_at": "2025-08-09T08:13:57Z",
+  "nonce": "0",
+  "target": "MAIN",
+  "action": "applyPatch",
+  "patchType": "hybrid",
+  "payload": {
+    "inline": {
+      "version": "noop",
+      "ops": [
+        {
+          "op": "noop"
+        }
+      ]
+    }
+  },
+  "validationPlan": [],
+  "allowedActions": [
+    "writeFile",
+    "moveFile"
+  ],
+  "constraints": {
+    "maxRuntimeMs": 60000,
+    "maxFilesChanged": 1
+  },
+  "hmac": "/FpFnPGpIGCfFgCWobQtXV//XLDpIDysG0NccDAgq48="
+}
