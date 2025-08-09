@@ -1,0 +1,5 @@
+[20250809T075058Z] ghost-bridge hardening applied:
+- publish_github.py fixed; staging restricted to safe dirs
+- executor ignores dotfiles & .retries.json; retries -> meta/retries.json
+- PM2 env set: CLOUD, GPT_BRIDGE_HMAC_SECRET
+- Smoke test executed; monitor results/diffs and pm2 logs
