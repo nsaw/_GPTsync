@@ -108,57 +108,288 @@ This is a **complete, implementation-ready plan** for hardening, stabilizing, an
 
 ---
 
-## 6) Validation & Hardening (Step-by-Step)
+# 6) Validation & Hardening (Step-by-Step) — **CYOPS Post-Mutation** (with `pre-commit`)
 
-### 6.1 Pre-ingest filters
+This section defines the **right-sized** (not ultra-strict) validation gates for the **CYOPS** track (agent/dev tooling: `ghost-bridge`, `gpt-cursor-runner`). It’s purpose-built for backend/automation work: fewer UI gates, strong repo hygiene, and lightweight runtime checks. Use this after any mutation (patch, refactor, config change) that touches the CYOPS workspace.
 
-* Only process files in `commands/*.json`.
-* Reject if filename starts with `.` or equals `.retries.json`.
-* Ignore non-JSON or zero-byte files.
-* Enforce size limits (e.g., 512KB per command).
+---
 
-### 6.2 HMAC verification
+## 6.0 Overview (what “good” looks like)
 
-* Load `GPT_BRIDGE_HMAC_SECRET` from PM2 env.
-* Canonicalize JSON (sorted keys, minimal separators), compute `sha256(secret, payload)`, base64-encode.
-* If mismatch → `dead_letter/`, annotate cause.
+* **Inputs**: a mutation (patch/commit) applied to CYOPS repos.
+* **Guarantees** after validation:
 
-### 6.3 Schema checks
+  * No unsafe paths touched; no hidden control files staged.
+  * `pre-commit` passes (style/sanity checks across CYOPS repos).
+  * Executor runs, processes a signed no-op, publishes artifacts, and **does not** create `.retries.json` in `commands/`.
+  * Git working tree is clean; only allowed dirs were staged/committed.
+  * PM2 process remains **online** with zero Python/Node tracebacks in last 200 lines.
 
-* Required fields present, well-formed timestamps, `expires_at > issued_at`.
-* `action` ∈ allowed set, `patchType` recognized.
-* `allowedActions` non-empty subset of executor capabilities.
-* `constraints.maxFilesChanged` >= actual staging delta; else reject.
+This is intentionally **lighter** than MAIN’s UI enforcement. Warnings are OK in most linters; we care about safety, integrity, and a healthy pipeline.
 
-### 6.4 Safety checks for mutations
+---
 
-* Only allow path mutations **inside repo root**, no `..`, no symlinks escape.
-* Deny writes to `commands/`, `meta/`, `.git/` or any dot-prefixed directory except `meta/`.
-* Deny file deletions unless explicitly allowed by policy.
-* Dry-run the patch → compute diff and count changes vs constraints.
+## 6.1 Patch format & location (CYOPS)
 
-### 6.5 Execution
+**Patch naming**
 
-* Apply allowed ops; capture stdout/stderr; timebox by `maxRuntimeMs`.
-* Emit:
+* `g2o-cyops-v<MAJOR>.<MINOR>.<PATCH>__<slug>.json`
+  e.g., `g2o-cyops-v1.3.07__git-publish-tighten.json`
 
-  * `results/<id>.json` (status, timings, counters, constraint compliance)
-  * `diffs/<id>.patch`
-  * `archive/<id>.json` (original command) on success
-  * `dead_letter/<id>.json` on failure
+**Patch location (CYOPS only)**
 
-### 6.6 Publish (Git)
+```
+/Users/sawyer/gitSync/.cursor-cache/CYOPS/
+├── patches/           # patch inbox (CYOPS)
+├── patches/.completed/
+├── patches/.failed/
+├── summaries/
+└── .logs/
+```
 
-* Stage **only**: `context/ results/ diffs/ summaries/ logs/ archive/ dead_letter/ meta/`
-* Never stage `commands/` (and never write `.retries.json` there).
-* Commit message convention:
+**Version note**: Keep versions monotonic; semver is advisory for traceability, not a hard gate.
 
-  * `bridge: results <id> (exit=<code>)`
-  * `bridge: DLQ <reason>`
-  * `bridge: retries index update`
-* Pull `--rebase`, exponential backoff (cap), push. Use **file lock** to serialize concurrent publishers.
+---
 
-**Why:** Prevents control files from driving commits; safe, bounded publish retries; conflict-safe.
+## 6.2 Allowed vs. forbidden changes (CYOPS)
+
+**Allowed**
+
+* `ghost-bridge/` (executor, publisher, configs)
+* `gpt-cursor-runner/` (orchestration scripts, daemons)
+* `_GPTsync/{results,diffs,archive,dead_letter,meta,logs,summaries,context}` (outputs/state)
+* `.cursor-cache/CYOPS/**` (patches, summaries, logs)
+
+**Forbidden (soft-fail by default → push to DLQ if violated)**
+
+* Mutating `_GPTsync/commands/**`
+* Creating **hidden control files** inside `commands/` (e.g., `.retries.json`)
+* Writing outside the repo root / path escapes (`..`, symlink traversal)
+* Touching `.git/**`, `node_modules/**`, system paths (`/usr`, `/System`, etc.)
+* Re-enabling broad `git add -A` in publisher
+
+---
+
+## 6.3 Pre-mutation sanity (quick)
+
+Run before applying meaningful changes:
+
+```bash
+# Ensure single executor and correct env
+pm2 describe gpt-executor | sed -n '1,120p' | grep -E 'script path|exec cwd'
+pm2 env gpt-executor | grep -E 'CLOUD|GPT_BRIDGE_HMAC_SECRET'
+
+# Cloud layout exists
+test -d /Users/sawyer/gitSync/_GPTsync/commands
+test -d /Users/sawyer/gitSync/_GPTsync/meta
+[ -f /Users/sawyer/gitSync/_GPTsync/meta/retries.json ] || echo '{}' > /Users/sawyer/gitSync/_GPTsync/meta/retries.json
+```
+
+---
+
+## 6.4 Post-mutation validation flow (CYOPS)
+
+### Step A — Repo hygiene & `pre-commit`
+
+Run `pre-commit` at the **repo roots** that were mutated:
+
+```bash
+# Ghost bridge
+( cd /Users/sawyer/gitSync/ghost-bridge && pre-commit run --all-files )
+
+# Runner/orchestrator (if changed)
+( cd /Users/sawyer/gitSync/gpt-cursor-runner && pre-commit run --all-files )
+```
+
+**Pass criteria**: exit code 0.
+**Note**: Style/lint warnings are okay if hooks are configured that way; a failing hook is not.
+
+---
+
+### Step B — Git safety (allowed dirs only)
+
+Confirm the publisher will not stage unexpected paths:
+
+```bash
+# Dry-run what would be staged by our restricted publisher
+( cd /Users/sawyer/gitSync/_GPTsync && \
+  git -C . status --porcelain && \
+  echo "Addable dirs would be: context results diffs summaries logs archive dead_letter meta" )
+```
+
+If you see pending changes **outside** those dirs, fix or revert before proceeding.
+
+---
+
+### Step C — Executor health & path banners
+
+Restart to capture clean startup logs (only if you changed executor/publisher):
+
+```bash
+pm2 restart gpt-executor --update-env
+sleep 2
+tail -n 120 /Users/sawyer/.pm2/logs/gpt-executor-out.log
+```
+
+**Look for**: resolved path banner (`CLOUD`, `CMDS`, `META`, …), and **no** tracebacks/import errors.
+
+---
+
+### Step D — Signed no-op smoke test
+
+Drop a signed no-op command and verify artifacts:
+
+```bash
+python3 - <<'PY'
+import os, json, base64, hmac, hashlib
+from datetime import datetime, timedelta, timezone
+CLOUD="/Users/sawyer/gitSync/_GPTsync"
+sec=os.environ["GPT_BRIDGE_HMAC_SECRET"]
+now=datetime.now(timezone.utc)
+ID="noop-"+now.strftime("%Y%m%dT%H%M%SZ")
+doc={
+  "schemaVersion":"1.0","id":ID,
+  "issued_at":now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+  "expires_at":(now+timedelta(minutes=5)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+  "nonce":"0","target":"MAIN","action":"applyPatch","patchType":"hybrid",
+  "payload":{"inline":{"version":"noop","ops":[{"op":"noop"}]}},
+  "validationPlan":[],
+  "allowedActions":["writeFile","moveFile"],
+  "constraints":{"maxRuntimeMs":60000,"maxFilesChanged":1}
+}
+payload=json.dumps({k:v for k,v in doc.items() if k!="hmac"},separators=(",",":"),sort_keys=True).encode()
+doc["hmac"]=base64.b64encode(hmac.new(sec.encode(), payload, hashlib.sha256).digest()).decode()
+out=f"{CLOUD}/commands/{ID}.json"
+open(out,"w").write(json.dumps(doc, indent=2))
+print(out)
+PY
+
+# Give the executor a moment, then check artifacts
+sleep 3
+ls -1 /Users/sawyer/gitSync/_GPTsync/{results,diffs,archive,dead_letter} 2>/dev/null | tail -n +1
+```
+
+**Pass criteria**:
+
+* `archive/<id>.json` exists (input captured)
+* `results/<id>.json` exists (status/metrics)
+* `diffs/<id>.patch` exists (may be near-empty for no-op)
+* **No** `.retries.json` appears in `commands/`
+* Git pushed a commit with message like `bridge: results <id> (exit=0)` (or `exit=1` for test failures)
+
+---
+
+### Step E — PM2 runtime check (light)
+
+Confirm the executor did not crash or flap:
+
+```bash
+pm2 list | grep gpt-executor
+tail -n 200 /Users/sawyer/.pm2/logs/gpt-executor-error.log | sed -n '$p'
+```
+
+**Pass criteria**: status **online**, no repeating tracebacks or `KeyboardInterrupt` loops.
+
+---
+
+## 6.5 Success criteria (CYOPS)
+
+* `pre-commit` **passes** on all touched CYOPS repos.
+* Publisher staged **only**: `context/ results/ diffs/ summaries/ logs/ archive/ dead_letter/ meta/`.
+* Signed no-op produced **archive + results + diffs** and a **single** commit.
+* No creation or staging of `commands/.retries.json`; retry state remains in `meta/retries.json`.
+* PM2 **online**; logs free of unhandled exceptions related to the change.
+
+**Nice-to-have (non-blocking)**
+
+* Python formatters/linters happy (`ruff`, `black --check`) where configured.
+* Node linters/tests pass in `gpt-cursor-runner` if that repo was touched.
+
+---
+
+## 6.6 Artifacts & directories (CYOPS)
+
+* **Validation logs**: `.cursor-cache/CYOPS/.logs/` (optional roll-up)
+* **Summaries**: `.cursor-cache/CYOPS/summaries/`
+* **Patches**: `.cursor-cache/CYOPS/patches/` (+ `.completed/`, `.failed/`)
+* **Bridge outputs**: `_GPTsync/{results,diffs,archive,dead_letter,meta}`
+
+---
+
+## 6.7 Watchers (Cursor/Ghost)
+
+* `.cursor-cache/CYOPS/patches{,/.completed,/.failed,/.archive}`
+* `.cursor-cache/CYOPS/summaries{,/.completed,/.failed,/.archive}`
+* `.cursor-cache/ROOT/.logs/CYOPS/` (optional unified logs)
+
+---
+
+## 6.8 Post-run file movements
+
+* **On PASS**
+
+  * Move **patch JSON** → `.cursor-cache/CYOPS/patches/.completed/`
+  * Move **summary .md** → `.cursor-cache/CYOPS/summaries/.completed/`
+
+* **On FAIL**
+
+  * Move **summary .md** → `.cursor-cache/CYOPS/summaries/.failed/`
+  * Patch JSON may remain in inbox or copied to `.failed/` per daemon policy
+
+---
+
+## 6.9 Exclude globs (diffs & tails)
+
+```
+.git/**, node_modules/**, *.lock, *.png, *.jpg, *.jpeg, *.gif,
+*.psd, **/__pycache__/**, .venv/**, .DS_Store, .expo/**, ios/**, android/**
+```
+
+(These are **advisory** for CYOPS—safe to exclude from noisy diffs and log tails.)
+
+---
+
+## 6.10 Quick “all-green” macro (operator)
+
+```bash
+# 1) pre-commit at roots
+( cd /Users/sawyer/gitSync/ghost-bridge && pre-commit run --all-files ) || exit 1
+( cd /Users/sawyer/gitSync/gpt-cursor-runner && pre-commit run --all-files ) || true  # optional if untouched
+
+# 2) executor healthy
+pm2 restart gpt-executor --update-env && sleep 2
+tail -n 80 /Users/sawyer/.pm2/logs/gpt-executor-out.log | grep -E 'CLOUD|retries path|Current branch' || true
+
+# 3) signed no-op smoke test
+python3 - <<'PY'
+import os, json, base64, hmac, hashlib
+from datetime import datetime, timedelta, timezone
+CLOUD="/Users/sawyer/gitSync/_GPTsync"; sec=os.environ["GPT_BRIDGE_HMAC_SECRET"]
+now=datetime.now(timezone.utc); ID="noop-"+now.strftime("%Y%m%dT%H%M%SZ")
+doc={"schemaVersion":"1.0","id":ID,"issued_at":now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+"expires_at":(now+timedelta(minutes=5)).strftime("%Y-%m-%dT%H:%M:%SZ"),"nonce":"0","target":"MAIN",
+"action":"applyPatch","patchType":"hybrid","payload":{"inline":{"version":"noop","ops":[{"op":"noop"}]}},
+"validationPlan":[],"allowedActions":["writeFile","moveFile"],"constraints":{"maxRuntimeMs":60000,"maxFilesChanged":1}}
+payload=json.dumps({k:v for k,v in doc.items() if k!="hmac"},separators=(",",":"),sort_keys=True).encode()
+doc["hmac"]=base64.b64encode(hmac.new(sec.encode(), payload, hashlib.sha256).digest()).decode()
+open(f"{CLOUD}/commands/{ID}.json","w").write(json.dumps(doc, indent=2))
+print(ID)
+PY
+
+sleep 3
+ls -1 /Users/sawyer/gitSync/_GPTsync/{results,diffs,archive,dead_letter} 2>/dev/null | tail -n +1
+
+# 4) ensure no hidden control churn
+test ! -f /Users/sawyer/gitSync/_GPTsync/commands/.retries.json
+```
+
+---
+
+### Notes for DEV
+
+* Treat these gates as **must-pass** unless explicitly documented as “optional” above.
+* If any gate fails, prefer **dead\_letter** with a precise reason rather than silent retries.
+* Keep this CYOPS validation **lighter** than MAIN: warnings are fine; what matters is safety, determinism, and a clean publish.
 
 ---
 
