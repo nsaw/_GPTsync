@@ -1,0 +1,1 @@
+✅ Bridge now polls every ChatGPT thread listed in config/chat_conversations.txt.

@@ -1,0 +1,1 @@
+✅ MAIN folder ID added—bridge now polls both CYOPS & MAIN threads.

@@ -1,0 +1,16 @@
+# Phase 2 Tier Hardening Report
+## Tiers and Features
+
+### free
+Files:        0
+
+### pro
+Files:        0
+
+### team
+Files:        0
+
+### enterprise
+Files:        0
+
+## Feature Flag System Test Output

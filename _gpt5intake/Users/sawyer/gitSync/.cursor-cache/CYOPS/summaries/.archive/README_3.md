@@ -1,0 +1,102 @@
+# summaries
+
+**Location**: `/Users/sawyer/gitSync/.cursor-cache/CYOPS/summaries`
+**Parent**: CYOPS
+**Last Updated**: 2025-08-06T20:48:32.262Z
+
+## 📁 Subdirectories
+
+- `_heartbeat/` - Subdirectory
+- `dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium/` - Subdirectory
+- `dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox/` - Subdirectory
+- `dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit/` - Subdirectory
+
+## 📄 Files
+
+- `INDEX.md` (.md, 11673 bytes)
+- `README.md` (.md, 5772 bytes)
+- `dashboard-current-status.png` (.png, 44665 bytes)
+- `phase2-tier-hardening-report.txt` (.txt, 199 bytes)
+- `summary-100-percent-operational-complete.md` (.md, 4674 bytes)
+- `summary-13-13-daemon-completion-final.md` (.md, 4816 bytes)
+- `summary-13-13-daemon-completion-status.md` (.md, 4013 bytes)
+- `summary-1password-fix-complete.md` (.md, 3759 bytes)
+- `summary-aio-checklist-complete.md` (.md, 5810 bytes)
+- `summary-all-issues-fixed-complete.md` (.md, 4948 bytes)
+- `summary-batch-fixes-complete.md` (.md, 4751 bytes)
+- `summary-complete-system-validation.md` (.md, 5734 bytes)
+- `summary-comprehensive-audit-tunnel-recovery.md` (.md, 10626 bytes)
+- `summary-comprehensive-dependency-audit.md` (.md, 14507 bytes)
+- `summary-comprehensive-system-management-complete.md` (.md, 8670 bytes)
+- `summary-conversation-handoff.md` (.md, 11209 bytes)
+- `summary-critical-services-discrepancy-analysis.md` (.md, 5840 bytes)
+- `summary-dashboard-endpoint-fix-complete.md` (.md, 4903 bytes)
+- `summary-dashboard-frontend-backend-wiring-fix.md` (.md, 2818 bytes)
+- `summary-dashboard-integration-fixes.md` (.md, 5026 bytes)
+- `summary-dashboard-monitor-diagnosis-complete.md` (.md, 6135 bytes)
+- `summary-dashboard-react-hook-fix-complete.md` (.md, 6363 bytes)
+- `summary-dashboard-recovery-FAILED.md` (.md, 4133 bytes)
+- `summary-dashboard-tunnel-orchestrator-recovery.md` (.md, 3287 bytes)
+- `summary-dashboard-warnings-fixed.md` (.md, 5014 bytes)
+- `summary-dashboard-wiring-fix-complete.md` (.md, 4986 bytes)
+- `summary-dual-agent-dashboard-restoration.md` (.md, 5303 bytes)
+- `summary-enhanced-dashboard-implementation.md` (.md, 4604 bytes)
+- `summary-enhanced-dashboard-integration.md` (.md, 5382 bytes)
+- `summary-error-resolution-complete.md` (.md, 6165 bytes)
+- `summary-final-doc-update-and-tier-audit.md` (.md, 7278 bytes)
+- `summary-final-phase-complete.md` (.md, 9565 bytes)
+- `summary-final-system-validation.md` (.md, 6751 bytes)
+- `summary-flask-dashboard-recovery.md` (.md, 4588 bytes)
+- `summary-frontend-backend-mismatch-fix.md` (.md, 4888 bytes)
+- `summary-frontend-data-structure-fix.md` (.md, 3611 bytes)
+- `summary-frontend-status-mapping-fix.md` (.md, 4478 bytes)
+- `summary-ghost-bridge-port-fix-complete.md` (.md, 2997 bytes)
+- `summary-legacy-script-cleanup-complete.md` (.md, 7933 bytes)
+- `summary-manual-daemon-startup-complete.md` (.md, 3237 bytes)
+- `summary-manual-daemon-startup-progress.md` (.md, 2843 bytes)
+- `summary-patch-status-display-fix-complete.md` (.md, 5448 bytes)
+- `summary-patch-status-frontend-fix.md` (.md, 5849 bytes)
+- `summary-patch-status-troubleshooting-complete.md` (.md, 3686 bytes)
+- `summary-patch-v1.4.960_permanent-port-8787-conflict-resolution.md` (.md, 7043 bytes)
+- `summary-patch-v1.4.970_dashboard-visual-validation-enforcement.md` (.md, 5421 bytes)
+- `summary-patch-v1.4.980_frontend-daemon-status-mapping-fix.md` (.md, 4829 bytes)
+- `summary-playwright-dashboard-test-results.md` (.md, 4546 bytes)
+- `summary-pm2-api-integration-complete.md` (.md, 6857 bytes)
+- `summary-pm2-cleanup-dashboard-validation.md` (.md, 6286 bytes)
+- `summary-pm2-daemon-restart-complete.md` (.md, 5911 bytes)
+- `summary-pm2-daemon-systems-recovery.md` (.md, 3707 bytes)
+- `summary-pm2-non-blocking-pattern-updates.md` (.md, 3943 bytes)
+- `summary-pre-commit-linting-status.md` (.md, 3723 bytes)
+- `summary-service-logs-fix.md` (.md, 5137 bytes)
+- `summary-service-logs-visual-validation-fix.md` (.md, 5211 bytes)
+- `summary-service-logs-width-fix.md` (.md, 3541 bytes)
+- `summary-service-naming-clarification.md` (.md, 2351 bytes)
+- `summary-service-status-discrepancy-investigation.md` (.md, 4725 bytes)
+- `summary-shell-enforcement-configuration.md` (.md, 2350 bytes)
+- `summary-silent-ticker-autopilot-complete.md` (.md, 4964 bytes)
+- `summary-slack-endpoints-fixed.md` (.md, 4433 bytes)
+- `summary-slack-oauth-setup-complete.md` (.md, 3909 bytes)
+- `summary-slack-setup-audit-and-fixes.md` (.md, 11436 bytes)
+- `summary-slack-verification-fixed.md` (.md, 2858 bytes)
+- `summary-summary-monitor-error-investigation.md` (.md, 4958 bytes)
+- `summary-system-recovery-complete.md` (.md, 5028 bytes)
+- `summary-systems-configuration-update.md` (.md, 5851 bytes)
+- `summary-technology-stack-audit.md` (.md, 7981 bytes)
+- `summary-unified-boot-analysis-and-fixes.md` (.md, 4495 bytes)
+- `summary-unified-boot-audit-and-manager-creation.md` (.md, 14202 bytes)
+- `summary-unified-boot-audit-findings.md` (.md, 5806 bytes)
+- `summary-unified-boot-critical-processes-fix.md` (.md, 7525 bytes)
+- `summary-unified-boot-final-status.md` (.md, 3221 bytes)
+- `summary-unified-logging-system-implementation.md` (.md, 6581 bytes)
+- `summary-unified-manager-discrepancy-fix.md` (.md, 5643 bytes)
+- `summary-unified-manager-integration-complete.md` (.md, 9116 bytes)
+- `summary-unified-manager-service-logs-frontend-fix.md` (.md, 5441 bytes)
+- `summary-unified-manager-testing-validation.md` (.md, 7799 bytes)
+- `summary-unified-master-ops-compliance.md` (.md, 6636 bytes)
+- `summary-visual-validation-enforcement-autopilot.md` (.md, 6359 bytes)
+- `summary-visual-validation-enforcement.md` (.md, 7905 bytes)
+- `test-failed-1.png` (.png, 44467 bytes)
+
+---
+
+*Auto-generated by Enhanced Document Daemon*

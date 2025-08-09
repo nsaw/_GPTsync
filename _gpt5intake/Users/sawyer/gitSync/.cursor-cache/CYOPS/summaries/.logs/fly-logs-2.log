@@ -1,0 +1,100 @@
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 47
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    f"[WEBHOOK] ✅ Forwarded {patch_id} to local runner (attempt {att
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    ^
+[2m2025-08-08T05:16:47Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]SyntaxError: unterminated string literal (detected at line 47)
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][    1.958605] reboot: Restarting system
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:16:48Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][    1.958605] reboot: Restarting system
+[2m2025-08-08T05:16:49Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:16:50Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:16:50Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:16:50Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 2.797s
+[2m2025-08-08T05:16:50Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 3.001681944s
+[2m2025-08-08T05:16:50Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:16:50.313812988 [01K24158DNNR9RV6425D53JQCF:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:16:50Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:16:50.314014271 [01K24158DNNR9RV6425D53JQCF:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:16:50Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:16:50.313812988 [01K24158DNNR9RV6425D53JQCF:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:16:50Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:16:50.314014271 [01K24158DNNR9RV6425D53JQCF:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:16:51Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 1.112s
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:16:51 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 47
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    f"[WEBHOOK] ✅ Forwarded {patch_id} to local runner (attempt {att
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    ^
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]SyntaxError: unterminated string literal (detected at line 47)
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:16:51Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 1.112s
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:16:51 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 47
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    f"[WEBHOOK] ✅ Forwarded {patch_id} to local runner (attempt {att
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    ^
+[2m2025-08-08T05:16:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]SyntaxError: unterminated string literal (detected at line 47)
+[2m2025-08-08T05:16:52Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:16:52Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:16:52Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:16:52Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][    1.952043] reboot: Restarting system
+[2m2025-08-08T05:16:56Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5555 (waited 5.715262388s so far)
+[2m2025-08-08T05:16:57Z[0m proxy[784e2e9a999e18] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:16:57Z[0m proxy[784e2e9a999e18] [32msea[0m [[31merror[0m][PM07] failed to change machine state: machine still active, refusing to start
+[2m2025-08-08T05:16:57Z[0m proxy[9185e12c943728] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:16:57Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025-08-08T05:16:57.319809960 [01K24158DYMDTB0A0FQ6717T88:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:16:57Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025-08-08T05:16:57.319931344 [01K24158DYMDTB0A0FQ6717T88:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:16:57Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:16:57 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:16:58Z[0m runner[9185e12c943728] [32msea[0m [[34minfo[0m]Machine started in 972ms
+[2m2025-08-08T05:16:58Z[0m proxy[9185e12c943728] [32msea[0m [[34minfo[0m]machine started in 983.803118ms
+[2m2025-08-08T05:16:58Z[0m health[9185e12c943728] [32msea[0m [[33mwarn[0m]Health check on port 5051 is in a 'warning' state. Your app may not be responding properly. Services exposed on ports [80, 443] may have intermittent failures until the health check passes.
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025/08/08 05:16:58 INFO SSH listening listen_address=[fdaa:20:8401:a7b:2c60:4b27:7feb:2]:22
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 47
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    f"[WEBHOOK] ✅ Forwarded {patch_id} to local runner (attempt {att
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    ^
+[2m2025-08-08T05:16:58Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]SyntaxError: unterminated string literal (detected at line 47)
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][    1.856450] reboot: Restarting system
+[2m2025-08-08T05:16:59Z[0m health[9185e12c943728] [32msea[0m [[31merror[0m]Health check on port 5051 has failed. Your app is not responding properly. Services exposed on ports [80, 443] will have intermittent failures until the health check passes.
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025-08-08T05:16:59.940204091 [01K24158DYMDTB0A0FQ6717T88:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:16:59Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025-08-08T05:16:59.940347855 [01K24158DYMDTB0A0FQ6717T88:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:17:00Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:17:00Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:17:00Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:17:00Z[0m runner[9185e12c943728] [32msea[0m [[34minfo[0m]Machine started in 952ms
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]2025/08/08 05:17:01 INFO SSH listening listen_address=[fdaa:20:8401:a7b:2c60:4b27:7feb:2]:22
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 47
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    f"[WEBHOOK] ✅ Forwarded {patch_id} to local runner (attempt {att
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]    ^
+[2m2025-08-08T05:17:01Z[0m app[9185e12c943728] [32msea[0m [[34minfo[0m]SyntaxError: unterminated string literal (detected at line 47)

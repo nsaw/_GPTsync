@@ -1,0 +1,8 @@
+{
+  "service": "ghost-bridge",
+  "status": "FAILED",
+  "timestamp": "2025-08-03T21:57:34Z",
+  "pid": "43207",
+  "log_file": "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/logs/ghost-bridge.log",
+  "watchdog_log": "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/logs/ghost-bridge-watchdog.log"
+}

@@ -1,0 +1,1 @@
+✅ Bridge now auto-polls all threads inside project folders listed in config/chat_folders.txt.

@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- heading "GHOST RUNNER" [level=1]
+- heading "[ dual-agent dashboard ]" [level=3]
+- text: Overall CYOPS / DEV [ HEALTH + STATUS ] MAIN / BRAUN [ HEALTH + STATUS ] GHOST | SYSTEMS | METRICS | STATUS
+- heading "⚙️ Component Health" [level=2]
+- heading "Fly.io" [level=3]
+- text: ⚠️
+- heading "Webhook Tunnel" [level=3]
+- text: ⚠️
+- heading "Dashboard Tunnel" [level=3]
+- text: ⚠️
+- heading "Flask" [level=3]
+- text: ⚠️
+- heading "BRAUN DAEMON" [level=3]
+- text: ⚠️
+- heading "Ghost Runner" [level=3]
+- text: ⚠️
+- heading "Patch Executor" [level=3]
+- text: ⚠️
+- heading "Dashboard Uplink" [level=3]
+- text: ⚠️
+- heading "Summary Watcher" [level=3]
+- text: ⚠️
+- heading "Comprehensive Dashboard" [level=3]
+- text: ⚠️
+- heading "🤖 Autonomous Decision" [level=3]
+- text: ⚠️
+- heading "📊 Telemetry Orchestrator" [level=3]
+- text: ⚠️
+- heading "📈 Metrics Aggregator" [level=3]
+- text: ⚠️
+- heading "🚨 Alert Engine" [level=3]
+- text: ⚠️
+- heading "📝 Enhanced Doc Daemon" [level=3]
+- text: ⚠️
+- heading "📊 Telemetry Dashboard" [level=2]
+- button "🔄 Refresh Telemetry"
+- heading "🏥 System Health" [level=4]
+- text: Overall Status unknown Uptime 0s Health Score 0%
+- heading "🔧 Component Metrics" [level=4]
+- text: Total Components 0 Healthy 0 Degraded 0 Unhealthy 0
+- heading "🔍 Debug Info" [level=4]
+- text: Data Available Yes Last Update 6:04:54 PM
+- heading "🚨 Alert Engine Dashboard" [level=2]
+- button "🔄 Refresh Alerts"
+- text: Active Alerts 0 Critical Alerts 0 Alert Engine Status Unknown Active Alerts
+- list:
+  - listitem: No active alerts
+- text: Recent Alert History
+- list:
+  - listitem: No recent alert history
+- heading "SYSTEM RESOURCES [ CPU, MEMORY, DISK, UPTIME ]" [level=2]
+- text: Memory Usage 0% CPU Usage 0% Disk Usage 0% Uptime Unknown
+```

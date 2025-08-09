@@ -1,0 +1,1 @@
+✅ Remote probe successful - end-to-end pipeline operational with unified location

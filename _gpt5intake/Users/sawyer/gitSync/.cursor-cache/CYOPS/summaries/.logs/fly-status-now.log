@@ -1,0 +1,12 @@
+[1mApp[0m
+  Name     = gpt-cursor-runner                                        
+  Owner    = personal                                                 
+  Hostname = gpt-cursor-runner.fly.dev                                
+  Image    = gpt-cursor-runner:deployment-01K248EJCXKDSJK8ZQS62AHNRV  
+
+[1mMachines[0m
+PROCESS	ID            	VERSION	REGION	STATE  	ROLE	CHECKS            	LAST UPDATED         
+app    	7814162c462698	127    	sea   	stopped	    	1 total, 1 warning	2025-08-08T07:22:09Z	
+app    	784e2e9a999e18	127    	sea   	stopped	    	1 total, 1 warning	2025-08-08T07:17:01Z	
+app    	9185e12c943728	127    	sea   	stopped	    	1 total, 1 warning	2025-08-08T07:17:23Z	
+

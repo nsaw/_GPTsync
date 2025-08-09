@@ -1,0 +1,100 @@
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:39:06Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.611s
+[2m2025-08-08T05:39:06Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.809227827s
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:39:06 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 24, in <module>
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .event_logger import event_logger
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/event_logger.py", line 103
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def log_system_event(self, event_type: str, data: Optional[Dict[str, Any]] = None) -
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                                                                       ^
+[2m2025-08-08T05:39:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]SyntaxError: expected ':'
+[2m2025-08-08T05:39:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:39:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:39:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:39:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.000539] reboot: Restarting system
+[2m2025-08-08T05:39:07Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T05:39:13Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.238369722s so far)
+[2m2025-08-08T05:39:34Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:39:34Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:39:34.842238005 [01K242VMD9340YR7ZPQM0PPY1D:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:39:34Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:39:34.842567053 [01K242VMD9340YR7ZPQM0PPY1D:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:39:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:39:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:39:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:39:35Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.397s
+[2m2025-08-08T05:39:35Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.504164306s
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:39:36 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 24, in <module>
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .event_logger import event_logger
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/event_logger.py", line 103
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def log_system_event(self, event_type: str, data: Optional[Dict[str, Any]] = None) -
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                                                                       ^
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]SyntaxError: expected ':'
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:39:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.013740] reboot: Restarting system
+[2m2025-08-08T05:39:37Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T05:39:43Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.349833382s so far)
+[2m2025-08-08T05:40:04Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:40:04Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:40:04.997035219 [01K242VMD9340YR7ZPQM0PPY1D:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:40:04Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:40:04.997217658 [01K242VMD9340YR7ZPQM0PPY1D:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:40:05Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:40:05Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:40:05Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:40:06Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.469s
+[2m2025-08-08T05:40:06Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.647320056s
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:40:06 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 24, in <module>
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .event_logger import event_logger
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/event_logger.py", line 103
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def log_system_event(self, event_type: str, data: Optional[Dict[str, Any]] = None) -
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                                                                       ^
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]SyntaxError: expected ':'
+[2m2025-08-08T05:40:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:40:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:40:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:40:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.016647] reboot: Restarting system
+[2m2025-08-08T05:40:07Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T05:40:13Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.423723531s so far)
+[2m2025-08-08T05:40:34Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:40:34Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:40:34.984472990 [01K242VMD9340YR7ZPQM0PPY1D:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:40:34Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:40:34.984833369 [01K242VMD9340YR7ZPQM0PPY1D:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:40:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:40:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:40:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:40:36Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.504s
+[2m2025-08-08T05:40:36Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.616239425s
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:40:36 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 19, in <module>
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.webhook_handler import handle_webhook_post
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/webhook_handler.py", line 24, in <module>
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .event_logger import event_logger
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/event_logger.py", line 103
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def log_system_event(self, event_type: str, data: Optional[Dict[str, Any]] = None) -
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                                                                       ^
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]SyntaxError: expected ':'
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:40:36Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:40:37Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:40:37Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.004466] reboot: Restarting system
+[2m2025-08-08T05:40:37Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10

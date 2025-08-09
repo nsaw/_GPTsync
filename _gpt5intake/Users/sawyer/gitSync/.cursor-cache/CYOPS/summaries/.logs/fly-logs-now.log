@@ -1,0 +1,100 @@
+[2m2025-08-08T07:20:45Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.582804571s so far)
+[2m2025-08-08T07:20:45Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T07:20:46Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:46.398829505 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Running Firecracker v1.12.1
+[2m2025-08-08T07:20:46Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:46.399190194 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T07:20:47Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T07:20:47Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T07:20:47Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T07:20:47Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.416s
+[2m2025-08-08T07:20:47Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.540960731s
+[2m2025-08-08T07:20:47Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 07:20:47 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 29, in <module>
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.dashboard import create_dashboard_routes
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/dashboard.py", line 24, in <module>
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def create_dashboard_routes(app: Flask) -> None:
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                     ^^^^^
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]NameError: name 'Flask' is not defined
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T07:20:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.040657] reboot: Restarting system
+[2m2025-08-08T07:20:48Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T07:20:51Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T07:20:51Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:51.761203449 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Running Firecracker v1.12.1
+[2m2025-08-08T07:20:51Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:51.761425788 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T07:20:52Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T07:20:52Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T07:20:52Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T07:20:52Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.407s
+[2m2025-08-08T07:20:52Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.546994512s
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 07:20:53 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 29, in <module>
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.dashboard import create_dashboard_routes
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/dashboard.py", line 24, in <module>
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def create_dashboard_routes(app: Flask) -> None:
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                     ^^^^^
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]NameError: name 'Flask' is not defined
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T07:20:53Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    1.999396] reboot: Restarting system
+[2m2025-08-08T07:20:54Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T07:20:54Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.081382156s so far)
+[2m2025-08-08T07:20:59Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 6.17724234s so far)
+[2m2025-08-08T07:20:59Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T07:20:59Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:59.837858736 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Running Firecracker v1.12.1
+[2m2025-08-08T07:20:59Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:20:59.838223715 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T07:21:00Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T07:21:00Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T07:21:00Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T07:21:00Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.472s
+[2m2025-08-08T07:21:00Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.598729084s
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 07:21:01 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 29, in <module>
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.dashboard import create_dashboard_routes
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/dashboard.py", line 24, in <module>
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def create_dashboard_routes(app: Flask) -> None:
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                     ^^^^^
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]NameError: name 'Flask' is not defined
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T07:21:01Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    2.001917] reboot: Restarting system
+[2m2025-08-08T07:21:02Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T07:21:06Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T07:21:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:21:06.701827138 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Running Firecracker v1.12.1
+[2m2025-08-08T07:21:06Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:21:06.702136117 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T07:21:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T07:21:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T07:21:07Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T07:21:07Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 1.366s
+[2m2025-08-08T07:21:07Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 1.440053058s
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 07:21:08 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 198, in _run_module_as_main
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 88, in _run_code
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 29, in <module>
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.dashboard import create_dashboard_routes
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/dashboard.py", line 24, in <module>
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    def create_dashboard_routes(app: Flask) -> None:
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]                                     ^^^^^
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]NameError: name 'Flask' is not defined
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T07:21:08Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.763100645s so far)
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T07:21:08Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][    1.980199] reboot: Restarting system
+[2m2025-08-08T07:21:09Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T07:21:15Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5051 (waited 7.33285682s so far)
+[2m2025-08-08T07:21:15Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T07:21:16Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:21:16.489173034 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Running Firecracker v1.12.1
+[2m2025-08-08T07:21:16Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T07:21:16.489553973 [01K248HM3ZY6WV9KJ4VHG6V7W3:main] Listening on API socket ("/fc.sock").

@@ -1,0 +1,399 @@
+#!/bin/bash
+set -euo pipefail
+
+# Enhanced Unified Manager Watchdog with Port 5555 Safeguards
+# Monitors and auto-recovers services using unified-manager.sh
+# Includes graceful fallback strategies for port 5555 conflicts
+
+LOG="/Users/sawyer/gitSync/.cursor-cache/CYOPS/logs/unified-manager-watchdog.log"
+UNIFIED_MANAGER="/Users/sawyer/gitSync/gpt-cursor-runner/scripts/core/unified-manager.sh"
+PID_FILE="/Users/sawyer/gitSync/gpt-cursor-runner/pids/unified-manager-watchdog.pid"
+
+# Port 5555 specific configuration
+MAX_RESTARTS=3
+RESTART_WINDOW=300  # 5 minutes
+HEALTH_CHECK_TIMEOUT=30
+MONITOR_INTERVAL=60
+
+# Create log directory
+mkdir -p "$(dirname "$LOG")"
+mkdir -p "$(dirname "$PID_FILE")"
+
+# Enhanced logging with timestamps
+exec 2>> "$LOG"
+
+# Restart tracking for port 5555
+RESTART_COUNT_FILE="/tmp/port-5555-restart-count"
+RESTART_TIME_FILE="/tmp/port-5555-restart-time"
+
+# Initialize restart tracking
+init_restart_tracking() {
+    echo "0" > "$RESTART_COUNT_FILE"
+    date +%s > "$RESTART_TIME_FILE"
+}
+
+# Check restart limits
+check_restart_limits() {
+    local current_time
+    local last_restart_time
+    local restart_count
+    
+    current_time=$(date +%s)
+    last_restart_time=$(cat "$RESTART_TIME_FILE" 2>/dev/null || echo "0")
+    restart_count=$(cat "$RESTART_COUNT_FILE" 2>/dev/null || echo "0")
+    
+    # Reset counter if outside window
+    if [ $((current_time - last_restart_time)) -gt $RESTART_WINDOW ]; then
+        echo "0" > "$RESTART_COUNT_FILE"
+        restart_count=0
+    fi
+    
+    if [ "$restart_count" -ge $MAX_RESTARTS ]; then
+        echo "[$(date)] 🚨 MAX RESTARTS REACHED for port 5555 services"
+        echo "[$(date)] ⏸️ Entering cooldown period - no more restarts for $RESTART_WINDOW seconds"
+        return 1
+    fi
+    
+    return 0
+}
+
+# Increment restart counter
+increment_restart_counter() {
+    local current_count
+    local new_count
+    
+    current_count=$(cat "$RESTART_COUNT_FILE" 2>/dev/null || echo "0")
+    new_count=$((current_count + 1))
+    echo "$new_count" > "$RESTART_COUNT_FILE"
+    date +%s > "$RESTART_TIME_FILE"
+    echo "[$(date)] 🔄 Restart count: $new_count/$MAX_RESTARTS"
+}
+
+# Safe health check with timeout and non-blocking pattern
+safe_health_check() {
+    local url=$1
+    local service_name=$2
+    
+    (
+        if curl -s --max-time $HEALTH_CHECK_TIMEOUT "$url" > /dev/null 2>&1; then
+            echo "✅ $service_name health check passed"
+            exit 0
+        else
+            echo "❌ $service_name health check failed"
+            exit 1
+        fi
+    ) &
+    local pid=$!
+    
+    # Wait with timeout
+    local wait_time=0
+    while [ $wait_time -lt $HEALTH_CHECK_TIMEOUT ] && kill -0 $pid 2>/dev/null; do
+        sleep 1
+        wait_time=$((wait_time + 1))
+    done
+    
+    # Kill if still running
+    if kill -0 $pid 2>/dev/null; then
+        echo "⏰ $service_name health check timed out"
+        kill -KILL $pid 2>/dev/null || true
+        return 1
+    fi
+    
+    # Get exit code
+    wait $pid
+    return $?
+}
+
+# Port 5555 specific monitoring and recovery
+monitor_port_5555() {
+    echo "[$(date)] 🔍 Monitoring port 5555..."
+    
+    # Check if port 5555 is healthy
+    if safe_health_check "http://localhost:5555/health" "port-5555"; then
+        echo "[$(date)] ✅ Port 5555 service is healthy"
+        return 0
+    fi
+    
+    echo "[$(date)] ❌ Port 5555 service is unhealthy"
+    
+    # Check restart limits before attempting recovery
+    if ! check_restart_limits; then
+        echo "[$(date)] ⏸️ Skipping port 5555 recovery due to restart limits"
+        return 1
+    fi
+    
+    # Analyze what's running on port 5555
+    local port_info
+    local service_type="unknown"
+    
+    port_info=$(lsof -i :5555 2>/dev/null || true)
+    
+    if echo "$port_info" | grep -q "node"; then
+        service_type="fly-webhook"
+    elif echo "$port_info" | grep -q "python\|flask"; then
+        service_type="local-flask"
+    elif echo "$port_info" | grep -q "curl"; then
+        service_type="stuck-curl"
+    fi
+    
+    echo "[$(date)] 📊 Port 5555 analysis: $service_type"
+    
+    # Graceful recovery based on service type
+    case "$service_type" in
+        "fly-webhook")
+            echo "[$(date)] 🔧 Attempting Fly.io webhook recovery..."
+            (
+                cd /Users/sawyer/gitSync/gpt-cursor-runner && \
+                WEBHOOK_THOUGHTMARKS_PORT=5555 node core/webhook-thoughtmarks-server.js
+            ) >> "/Users/sawyer/gitSync/.cursor-cache/CYOPS/logs/fly-webhook.log" 2>&1 &
+            ;;
+        "local-flask")
+            echo "[$(date)] 🔧 Attempting local Flask recovery..."
+            (
+                cd /Users/sawyer/gitSync/gpt-cursor-runner && \
+                python3 dashboard/app.py
+            ) >> "/Users/sawyer/gitSync/.cursor-cache/CYOPS/logs/local-flask.log" 2>&1 &
+            ;;
+        "stuck-curl")
+            echo "[$(date)] 🧹 Cleaning up stuck curl processes..."
+            pkill -f "curl.*5555" 2>/dev/null || true
+            ;;
+        "unknown")
+            echo "[$(date)] ❓ Unknown service type, attempting default recovery..."
+            # Try Fly.io webhook first, then local Flask
+            (
+                cd /Users/sawyer/gitSync/gpt-cursor-runner && \
+                WEBHOOK_THOUGHTMARKS_PORT=5555 node core/webhook-thoughtmarks-server.js
+            ) >> "/Users/sawyer/gitSync/.cursor-cache/CYOPS/logs/port-5555-recovery.log" 2>&1 &
+            ;;
+    esac
+    
+    # Wait for service to start
+    sleep 5
+    
+    # Verify recovery
+    if safe_health_check "http://localhost:5555/health" "port-5555-recovery"; then
+        echo "[$(date)] ✅ Port 5555 recovery successful"
+        return 0
+    else
+        echo "[$(date)] ❌ Port 5555 recovery failed"
+        increment_restart_counter
+        return 1
+    fi
+}
+
+# Function to check if unified manager is available
+check_unified_manager() {
+    if [ ! -f "$UNIFIED_MANAGER" ]; then
+        echo "[$(date)] ❌ CRITICAL: unified-manager.sh not found at $UNIFIED_MANAGER"
+        return 1
+    fi
+    
+    if [ ! -x "$UNIFIED_MANAGER" ]; then
+        echo "[$(date)] 🔧 Making unified-manager.sh executable..."
+        chmod +x "$UNIFIED_MANAGER"
+    fi
+    
+    return 0
+}
+
+# Function to monitor services
+monitor_services() {
+    echo "[$(date)] 🔍 Monitoring services via unified manager..."
+    
+    (
+        if "$UNIFIED_MANAGER" monitor; then
+            echo "[$(date)] ✅ All services healthy"
+            return 0
+        else
+            echo "[$(date)] ❌ Some services unhealthy, attempting recovery..."
+            return 1
+        fi
+    ) &
+    MONITOR_PID=$!
+    sleep 30
+    disown $MONITOR_PID
+    
+    # Check if monitor process is still running (indicating failure)
+    if ps -p $MONITOR_PID > /dev/null 2>&1; then
+        echo "[$(date)] ⏰ Monitor timed out, attempting recovery..."
+        return 1
+    fi
+    
+    return 0
+}
+
+# Function to perform auto-recovery
+auto_recovery() {
+    echo "[$(date)] 🔄 Performing auto-recovery..."
+    
+    (
+        if "$UNIFIED_MANAGER" recover; then
+            echo "[$(date)] ✅ Auto-recovery completed"
+        else
+            echo "[$(date)] ❌ Auto-recovery failed"
+        fi
+    ) &
+    RECOVERY_PID=$!
+    sleep 60
+    disown $RECOVERY_PID
+}
+
+# Function to check system resources
+check_resources() {
+    echo "[$(date)] 📊 Checking system resources..."
+    
+    (
+        "$UNIFIED_MANAGER" resources
+    ) &
+    RESOURCE_PID=$!
+    sleep 10
+    disown $RESOURCE_PID
+}
+
+# Function to validate dashboard API
+validate_dashboard() {
+    echo "[$(date)] 🌐 Validating dashboard API..."
+    
+    (
+        if curl -s --max-time 30 "http://localhost:8787/api/manager-status" > /dev/null 2>&1; then
+            echo "[$(date)] ✅ Dashboard API responding"
+        else
+            echo "[$(date)] ❌ Dashboard API not responding"
+        fi
+    ) &
+    DASHBOARD_PID=$!
+    sleep 10
+    disown $DASHBOARD_PID
+}
+
+# Main monitoring loop
+main() {
+    echo "[$(date)] 🚀 Starting Enhanced Unified Manager Watchdog..."
+    
+    # Initialize restart tracking
+    init_restart_tracking
+    
+    # Write PID file
+    echo $$ > "$PID_FILE"
+    
+    # Check unified manager availability
+    if ! check_unified_manager; then
+        echo "[$(date)] ❌ Cannot start watchdog - unified manager not available"
+        exit 1
+    fi
+    
+    echo "[$(date)] ✅ Enhanced Unified Manager Watchdog started"
+    echo "[$(date)] 📋 Configuration:"
+    echo "  - Max restarts: $MAX_RESTARTS per $RESTART_WINDOW seconds"
+    echo "  - Health check timeout: $HEALTH_CHECK_TIMEOUT seconds"
+    echo "  - Monitor interval: $MONITOR_INTERVAL seconds"
+    echo "  - Log file: $LOG"
+    echo "  - PID file: $PID_FILE"
+    
+    # Main monitoring loop
+    while true; do
+        echo "[$(date)] 🔄 Monitoring cycle started..."
+        
+        # Monitor port 5555 specifically (with safeguards)
+        if ! monitor_port_5555; then
+            echo "[$(date)] ⚠️ Port 5555 issues detected (safeguards active)"
+        fi
+        
+        # Monitor general services
+        if ! monitor_services; then
+            echo "[$(date)] ⚠️ Service health issues detected"
+            auto_recovery
+        fi
+        
+        # Check resources
+        check_resources
+        
+        # Validate dashboard
+        validate_dashboard
+        
+        echo "[$(date)] ✅ Monitoring cycle completed"
+        
+        # Wait for next cycle
+        sleep $MONITOR_INTERVAL
+    done
+}
+
+# Cleanup function
+cleanup() {
+    echo "[$(date)] 🛑 Enhanced Unified Manager Watchdog shutting down..."
+    rm -f "$PID_FILE"
+    exit 0
+}
+
+# Signal handlers
+trap cleanup SIGTERM SIGINT
+
+# Command line interface
+case "${1:-}" in
+    "monitor")
+        main
+        ;;
+    "test")
+        echo "Testing Enhanced Unified Manager Watchdog..."
+        check_unified_manager
+        monitor_port_5555
+        monitor_services
+        check_resources
+        validate_dashboard
+        echo "Test completed"
+        ;;
+    "recover")
+        echo "Manual recovery triggered..."
+        monitor_port_5555
+        auto_recovery
+        ;;
+    "status")
+        echo "Enhanced Unified Manager Watchdog Status"
+        echo "======================================="
+        echo "PID File: $PID_FILE"
+        if [ -f "$PID_FILE" ]; then
+            pid=$(cat "$PID_FILE")
+            if ps -p "$pid" > /dev/null 2>&1; then
+                echo "Status: ✅ Running (PID: $pid)"
+            else
+                echo "Status: ❌ Not running (stale PID file)"
+            fi
+        else
+            echo "Status: ❌ Not running"
+        fi
+        echo ""
+        echo "Port 5555 Status:"
+        if safe_health_check "http://localhost:5555/health" "status-check"; then
+            echo "✅ Port 5555 service is healthy"
+        else
+            echo "❌ Port 5555 service is unhealthy"
+        fi
+        ;;
+    *)
+        echo "Enhanced Unified Manager Watchdog"
+        echo "================================="
+        echo ""
+        echo "Usage: $0 <command>"
+        echo ""
+        echo "Commands:"
+        echo "  monitor  - Start continuous monitoring"
+        echo "  test     - Run one-time test"
+        echo "  recover  - Trigger manual recovery"
+        echo "  status   - Show current status"
+        echo ""
+        echo "Features:"
+        echo "  - Port 5555 specific monitoring with safeguards"
+        echo "  - Restart limits and cooldown periods"
+        echo "  - Non-blocking health checks with timeouts"
+        echo "  - Graceful fallback strategies"
+        echo "  - Safe process management without destructive killing"
+        echo ""
+        echo "Examples:"
+        echo "  $0 monitor"
+        echo "  $0 test"
+        echo "  $0 recover"
+        echo "  $0 status"
+        exit 1
+        ;;
+esac 

@@ -1,0 +1,109 @@
+==> Verifying app config
+Validating /Users/sawyer/gitSync/gpt-cursor-runner/fly.toml
+[32m✓[0m Configuration is valid
+--> Verified app config
+==> Building image
+Waiting for depot builder...
+
+==> Building image with Depot
+--> build:  (​)
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 612B 0.1s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 102B 0.1s done
+#3 DONE 0.1s
+
+#4 [1/6] FROM docker.io/library/python:3.11-slim@sha256:0ce77749ac83174a31d5e107ce0cfa6b28a2fd6b0615e029d9d84b39c48976ee
+#4 resolve docker.io/library/python:3.11-slim@sha256:0ce77749ac83174a31d5e107ce0cfa6b28a2fd6b0615e029d9d84b39c48976ee done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 74.48MB 4.9s
+#5 transferring context: 116.54MB 8.4s done
+#5 DONE 8.6s
+
+#6 [3/6] RUN apt-get update && apt-get install -y     gcc     && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [4/6] COPY requirements.txt .
+#7 CACHED
+
+#8 [2/6] WORKDIR /app
+#8 CACHED
+
+#9 [5/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [6/6] COPY . .
+#10 DONE 34.5s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 10.9s done
+#11 exporting manifest sha256:8d277b755f6842e80540ba384913a22e1244185a0134a7c386629230802c55a0 done
+#11 exporting config sha256:14c02af5744c63815d05689bb60420bbef293fc9fb860dd4049aa57a7b3cbe24 done
+#11 pushing layers for registry.fly.io/gpt-cursor-runner:deployment-01K242R584YSY5WC0EF2CFV0V4@sha256:8d277b755f6842e80540ba384913a22e1244185a0134a7c386629230802c55a0
+#11 pushing layer sha256:8a0e93eb9913a89ee5236dc2fe404c2e3c4950001836af83481e4d32cbac1136
+#11 pushing layer sha256:4085babbc5702254267393a22fc7f0d644efddd41dc328f81b1549c13a210b4e
+#11 pushing layer sha256:708e8d63ee4b8e9734d0c70496ff35030f271af453947c721923d4f493a01b31
+#11 pushing layer sha256:3615dc846b5413c93ba753e974980905b0324889d555e32297180fe7bddee15f
+#11 pushing layer sha256:2e24d5202d618f684877131fcca602a79c9d6b8edca5e24d247aafcc460845ec
+#11 pushing layer sha256:b0fd734eea44c1425cfafeba7e9f7c0fcd8ba2c17472d939f0e53353d0eb06e3
+#11 pushing layer sha256:b7b61708209ad8f9b9a11c61dc9df90f74c1e39eddc169936146259febc2ec24
+#11 pushing layer sha256:14c02af5744c63815d05689bb60420bbef293fc9fb860dd4049aa57a7b3cbe24
+#11 pushing layer sha256:59e22667830bf04fb35e15ed9c70023e9d121719bb87f0db7f3159ee7c7e0b8d
+#11 pushing layer sha256:abd846fa1cdb2ae1ef7731213cd4f0c40b05fdbeeaef9301a4dc9575b2088ece
+#11 pushing layer sha256:4085babbc5702254267393a22fc7f0d644efddd41dc328f81b1549c13a210b4e 0.4s done
+#11 pushing layer sha256:b7b61708209ad8f9b9a11c61dc9df90f74c1e39eddc169936146259febc2ec24 0.6s done
+#11 pushing layer sha256:abd846fa1cdb2ae1ef7731213cd4f0c40b05fdbeeaef9301a4dc9575b2088ece 0.5s done
+#11 pushing layer sha256:708e8d63ee4b8e9734d0c70496ff35030f271af453947c721923d4f493a01b31 0.6s done
+#11 pushing layer sha256:3615dc846b5413c93ba753e974980905b0324889d555e32297180fe7bddee15f 0.6s done
+#11 pushing layer sha256:2e24d5202d618f684877131fcca602a79c9d6b8edca5e24d247aafcc460845ec 0.6s done
+#11 pushing layer sha256:b0fd734eea44c1425cfafeba7e9f7c0fcd8ba2c17472d939f0e53353d0eb06e3 0.6s done
+#11 pushing layer sha256:59e22667830bf04fb35e15ed9c70023e9d121719bb87f0db7f3159ee7c7e0b8d 0.6s done
+#11 pushing layer sha256:14c02af5744c63815d05689bb60420bbef293fc9fb860dd4049aa57a7b3cbe24 6.3s done
+#11 pushing layers for registry.fly.io/gpt-cursor-runner:deployment-01K242R584YSY5WC0EF2CFV0V4@sha256:8d277b755f6842e80540ba384913a22e1244185a0134a7c386629230802c55a0 30.7s done
+#11 pushing layer sha256:8a0e93eb9913a89ee5236dc2fe404c2e3c4950001836af83481e4d32cbac1136 30.7s done
+#11 pushing manifest for registry.fly.io/gpt-cursor-runner:deployment-01K242R584YSY5WC0EF2CFV0V4@sha256:8d277b755f6842e80540ba384913a22e1244185a0134a7c386629230802c55a0
+#11 pushing manifest for registry.fly.io/gpt-cursor-runner:deployment-01K242R584YSY5WC0EF2CFV0V4@sha256:8d277b755f6842e80540ba384913a22e1244185a0134a7c386629230802c55a0 2.7s done
+#11 DONE 44.3s
+--> Build Summary:  (​)
+[38;5;252m--> Building image done[0m
+image: registry.fly.io/gpt-cursor-runner:deployment-01K242R584YSY5WC0EF2CFV0V4
+image size: 760 MB
+
+Watch your deployment at https://fly.io/apps/gpt-cursor-runner/monitoring
+
+Updating existing machines in 'gpt-cursor-runner' with rolling strategy
+> [1/3] Acquiring lease for 9185e12c943728
+> [1/3] Acquired lease for 9185e12c943728
+> [2/3] Acquiring lease for 784e2e9a999e18
+> [2/3] Acquired lease for 784e2e9a999e18
+> [3/3] Acquiring lease for 7814162c462698
+> [3/3] Acquired lease for 7814162c462698
+> [3/3] Updating machine config for 7814162c462698
+> [2/3] Updating machine config for 784e2e9a999e18
+> [1/3] Updating machine config for 9185e12c943728
+> [2/3] Updating 784e2e9a999e18 [app]
+> [1/3] Updating 9185e12c943728 [app]
+> [3/3] Updating 7814162c462698 [app]
+> [1/3] Updated machine config for 9185e12c943728
+✔ [1/3] Machine 9185e12c943728 is now in a good state
+> [2/3] Updated machine config for 784e2e9a999e18
+✔ [2/3] Machine 784e2e9a999e18 is now in a good state
+> [3/3] Updated machine config for 7814162c462698
+✔ [3/3] Machine 7814162c462698 is now in a good state
+> [3/3] Clearing lease for 7814162c462698
+> [1/3] Clearing lease for 9185e12c943728
+> [2/3] Clearing lease for 784e2e9a999e18
+✔ [2/3] Cleared lease for 784e2e9a999e18
+✔ [3/3] Cleared lease for 7814162c462698
+✔ [1/3] Cleared lease for 9185e12c943728
+Checking DNS configuration for gpt-cursor-runner.fly.dev
+
+Visit your newly deployed app at https://gpt-cursor-runner.fly.dev/
