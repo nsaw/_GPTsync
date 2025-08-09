@@ -1,4 +1,104 @@
-# ROADMAP ***REMOVED***3.0 -- DON'T START UNTIL YOU'VE READ THE WHOLE THING (VERIFICATION AND CORRECTIONS IN NEXT SECTION)
+# ROADMAP ***REMOVED***2o -- DON'T START UNTIL YOU'VE READ THE WHOLE THING (VERIFICATION AND CORRECTIONS IN NEXT SECTION)
+
+--- 
+
+## **G2o Roadmap — Streamlined Execution Plan**
+
+    ### **Phase 0 — Foundations & Prep**
+
+    **Goal:** Establish clean execution lanes, validation standards, and runtime safety before any patch.
+
+    * **Steps:**
+
+      1. **Baseline Audit** — Review existing bridge state, identify hard dependencies, and confirm all directories match expected (`_GPTsync/`, `meta/`, `commands/`).
+      2. **Runtime Guard Rails** — Apply enforced settings (`autoReleaseTimeoutMs`, `watchConsole`, background execution).
+      3. **Validation Hooks** — Bake in TS compile, ESLint, unit tests, runtime boot checks.
+      4. **HMAC Secret Handling** — Set `GPT_BRIDGE_HMAC_SECRET` in `.env` with strong random key.
+    * **Validation Guidelines:** No commits until all preflight checks pass in one run.
+    * **Audit Report Trigger:** Full folder hash + runtime screenshot + `meta/retries.json` integrity check.
+
+---
+
+### **Phase 1 — Command Path Reliability**
+
+    **Goal:** Ensure `_GPTsync/commands` writes, retries, and dispatches are reliable.
+
+    * **Patches:**
+
+      1. **Write Path Monitor** — Persistent fs watcher to log all `.json` write events.
+      2. **Retry Logic Audit** — Confirm `meta/retries.json` updates after every failed send.
+      3. **Dead Letter Handling** — Automatic move of stale commands to `dead_letter/` with timestamp.
+    * **Validation Guidelines:** Simulate 3 failed sends; confirm retries increment and DLQ archive created.
+    * **Audit Report:** Command write timestamps vs. `results/` receipts.
+
+---
+
+### **Phase 2 — Ghost Dispatch & Response Loop**
+
+**Goal:** Verify webhook→executor→results cycle is atomic and fault-tolerant.
+
+* **Patches:**
+
+  1. **Dispatch Verifier** — Payload HMAC validation before queue.
+  2. **Executor Journal** — Append log per execution, include command ID + exit code.
+  3. **Result Confirmation** — Results written and matched to originating command ID.
+* **Validation Guidelines:** 10 command fire test; 100% must return matching results in under 30s.
+* **Audit Report:** Command IDs, latency, errors, retries.
+
+---
+
+### **Phase 3 — Phase-Specific Functionality**
+
+**Goal:** Modular patch deployment for bridge logic (e.g., hybrid patch handling).
+
+* **Steps:**
+
+  1. Hybrid patch parsing → queue
+  2. Mutation proof generation
+  3. Service uptime pre-check
+* **Validation Guidelines:** Each patch runs end-to-end with logs, diffs, summaries, runtime verification.
+* **Audit Report:** Mutation proof hashes + screenshot verification.
+
+---
+
+### **Phase 4 — Performance Hardening**
+
+**Goal:** Reduce latency, improve fault recovery.
+
+* **Patches:**
+
+  * Async file writes with fsync
+  * Parallel DLQ processing
+  * Cache warm for executor imports
+* **Validation:** Under 1s command enqueue latency under load.
+
+---
+
+### **Phase 5 — Continuous Audit & Self-Heal**
+
+**Goal:** Bridge maintains itself in degraded states.
+
+* **Features:**
+
+  * Watchdog for executor hang
+  * Auto-restart if meta or commands stall
+  * Clock drift correction
+* **Validation:** Force-kill executor, confirm restart and command recovery.
+
+---
+
+### **Global Validation Guidelines**
+
+* ✅ All patches follow enforced runtime + validation rules
+* ✅ CI tags with confidence + verify-tier + drift note
+* ✅ No commit on error
+* ✅ Disk proof > summary text
+
+---
+
+If you want, I can now **pull every step/patch from your `ghost3.0.md`** and map them into this G2o structure so it’s the *final execution-ready doc*.
+Do you want me to do that next?
+
     
     
     Phase 0 — Preconditions (once) SEE HARDENING BELOW
@@ -1332,6 +1432,7 @@ I’ll attach a header/footer block on factual / reference answers:
 
 I set a reminder for **Monday, Aug 11, 2025 at 10:00 AM PT** to set up the cloud-based ruleset/reference directory that mirrors `.cursor/rules/*.mdc`.
 Got it! I’ll remind you then.
+#DONE
 
 ---
 
