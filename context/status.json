@@ -1,0 +1,12 @@
+{
+  "MAIN": {
+    "branch": "develop/PHASE6.5",
+    "head": "80b2ce60fed52d35ebbadc898bb9c9b0d72ff926",
+    "dirty": true
+  },
+  "CYOPS": {
+    "branch": "GHOST2.0_PHASE_5_CLEAN",
+    "head": "7f497e57f7fdf5297a05f76917085ce280251bbf",
+    "dirty": true
+  }
+}
