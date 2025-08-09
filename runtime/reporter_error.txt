@@ -1,0 +1,1 @@
+Command '['git', '-C', '/Users/sawyer/gitSync/_GPTsync', 'pull', '--rebase']' returned non-zero exit status 128.
