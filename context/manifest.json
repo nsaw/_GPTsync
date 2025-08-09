@@ -3051,8 +3051,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 20939296,
-    "mtime": 1754732826
+    "size": 20939632,
+    "mtime": 1754732856
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3212,7 +3212,7 @@
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.DS_Store",
     "size": 20484,
-    "mtime": 1754715910
+    "mtime": 1754732862
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/get-sha1.sh",
