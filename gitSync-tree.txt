@@ -1,0 +1,3294 @@
+/Users/sawyer/gitSync/_backups
+├── 25_Ghost_Runner
+├── 25_Thoughtmarks_Native
+│   ├── 250706_0006UTC_v1.4.0_autoroleview-v3-complete_backup_tm-mobile-cursor 2
+│   │   ├── docs
+│   │   │   ├── git
+│   │   │   ├── snippets
+│   │   │   │   └── pulled-chat-snippets
+│   │   │   │       ├── [CURSOR]_JSX_hybrid-block-v1
+│   │   │   │       ├── 3_ELEMENTS_conversion_blocks
+│   │   │   │       ├── BACKGROUND_AGENT_RULES
+│   │   │   │       ├── Clickable_Element_Audit
+│   │   │   │       ├── ModalSpecCard_SCOPED_OVERRIDE
+│   │   │   │       └── REFACTOR_COND_DASH_REFACTOR
+│   │   │   └── Thoughtmarks_Teams_Kickstart
+│   │   ├── mobile-native-fresh
+│   │   │   ├── .husky
+│   │   │   ├── assets
+│   │   │   │   └── AppIcon
+│   │   │   │       ├── imessenger
+│   │   │   │       └── watchkit
+│   │   │   │           └── AppIcon.appiconset
+│   │   │   ├── audit
+│   │   │   ├── backend
+│   │   │   │   └── src
+│   │   │   │       ├── config
+│   │   │   │       ├── controllers
+│   │   │   │       ├── db
+│   │   │   │       ├── middleware
+│   │   │   │       ├── routes
+│   │   │   │       └── utils
+│   │   │   ├── docs
+│   │   │   │   └── TASKS 250626
+│   │   │   ├── eslint-plugin-custom
+│   │   │   ├── eslint-plugin-thoughtmarks
+│   │   │   ├── eslint-rules
+│   │   │   ├── scripts
+│   │   │   ├── src
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── tasks
+│   │   │   │   └── v1.4.0
+│   │   │   └── thoughtmarks-dev-tools
+│   │   │       └── scripts
+│   │   ├── references
+│   │   │   ├── backend
+│   │   │   │   └── src
+│   │   │   │       ├── config
+│   │   │   │       ├── controllers
+│   │   │   │       ├── db
+│   │   │   │       ├── middleware
+│   │   │   │       ├── routes
+│   │   │   │       └── utils
+│   │   │   ├── react-native
+│   │   │   │   └── src
+│   │   │   │       ├── components
+│   │   │   │       ├── hooks
+│   │   │   │       ├── navigation
+│   │   │   │       ├── screens
+│   │   │   │       ├── services
+│   │   │   │       └── types
+│   │   │   ├── shared
+│   │   │   ├── swiftui
+│   │   │   │   └── Thoughtmarks
+│   │   │   │       ├── Assets.xcassets
+│   │   │   │       │   └── AppIcon.appiconset
+│   │   │   │       ├── Models
+│   │   │   │       └── Utils
+│   │   │   └── web-src
+│   │   │       ├── public
+│   │   │       │   └── fonts
+│   │   │       └── src
+│   │   │           ├── assets
+│   │   │           │   └── animations
+│   │   │           ├── components
+│   │   │           │   └── ui
+│   │   │           ├── features
+│   │   │           │   └── voice
+│   │   │           ├── hooks
+│   │   │           ├── pages
+│   │   │           │   ├── ai
+│   │   │           │   ├── bins
+│   │   │           │   ├── content
+│   │   │           │   ├── legal
+│   │   │           │   └── settings
+│   │   │           │       ├── account
+│   │   │           │       ├── automation
+│   │   │           │       └── legal
+│   │   │           ├── theme
+│   │   │           └── types
+│   │   ├── scripts
+│   │   ├── snapshots
+│   │   ├── src
+│   │   │   ├── assets
+│   │   │   │   └── SVG
+│   │   │   └── components
+│   │   └── tasks
+│   │       ├── Archive
+│   │       ├── cleanup
+│   │       ├── docs
+│   │       ├── git
+│   │       ├── hybrid_blocks
+│   │       ├── recovery_troubleshooting
+│   │       ├── v1.2.2
+│   │       ├── v1.3.1
+│   │       ├── v1.3.2
+│   │       │   └── docs
+│   │       └── v1.4.0
+│   │           ├── 1_Troubleshooting
+│   │           ├── ATTEMPT-2-Postmortem
+│   │           ├── auto-role-view_v3
+│   │           │   └── auto_roleview_v3_package
+│   │           └── docs
+│   ├── mobile-native-fresh
+│   │   └── __tests__
+│   └── xrefs
+│       ├── Archive
+│       ├── docs
+│       ├── mobile-native-fresh
+│       ├── tasks
+│       │   └── v1.3.1
+│       ├── tm-mobile-cursor copy
+│       │   ├── docs
+│       │   │   ├── git
+│       │   │   └── snippets
+│       │   │       └── pulled-chat-snippets
+│       │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │           ├── 3_ELEMENTS_conversion_blocks
+│       │   │           ├── BACKGROUND_AGENT_RULES
+│       │   │           ├── Clickable_Element_Audit
+│       │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │           └── REFACTOR_COND_DASH_REFACTOR
+│       │   ├── mobile-native-fresh
+│       │   │   ├── .husky
+│       │   │   ├── assets
+│       │   │   │   └── AppIcon
+│       │   │   │       ├── imessenger
+│       │   │   │       └── watchkit
+│       │   │   │           └── AppIcon.appiconset
+│       │   │   ├── backend
+│       │   │   │   └── src
+│       │   │   │       ├── config
+│       │   │   │       ├── controllers
+│       │   │   │       ├── db
+│       │   │   │       ├── middleware
+│       │   │   │       ├── routes
+│       │   │   │       └── utils
+│       │   │   ├── docs
+│       │   │   │   └── TASKS 250626
+│       │   │   ├── eslint-plugin-custom
+│       │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   ├── eslint-rules
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── components
+│       │   │   │   │   └── ui
+│       │   │   │   ├── config
+│       │   │   │   ├── features
+│       │   │   │   │   ├── ai
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── auth
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── bins
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── content
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── home
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── search
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── settings
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   └── thoughtmarks
+│       │   │   │   │       └── screens
+│       │   │   │   ├── hooks
+│       │   │   │   ├── navigation
+│       │   │   │   ├── services
+│       │   │   │   ├── theme
+│       │   │   │   ├── types
+│       │   │   │   └── utils
+│       │   │   └── thoughtmarks-dev-tools
+│       │   │       └── scripts
+│       │   ├── scripts
+│       │   ├── src
+│       │   │   ├── assets
+│       │   │   │   └── SVG
+│       │   │   └── components
+│       │   └── tasks
+│       │       ├── Archive
+│       │       ├── cleanup
+│       │       ├── docs
+│       │       ├── git
+│       │       ├── hybrid_blocks
+│       │       ├── recovery_troubleshooting
+│       │       ├── v1.2.2
+│       │       ├── v1.3.1
+│       │       └── v1.3.2
+│       │           └── thoughtmarks-functional-docs-v1.3.2
+│       ├── tm-mobile-cursor copy 2
+│       │   ├── docs
+│       │   │   ├── git
+│       │   │   ├── snippets
+│       │   │   │   └── pulled-chat-snippets
+│       │   │   │       ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │   │       ├── 3_ELEMENTS_conversion_blocks
+│       │   │   │       ├── BACKGROUND_AGENT_RULES
+│       │   │   │       ├── Clickable_Element_Audit
+│       │   │   │       ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │   │       └── REFACTOR_COND_DASH_REFACTOR
+│       │   │   └── Thoughtmarks_Teams_Kickstart
+│       │   ├── mobile-native-fresh
+│       │   │   ├── .husky
+│       │   │   ├── assets
+│       │   │   │   └── AppIcon
+│       │   │   │       ├── imessenger
+│       │   │   │       └── watchkit
+│       │   │   │           └── AppIcon.appiconset
+│       │   │   ├── backend
+│       │   │   │   └── src
+│       │   │   │       ├── config
+│       │   │   │       ├── controllers
+│       │   │   │       ├── db
+│       │   │   │       ├── middleware
+│       │   │   │       ├── routes
+│       │   │   │       └── utils
+│       │   │   ├── docs
+│       │   │   │   └── TASKS 250626
+│       │   │   ├── eslint-plugin-custom
+│       │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   ├── eslint-rules
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── components
+│       │   │   │   │   └── ui
+│       │   │   │   ├── config
+│       │   │   │   ├── features
+│       │   │   │   │   ├── ai
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── auth
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── bins
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── content
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── home
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── search
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── settings
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   └── thoughtmarks
+│       │   │   │   │       └── screens
+│       │   │   │   ├── hooks
+│       │   │   │   ├── navigation
+│       │   │   │   ├── services
+│       │   │   │   ├── theme
+│       │   │   │   ├── types
+│       │   │   │   └── utils
+│       │   │   └── thoughtmarks-dev-tools
+│       │   │       └── scripts
+│       │   ├── references
+│       │   │   ├── backend
+│       │   │   │   └── src
+│       │   │   │       ├── config
+│       │   │   │       ├── controllers
+│       │   │   │       ├── db
+│       │   │   │       ├── middleware
+│       │   │   │       ├── routes
+│       │   │   │       └── utils
+│       │   │   ├── react-native
+│       │   │   │   └── src
+│       │   │   │       ├── components
+│       │   │   │       ├── hooks
+│       │   │   │       ├── navigation
+│       │   │   │       ├── screens
+│       │   │   │       ├── services
+│       │   │   │       └── types
+│       │   │   ├── shared
+│       │   │   ├── swiftui
+│       │   │   │   └── Thoughtmarks
+│       │   │   │       ├── Assets.xcassets
+│       │   │   │       │   └── AppIcon.appiconset
+│       │   │   │       ├── Models
+│       │   │   │       └── Utils
+│       │   │   └── web-src
+│       │   │       ├── public
+│       │   │       │   └── fonts
+│       │   │       └── src
+│       │   │           ├── assets
+│       │   │           │   └── animations
+│       │   │           ├── components
+│       │   │           │   └── ui
+│       │   │           ├── features
+│       │   │           │   └── voice
+│       │   │           ├── hooks
+│       │   │           ├── pages
+│       │   │           │   ├── ai
+│       │   │           │   ├── bins
+│       │   │           │   ├── content
+│       │   │           │   ├── legal
+│       │   │           │   └── settings
+│       │   │           │       ├── account
+│       │   │           │       ├── automation
+│       │   │           │       └── legal
+│       │   │           ├── theme
+│       │   │           └── types
+│       │   ├── scripts
+│       │   ├── src
+│       │   │   ├── assets
+│       │   │   │   └── SVG
+│       │   │   └── components
+│       │   └── tasks
+│       │       ├── Archive
+│       │       ├── cleanup
+│       │       ├── docs
+│       │       ├── git
+│       │       ├── hybrid_blocks
+│       │       ├── recovery_troubleshooting
+│       │       ├── v1.2.2
+│       │       ├── v1.3.1
+│       │       ├── v1.3.2
+│       │       │   └── docs
+│       │       ├── v1.3.2_INDEX-ROADMAP_patch
+│       │       └── v1.4.0
+│       │           └── docs
+│       ├── tm-mobile-cursor_BACKUPS
+│       │   ├── tm-mobile-cursor_BACKUP_20250627-1425
+│       │   │   ├── docs
+│       │   │   │   ├── git
+│       │   │   │   ├── nick_need2know
+│       │   │   │   ├── README
+│       │   │   │   └── snippets
+│       │   │   │       └── pulled-chat-snippets
+│       │   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │   │           ├── 3_ELEMENTS_conversion_blocks
+│       │   │   │           ├── BACKGROUND_AGENT_RULES
+│       │   │   │           ├── Clickable_Element_Audit
+│       │   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│       │   │   ├── ios bak
+│       │   │   ├── mobile-native-fresh
+│       │   │   │   ├── .husky
+│       │   │   │   ├── assets
+│       │   │   │   │   └── AppIcon
+│       │   │   │   │       ├── imessenger
+│       │   │   │   │       └── watchkit
+│       │   │   │   │           └── AppIcon.appiconset
+│       │   │   │   ├── backend
+│       │   │   │   │   └── src
+│       │   │   │   │       ├── config
+│       │   │   │   │       ├── controllers
+│       │   │   │   │       ├── db
+│       │   │   │   │       ├── middleware
+│       │   │   │   │       ├── routes
+│       │   │   │   │       └── utils
+│       │   │   │   ├── docs
+│       │   │   │   │   └── TASKS 250626
+│       │   │   │   ├── eslint-plugin-custom
+│       │   │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   │   ├── eslint-rules
+│       │   │   │   ├── mobile-native-fresh
+│       │   │   │   │   └── docs
+│       │   │   │   ├── scripts
+│       │   │   │   ├── src
+│       │   │   │   │   ├── components
+│       │   │   │   │   │   ├── ui
+│       │   │   │   │   │   └── wrappers
+│       │   │   │   │   ├── config
+│       │   │   │   │   ├── contexts
+│       │   │   │   │   ├── features
+│       │   │   │   │   │   ├── ai
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── auth
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── bins
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── content
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── home
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── search
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── settings
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   └── thoughtmarks
+│       │   │   │   │   │       └── screens
+│       │   │   │   │   ├── hooks
+│       │   │   │   │   ├── navigation
+│       │   │   │   │   ├── services
+│       │   │   │   │   ├── theme
+│       │   │   │   │   ├── types
+│       │   │   │   │   └── utils
+│       │   │   │   └── thoughtmarks-dev-tools
+│       │   │   │       └── scripts
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── assets
+│       │   │   │   │   └── SVG
+│       │   │   │   └── components
+│       │   │   └── tasks
+│       │   │       ├── cursor_instructions
+│       │   │       ├── docs
+│       │   │       ├── enforcement
+│       │   │       ├── git
+│       │   │       ├── handlers
+│       │   │       ├── hybrid_blocks
+│       │   │       ├── loops_expensive
+│       │   │       └── release_flows
+│       │   ├── tm-mobile-cursor_BACKUP_20250627-2050
+│       │   │   ├── docs
+│       │   │   │   └── git
+│       │   │   ├── mobile-native-fresh
+│       │   │   │   ├── assets
+│       │   │   │   ├── backend
+│       │   │   │   ├── mobile-native-fresh
+│       │   │   │   │   └── docs
+│       │   │   │   ├── src
+│       │   │   │   │   ├── components
+│       │   │   │   │   │   └── ui
+│       │   │   │   │   ├── features
+│       │   │   │   │   │   ├── home
+│       │   │   │   │   │   │   └── components
+│       │   │   │   │   │   └── thoughtmarks
+│       │   │   │   │   │       └── screens
+│       │   │   │   │   └── utils
+│       │   │   │   └── thoughtmarks-dev-tools
+│       │   │   └── tasks
+│       │   │       └── git
+│       │   ├── tm-mobile-cursor_BACKUP_20250627-2131
+│       │   │   ├── docs
+│       │   │   │   └── git
+│       │   │   ├── mobile-native-fresh
+│       │   │   │   ├── assets
+│       │   │   │   ├── backend
+│       │   │   │   ├── mobile-native-fresh
+│       │   │   │   │   └── docs
+│       │   │   │   ├── src
+│       │   │   │   │   ├── components
+│       │   │   │   │   │   └── ui
+│       │   │   │   │   ├── features
+│       │   │   │   │   │   └── thoughtmarks
+│       │   │   │   │   │       └── screens
+│       │   │   │   │   └── utils
+│       │   │   │   └── thoughtmarks-dev-tools
+│       │   │   ├── src
+│       │   │   └── tasks
+│       │   │       └── git
+│       │   ├── tm-mobile-cursor_BACKUP_20250628-0012
+│       │   │   ├── docs
+│       │   │   │   ├── git
+│       │   │   │   ├── nick_need2know
+│       │   │   │   ├── README
+│       │   │   │   └── snippets
+│       │   │   │       └── pulled-chat-snippets
+│       │   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │   │           ├── 3_ELEMENTS_conversion_blocks
+│       │   │   │           ├── BACKGROUND_AGENT_RULES
+│       │   │   │           ├── Clickable_Element_Audit
+│       │   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│       │   │   ├── ios bak
+│       │   │   ├── mobile-native-fresh
+│       │   │   │   ├── .husky
+│       │   │   │   ├── assets
+│       │   │   │   │   └── AppIcon
+│       │   │   │   │       ├── imessenger
+│       │   │   │   │       └── watchkit
+│       │   │   │   │           └── AppIcon.appiconset
+│       │   │   │   ├── backend
+│       │   │   │   │   └── src
+│       │   │   │   │       ├── config
+│       │   │   │   │       ├── controllers
+│       │   │   │   │       ├── db
+│       │   │   │   │       ├── middleware
+│       │   │   │   │       ├── routes
+│       │   │   │   │       └── utils
+│       │   │   │   ├── docs
+│       │   │   │   │   └── TASKS 250626
+│       │   │   │   ├── eslint-plugin-custom
+│       │   │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   │   ├── eslint-rules
+│       │   │   │   ├── mobile-native-fresh
+│       │   │   │   │   └── docs
+│       │   │   │   ├── scripts
+│       │   │   │   ├── src
+│       │   │   │   │   ├── components
+│       │   │   │   │   │   ├── ui
+│       │   │   │   │   │   └── wrappers
+│       │   │   │   │   ├── config
+│       │   │   │   │   ├── contexts
+│       │   │   │   │   ├── features
+│       │   │   │   │   │   ├── ai
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── auth
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── bins
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── content
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── home
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── search
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── settings
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   └── thoughtmarks
+│       │   │   │   │   │       └── screens
+│       │   │   │   │   ├── hooks
+│       │   │   │   │   ├── navigation
+│       │   │   │   │   ├── services
+│       │   │   │   │   ├── theme
+│       │   │   │   │   ├── types
+│       │   │   │   │   └── utils
+│       │   │   │   └── thoughtmarks-dev-tools
+│       │   │   │       └── scripts
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── assets
+│       │   │   │   │   └── SVG
+│       │   │   │   └── components
+│       │   │   └── tasks
+│       │   │       ├── completed
+│       │   │       ├── cursor_instructions
+│       │   │       │   └── rollbacks_cleanups
+│       │   │       ├── docs
+│       │   │       ├── enforcement
+│       │   │       ├── git
+│       │   │       ├── handlers
+│       │   │       ├── hybrid_blocks
+│       │   │       ├── loops_expensive
+│       │   │       └── release_flows
+│       │   ├── tm-mobile-cursor_RECOVERED_20250627-2110
+│       │   │   ├── docs
+│       │   │   │   ├── git
+│       │   │   │   ├── nick_need2know
+│       │   │   │   ├── README
+│       │   │   │   └── snippets
+│       │   │   │       └── pulled-chat-snippets
+│       │   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │   │           ├── 3_ELEMENTS_conversion_blocks
+│       │   │   │           ├── BACKGROUND_AGENT_RULES
+│       │   │   │           ├── Clickable_Element_Audit
+│       │   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│       │   │   ├── ios bak
+│       │   │   ├── mobile-native-fresh
+│       │   │   │   ├── .husky
+│       │   │   │   ├── assets
+│       │   │   │   │   └── AppIcon
+│       │   │   │   │       ├── imessenger
+│       │   │   │   │       └── watchkit
+│       │   │   │   │           └── AppIcon.appiconset
+│       │   │   │   ├── backend
+│       │   │   │   │   └── src
+│       │   │   │   │       ├── config
+│       │   │   │   │       ├── controllers
+│       │   │   │   │       ├── db
+│       │   │   │   │       ├── middleware
+│       │   │   │   │       ├── routes
+│       │   │   │   │       └── utils
+│       │   │   │   ├── docs
+│       │   │   │   │   └── TASKS 250626
+│       │   │   │   ├── eslint-plugin-custom
+│       │   │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   │   ├── eslint-rules
+│       │   │   │   ├── mobile-native-fresh
+│       │   │   │   │   └── docs
+│       │   │   │   ├── scripts
+│       │   │   │   ├── src
+│       │   │   │   │   ├── components
+│       │   │   │   │   │   ├── ui
+│       │   │   │   │   │   └── wrappers
+│       │   │   │   │   ├── config
+│       │   │   │   │   ├── contexts
+│       │   │   │   │   ├── features
+│       │   │   │   │   │   ├── ai
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── auth
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── bins
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── content
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── home
+│       │   │   │   │   │   │   ├── components
+│       │   │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── search
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   ├── settings
+│       │   │   │   │   │   │   └── screens
+│       │   │   │   │   │   └── thoughtmarks
+│       │   │   │   │   │       └── screens
+│       │   │   │   │   ├── hooks
+│       │   │   │   │   ├── navigation
+│       │   │   │   │   ├── services
+│       │   │   │   │   ├── theme
+│       │   │   │   │   ├── types
+│       │   │   │   │   └── utils
+│       │   │   │   └── thoughtmarks-dev-tools
+│       │   │   │       └── scripts
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── assets
+│       │   │   │   │   └── SVG
+│       │   │   │   └── components
+│       │   │   └── tasks
+│       │   │       ├── cursor_instructions
+│       │   │       │   └── rollbacks_cleanups
+│       │   │       ├── docs
+│       │   │       ├── enforcement
+│       │   │       ├── git
+│       │   │       ├── handlers
+│       │   │       ├── hybrid_blocks
+│       │   │       ├── loops_expensive
+│       │   │       └── release_flows
+│       │   └── tm-mobile-cursor-1.3.1_safeguard-check
+│       │       ├── docs
+│       │       │   └── snippets
+│       │       │       └── pulled-chat-snippets
+│       │       │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │       │           ├── 3_ELEMENTS_conversion_blocks
+│       │       │           ├── BACKGROUND_AGENT_RULES
+│       │       │           ├── Clickable_Element_Audit
+│       │       │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │       │           └── REFACTOR_COND_DASH_REFACTOR
+│       │       ├── ios bak
+│       │       ├── mobile-native-fresh
+│       │       │   ├── .husky
+│       │       │   ├── assets
+│       │       │   │   └── AppIcon
+│       │       │   │       ├── imessenger
+│       │       │   │       └── watchkit
+│       │       │   │           └── AppIcon.appiconset
+│       │       │   ├── backend
+│       │       │   │   └── src
+│       │       │   │       ├── config
+│       │       │   │       ├── controllers
+│       │       │   │       ├── db
+│       │       │   │       ├── middleware
+│       │       │   │       ├── routes
+│       │       │   │       └── utils
+│       │       │   ├── docs
+│       │       │   │   └── TASKS 250626
+│       │       │   ├── eslint-plugin-custom
+│       │       │   ├── eslint-plugin-thoughtmarks
+│       │       │   ├── eslint-rules
+│       │       │   ├── scripts
+│       │       │   ├── src
+│       │       │   │   ├── components
+│       │       │   │   │   └── ui
+│       │       │   │   ├── config
+│       │       │   │   ├── features
+│       │       │   │   │   ├── ai
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── auth
+│       │       │   │   │   │   ├── components
+│       │       │   │   │   │   ├── hooks
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── bins
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── content
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── home
+│       │       │   │   │   │   ├── components
+│       │       │   │   │   │   ├── hooks
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── search
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   ├── settings
+│       │       │   │   │   │   └── screens
+│       │       │   │   │   └── thoughtmarks
+│       │       │   │   │       └── screens
+│       │       │   │   ├── hooks
+│       │       │   │   ├── navigation
+│       │       │   │   ├── services
+│       │       │   │   ├── theme
+│       │       │   │   ├── types
+│       │       │   │   └── utils
+│       │       │   └── thoughtmarks-dev-tools
+│       │       │       └── scripts
+│       │       ├── scripts
+│       │       ├── src
+│       │       │   ├── assets
+│       │       │   │   └── SVG
+│       │       │   └── components
+│       │       └── tasks
+│       │           └── hybrid_blocks
+│       ├── tm-mobile-cursor_RESTORED_feature.v1.3.1_eas-setup
+│       │   ├── assets
+│       │   │   └── AppIcon
+│       │   │       ├── imessenger
+│       │   │       └── watchkit
+│       │   │           └── AppIcon.appiconset
+│       │   ├── docs
+│       │   │   ├── git
+│       │   │   ├── nick_need2know
+│       │   │   ├── README
+│       │   │   └── snippets
+│       │   │       └── pulled-chat-snippets
+│       │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│       │   │           ├── 3_ELEMENTS_conversion_blocks
+│       │   │           ├── BACKGROUND_AGENT_RULES
+│       │   │           ├── Clickable_Element_Audit
+│       │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│       │   │           └── REFACTOR_COND_DASH_REFACTOR
+│       │   ├── ios bak
+│       │   ├── mobile-native-fresh
+│       │   │   ├── .husky
+│       │   │   ├── assets
+│       │   │   │   └── AppIcon
+│       │   │   │       ├── imessenger
+│       │   │   │       └── watchkit
+│       │   │   │           └── AppIcon.appiconset
+│       │   │   ├── backend
+│       │   │   │   └── src
+│       │   │   │       ├── config
+│       │   │   │       ├── controllers
+│       │   │   │       ├── db
+│       │   │   │       ├── middleware
+│       │   │   │       ├── routes
+│       │   │   │       └── utils
+│       │   │   ├── docs
+│       │   │   │   └── TASKS 250626
+│       │   │   ├── eslint-plugin-custom
+│       │   │   ├── eslint-plugin-thoughtmarks
+│       │   │   ├── eslint-rules
+│       │   │   ├── scripts
+│       │   │   ├── src
+│       │   │   │   ├── components
+│       │   │   │   │   ├── ui
+│       │   │   │   │   └── wrappers
+│       │   │   │   ├── config
+│       │   │   │   ├── contexts
+│       │   │   │   ├── features
+│       │   │   │   │   ├── ai
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── auth
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── bins
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── content
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── home
+│       │   │   │   │   │   ├── components
+│       │   │   │   │   │   ├── hooks
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── search
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   ├── settings
+│       │   │   │   │   │   └── screens
+│       │   │   │   │   └── thoughtmarks
+│       │   │   │   │       └── screens
+│       │   │   │   ├── hooks
+│       │   │   │   ├── navigation
+│       │   │   │   ├── services
+│       │   │   │   ├── theme
+│       │   │   │   ├── types
+│       │   │   │   └── utils
+│       │   │   └── thoughtmarks-dev-tools
+│       │   │       └── scripts
+│       │   ├── scripts
+│       │   ├── src
+│       │   │   ├── assets
+│       │   │   │   └── SVG
+│       │   │   └── components
+│       │   └── tasks
+│       │       ├── background
+│       │       ├── completed
+│       │       ├── cursor_instructions
+│       │       │   └── rollbacks_cleanups
+│       │       ├── docs
+│       │       ├── enforcement
+│       │       ├── general
+│       │       ├── git
+│       │       ├── handlers
+│       │       ├── release_flows
+│       │       ├── templates
+│       │       ├── v1.2.2
+│       │       ├── v1.3.1
+│       │       ├── v1.3.3
+│       │       ├── v1.3.4
+│       │       └── v1.3.5
+│       └── zips
+├── credentials
+├── enforcement_daemon
+├── git-filter-repo
+│   └── .git_bak_250709_UTC
+│       ├── hooks
+│       ├── info
+│       ├── objects
+│       │   ├── 00
+│       │   ├── 01
+│       │   ├── 02
+│       │   ├── 03
+│       │   ├── 04
+│       │   ├── 05
+│       │   ├── 06
+│       │   ├── 07
+│       │   ├── 08
+│       │   ├── 09
+│       │   ├── 0b
+│       │   ├── 0c
+│       │   ├── 0d
+│       │   ├── 0e
+│       │   ├── 0f
+│       │   ├── 10
+│       │   ├── 12
+│       │   ├── 13
+│       │   ├── 14
+│       │   ├── 15
+│       │   ├── 16
+│       │   ├── 17
+│       │   ├── 18
+│       │   ├── 19
+│       │   ├── 1a
+│       │   ├── 1b
+│       │   ├── 1c
+│       │   ├── 1d
+│       │   ├── 1e
+│       │   ├── 1f
+│       │   ├── 20
+│       │   ├── 21
+│       │   ├── 22
+│       │   ├── 23
+│       │   ├── 24
+│       │   ├── 25
+│       │   ├── 26
+│       │   ├── 27
+│       │   ├── 28
+│       │   ├── 29
+│       │   ├── 2a
+│       │   ├── 2b
+│       │   ├── 2c
+│       │   ├── 2d
+│       │   ├── 2e
+│       │   ├── 2f
+│       │   ├── 30
+│       │   ├── 31
+│       │   ├── 32
+│       │   ├── 33
+│       │   ├── 34
+│       │   ├── 35
+│       │   ├── 36
+│       │   ├── 37
+│       │   ├── 38
+│       │   ├── 39
+│       │   ├── 3a
+│       │   ├── 3b
+│       │   ├── 3c
+│       │   ├── 3d
+│       │   ├── 3e
+│       │   ├── 3f
+│       │   ├── 40
+│       │   ├── 41
+│       │   ├── 42
+│       │   ├── 43
+│       │   ├── 44
+│       │   ├── 45
+│       │   ├── 46
+│       │   ├── 47
+│       │   ├── 48
+│       │   ├── 49
+│       │   ├── 4a
+│       │   ├── 4b
+│       │   ├── 4c
+│       │   ├── 4d
+│       │   ├── 4e
+│       │   ├── 4f
+│       │   ├── 50
+│       │   ├── 51
+│       │   ├── 52
+│       │   ├── 53
+│       │   ├── 54
+│       │   ├── 55
+│       │   ├── 56
+│       │   ├── 57
+│       │   ├── 58
+│       │   ├── 59
+│       │   ├── 5a
+│       │   ├── 5b
+│       │   ├── 5c
+│       │   ├── 5d
+│       │   ├── 5e
+│       │   ├── 5f
+│       │   ├── 60
+│       │   ├── 61
+│       │   ├── 62
+│       │   ├── 63
+│       │   ├── 64
+│       │   ├── 65
+│       │   ├── 66
+│       │   ├── 67
+│       │   ├── 68
+│       │   ├── 69
+│       │   ├── 6a
+│       │   ├── 6b
+│       │   ├── 6c
+│       │   ├── 6d
+│       │   ├── 6e
+│       │   ├── 6f
+│       │   ├── 70
+│       │   ├── 71
+│       │   ├── 72
+│       │   ├── 73
+│       │   ├── 74
+│       │   ├── 75
+│       │   ├── 76
+│       │   ├── 77
+│       │   ├── 78
+│       │   ├── 79
+│       │   ├── 7a
+│       │   ├── 7b
+│       │   ├── 7c
+│       │   ├── 7d
+│       │   ├── 7e
+│       │   ├── 7f
+│       │   ├── 80
+│       │   ├── 81
+│       │   ├── 82
+│       │   ├── 83
+│       │   ├── 84
+│       │   ├── 85
+│       │   ├── 86
+│       │   ├── 87
+│       │   ├── 88
+│       │   ├── 89
+│       │   ├── 8a
+│       │   ├── 8b
+│       │   ├── 8c
+│       │   ├── 8d
+│       │   ├── 8e
+│       │   ├── 8f
+│       │   ├── 90
+│       │   ├── 91
+│       │   ├── 92
+│       │   ├── 93
+│       │   ├── 94
+│       │   ├── 95
+│       │   ├── 96
+│       │   ├── 97
+│       │   ├── 98
+│       │   ├── 99
+│       │   ├── 9a
+│       │   ├── 9b
+│       │   ├── 9c
+│       │   ├── 9d
+│       │   ├── 9e
+│       │   ├── 9f
+│       │   ├── a0
+│       │   ├── a1
+│       │   ├── a2
+│       │   ├── a3
+│       │   ├── a4
+│       │   ├── a5
+│       │   ├── a6
+│       │   ├── a7
+│       │   ├── a8
+│       │   ├── a9
+│       │   ├── aa
+│       │   ├── ab
+│       │   ├── ac
+│       │   ├── ad
+│       │   ├── ae
+│       │   ├── af
+│       │   ├── b0
+│       │   ├── b1
+│       │   ├── b2
+│       │   ├── b3
+│       │   ├── b4
+│       │   ├── b5
+│       │   ├── b6
+│       │   ├── b7
+│       │   ├── b8
+│       │   ├── b9
+│       │   ├── ba
+│       │   ├── bb
+│       │   ├── bc
+│       │   ├── bd
+│       │   ├── be
+│       │   ├── bf
+│       │   ├── c0
+│       │   ├── c1
+│       │   ├── c2
+│       │   ├── c3
+│       │   ├── c4
+│       │   ├── c5
+│       │   ├── c6
+│       │   ├── c7
+│       │   ├── c8
+│       │   ├── c9
+│       │   ├── ca
+│       │   ├── cb
+│       │   ├── cc
+│       │   ├── cd
+│       │   ├── ce
+│       │   ├── cf
+│       │   ├── d0
+│       │   ├── d1
+│       │   ├── d2
+│       │   ├── d3
+│       │   ├── d4
+│       │   ├── d5
+│       │   ├── d6
+│       │   ├── d7
+│       │   ├── d8
+│       │   ├── d9
+│       │   ├── da
+│       │   ├── db
+│       │   ├── dc
+│       │   ├── dd
+│       │   ├── de
+│       │   ├── df
+│       │   ├── e0
+│       │   ├── e1
+│       │   ├── e2
+│       │   ├── e3
+│       │   ├── e4
+│       │   ├── e5
+│       │   ├── e6
+│       │   ├── e7
+│       │   ├── e8
+│       │   ├── e9
+│       │   ├── ea
+│       │   ├── eb
+│       │   ├── ec
+│       │   ├── ed
+│       │   ├── ee
+│       │   ├── ef
+│       │   ├── f0
+│       │   ├── f1
+│       │   ├── f2
+│       │   ├── f3
+│       │   ├── f4
+│       │   ├── f5
+│       │   ├── f6
+│       │   ├── f7
+│       │   ├── f8
+│       │   ├── f9
+│       │   ├── fa
+│       │   ├── fb
+│       │   ├── fc
+│       │   ├── fd
+│       │   ├── fe
+│       │   ├── ff
+│       │   ├── info
+│       │   └── pack
+│       └── refs
+│           ├── heads
+│           ├── remotes
+│           │   └── origin
+│           └── tags
+├── gpt-cursor-runner
+│   └── 20250728_patch-v3.9.0(P8.HOT)_telemetry-dashboard-fix_backup_gpt-cursor-runner
+│       ├── .github
+│       │   └── workflows
+│       ├── .ruff_cache
+│       │   └── 0.12.2
+│       ├── analytics
+│       ├── assets
+│       ├── backups
+│       ├── bin
+│       ├── components
+│       │   └── dashboard
+│       │       └── sections
+│       ├── config
+│       │   └── redis
+│       ├── dashboard
+│       │   ├── api
+│       │   ├── components
+│       │   │   ├── hooks
+│       │   │   └── ui
+│       │   ├── static
+│       │   └── templates
+│       ├── data
+│       │   └── redis
+│       │       └── appendonlydir
+│       ├── docs
+│       │   ├── cursor-rules
+│       │   └── NEW CONFIG
+│       ├── Enterprise
+│       ├── foo
+│       │   └── bar
+│       ├── Free
+│       ├── gpt_cursor_runner
+│       ├── init
+│       ├── k8s
+│       │   ├── autoscale
+│       │   ├── infra
+│       │   ├── kafka
+│       │   ├── policy
+│       │   └── services
+│       ├── Pro
+│       ├── public
+│       │   └── status
+│       ├── quarantine
+│       │   └── .failed-patches
+│       ├── runner
+│       ├── scripts
+│       │   ├── audit
+│       │   ├── boot
+│       │   ├── bridge
+│       │   ├── cli
+│       │   ├── cloudflared
+│       │   ├── compliance
+│       │   ├── constants
+│       │   ├── daemons
+│       │   ├── diagnostics
+│       │   ├── doc
+│       │   ├── error-handling
+│       │   ├── failsafe
+│       │   ├── freezer
+│       │   ├── ghost
+│       │   ├── hooks
+│       │   ├── internal
+│       │   │   └── util
+│       │   ├── launchers
+│       │   ├── metrics
+│       │   ├── ml
+│       │   ├── monitor
+│       │   ├── orchestrator
+│       │   ├── recovery
+│       │   ├── registry
+│       │   ├── relay
+│       │   ├── repair
+│       │   ├── setup
+│       │   ├── status
+│       │   ├── system
+│       │   ├── tunnel
+│       │   ├── utils
+│       │   ├── validate
+│       │   ├── validators
+│       │   ├── viewer
+│       │   ├── watchdog
+│       │   ├── watchdogs
+│       │   ├── watchers
+│       │   └── web
+│       ├── server
+│       │   ├── commands
+│       │   │   └── archived
+│       │   ├── database
+│       │   ├── handlers
+│       │   ├── middleware
+│       │   ├── routes
+│       │   └── utils
+│       ├── services
+│       │   ├── registry
+│       │   ├── relay
+│       │   └── runner
+│       ├── slack
+│       ├── src
+│       │   ├── db
+│       │   │   └── migrations
+│       │   ├── middleware
+│       │   └── utils
+│       ├── src-nextgen
+│       │   ├── components
+│       │   ├── ghost
+│       │   │   ├── analysis
+│       │   │   ├── autonomy
+│       │   │   ├── bridge
+│       │   │   ├── config
+│       │   │   ├── dashboard
+│       │   │   ├── decision
+│       │   │   ├── generator
+│       │   │   ├── healer
+│       │   │   ├── ingestion
+│       │   │   ├── middleware
+│       │   │   ├── ml
+│       │   │   ├── monitoring
+│       │   │   ├── queue
+│       │   │   ├── recovery
+│       │   │   ├── relay
+│       │   │   ├── shell
+│       │   │   ├── telemetry
+│       │   │   │   ├── docs
+│       │   │   │   └── test
+│       │   │   ├── utils
+│       │   │   └── validation
+│       │   ├── hooks
+│       │   ├── monitor
+│       │   ├── navigation
+│       │   ├── orchestrator
+│       │   └── state
+│       ├── state
+│       ├── summaries
+│       │   └── _heartbeat
+│       ├── tasks
+│       │   ├── .archive
+│       │   ├── .completed
+│       │   ├── .failed
+│       │   ├── completed
+│       │   └── queue
+│       ├── Team
+│       ├── test
+│       │   └── slack
+│       ├── tests
+│       │   ├── data
+│       │   └── fixtures
+│       ├── utils
+│       ├── validation
+│       │   ├── .archive
+│       │   ├── .completed
+│       │   ├── .failed
+│       │   ├── diff
+│       │   │   ├── .archive
+│       │   │   ├── .completed
+│       │   │   └── .failed
+│       │   └── snapshots
+│       │       ├── .archive
+│       │       ├── .completed
+│       │       └── .failed
+│       └── web
+│           └── monitor
+├── launchd
+├── snapshots
+├── thoughtmarks-commercial
+├── tm-mobile-cursor
+│   ├── 20250727_130209_patch-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_142858_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_142858_summaries-mirror-backup
+│   ├── 20250727_145249_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145249_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_145338_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145338_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_145630_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145630_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_145644_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145644_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_145713_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145713_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_145738_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_145738_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_202400_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_202400_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_204445_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_204445_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_204733_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_204733_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── 20250727_205532_patches-mirror-backup
+│   │   ├── docs
+│   │   │   ├── old-rollback-reference-docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── phase-0
+│   │   ├── phase-1
+│   │   ├── phase-2
+│   │   ├── phase-3
+│   │   ├── phase-4
+│   │   ├── src-nextgen
+│   │   └── status-unknown
+│   ├── 20250727_205532_summaries-mirror-backup
+│   │   └── _heartbeat
+│   ├── tm-mobile-cursor
+│   │   ├── config
+│   │   ├── docs
+│   │   │   ├── _legacy
+│   │   │   ├── _unlabeled
+│   │   │   ├── agent-training
+│   │   │   ├── cursor-rules
+│   │   │   ├── legacy
+│   │   │   ├── ROADMAPS
+│   │   │   └── snippets
+│   │   │       └── pulled-chat-snippets
+│   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│   │   │           ├── 3_ELEMENTS_conversion_blocks
+│   │   │           ├── BACKGROUND_AGENT_RULES
+│   │   │           ├── Clickable_Element_Audit
+│   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│   │   ├── gpt_cursor_runner
+│   │   │   └── validation
+│   │   ├── MAIN
+│   │   ├── mobile-native-fresh
+│   │   │   ├── __tests__
+│   │   │   │   └── snapshots
+│   │   │   │       └── __snapshots__
+│   │   │   ├── _quarantine
+│   │   │   │   └── scripts
+│   │   │   ├── .github
+│   │   │   │   └── workflows
+│   │   │   ├── .husky
+│   │   │   ├── assets
+│   │   │   │   └── AppIcon
+│   │   │   │       ├── imessenger
+│   │   │   │       └── watchkit
+│   │   │   │           └── AppIcon.appiconset
+│   │   │   ├── backend
+│   │   │   │   └── src
+│   │   │   │       ├── config
+│   │   │   │       ├── controllers
+│   │   │   │       ├── db
+│   │   │   │       ├── middleware
+│   │   │   │       ├── routes
+│   │   │   │       └── utils
+│   │   │   ├── captures
+│   │   │   ├── config
+│   │   │   ├── data
+│   │   │   ├── docs
+│   │   │   │   └── TASKS 250626
+│   │   │   ├── e2e
+│   │   │   ├── eslint-plugin-custom
+│   │   │   ├── eslint-plugin-thoughtmarks
+│   │   │   ├── eslint-rules
+│   │   │   ├── screens
+│   │   │   ├── screenshots
+│   │   │   ├── scripts
+│   │   │   │   ├── _backup
+│   │   │   │   └── tracer
+│   │   │   ├── src-nextgen
+│   │   │   │   ├── __tests__
+│   │   │   │   │   └── snapshots
+│   │   │   │   │       └── __snapshots__
+│   │   │   │   ├── .archive
+│   │   │   │   │   ├── documentation-backup
+│   │   │   │   │   │   └── backup-2025-07-19T17-57-11-539Z
+│   │   │   │   │   ├── old-executive
+│   │   │   │   │   └── old-roadmaps
+│   │   │   │   ├── .cleanup
+│   │   │   │   ├── .deprecated
+│   │   │   │   ├── .dev-strategy
+│   │   │   │   ├── components
+│   │   │   │   │   └── layout
+│   │   │   │   ├── config
+│   │   │   │   ├── core
+│   │   │   │   │   └── navigation
+│   │   │   │   ├── docs
+│   │   │   │   │   ├── phases
+│   │   │   │   │   ├── strategy
+│   │   │   │   │   └── technical
+│   │   │   │   ├── features
+│   │   │   │   ├── hooks
+│   │   │   │   ├── layout
+│   │   │   │   │   └── shell
+│   │   │   │   ├── navigation
+│   │   │   │   ├── providers
+│   │   │   │   ├── screens
+│   │   │   │   ├── scripts
+│   │   │   │   │   ├── deployment
+│   │   │   │   │   └── validation
+│   │   │   │   ├── services
+│   │   │   │   ├── slots
+│   │   │   │   ├── state
+│   │   │   │   ├── summaries
+│   │   │   │   │   ├── archived
+│   │   │   │   │   ├── phase-0
+│   │   │   │   │   ├── phase-1
+│   │   │   │   │   └── phase-2
+│   │   │   │   ├── theme
+│   │   │   │   ├── tracking
+│   │   │   │   ├── types
+│   │   │   │   ├── utils
+│   │   │   │   └── validation
+│   │   │   │       ├── accessibility
+│   │   │   │       ├── performance
+│   │   │   │       └── visual
+│   │   │   ├── src-reference
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── src-reference-complete
+│   │   │   │   ├── __tests__
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   ├── layout
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── shell
+│   │   │   │   │   ├── components
+│   │   │   │   │   │   └── __tests__
+│   │   │   │   │   ├── layouts
+│   │   │   │   │   │   └── __tests__
+│   │   │   │   │   ├── navigation
+│   │   │   │   │   ├── roles
+│   │   │   │   │   ├── types
+│   │   │   │   │   └── utils
+│   │   │   │   ├── state
+│   │   │   │   ├── testing
+│   │   │   │   │   └── interaction
+│   │   │   │   │       └── rules
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── tasks
+│   │   │   │   ├── docs
+│   │   │   │   └── summaries
+│   │   │   │       ├── .archived
+│   │   │   │       └── .processed
+│   │   │   ├── tasks_FAILED
+│   │   │   │   ├── .archive
+│   │   │   │   ├── .completed
+│   │   │   │   │   ├── cleanup
+│   │   │   │   │   ├── docs
+│   │   │   │   │   ├── hybrid_blocks
+│   │   │   │   │   ├── recovery_troubleshooting
+│   │   │   │   │   ├── v1.2.2
+│   │   │   │   │   ├── v1.3.1
+│   │   │   │   │   └── v1.3.2
+│   │   │   │   │       └── docs
+│   │   │   │   ├── .failed
+│   │   │   │   │   └── v1.4.0
+│   │   │   │   │       ├── 1_Troubleshooting
+│   │   │   │   │       └── docs
+│   │   │   │   ├── cleanup
+│   │   │   │   ├── docs
+│   │   │   │   ├── hybrid_blocks
+│   │   │   │   └── v1.4.0
+│   │   │   │       ├── auto-role-view_v3
+│   │   │   │       │   └── auto_roleview_v3_package
+│   │   │   │       ├── auto-role-view_v4
+│   │   │   │       ├── docs
+│   │   │   │       └── v1.4.1d
+│   │   │   ├── tests
+│   │   │   ├── thoughtmarks-dev-tools
+│   │   │   │   └── scripts
+│   │   │   ├── validation
+│   │   │   │   ├── diff
+│   │   │   │   │   ├── .archive
+│   │   │   │   │   ├── .completed
+│   │   │   │   │   └── .failed
+│   │   │   │   ├── diff-cyops -> /Users/sawyer/gitSync/.cursor-cache/CYOPS/validation/diff
+│   │   │   │   ├── snapshots
+│   │   │   │   │   ├── .archive
+│   │   │   │   │   ├── .completed
+│   │   │   │   │   └── .failed
+│   │   │   │   └── snapshots-cyops -> /Users/sawyer/gitSync/.cursor-cache/CYOPS/validation/snapshots
+│   │   │   ├── validations
+│   │   │   └── verification
+│   │   ├── references
+│   │   │   ├── hybrid-blocks
+│   │   │   └── web-src
+│   │   ├── rules
+│   │   │   └── .archive
+│   │   ├── scripts
+│   │   │   ├── _backup
+│   │   │   ├── audit
+│   │   │   ├── constants
+│   │   │   ├── cron
+│   │   │   ├── ghost
+│   │   │   ├── mobile-native-fresh
+│   │   │   │   ├── captures
+│   │   │   │   ├── src-nextgen
+│   │   │   │   │   ├── phase-0
+│   │   │   │   │   │   └── summaries
+│   │   │   │   │   ├── phase-1
+│   │   │   │   │   │   └── summaries
+│   │   │   │   │   ├── phase-2
+│   │   │   │   │   │   └── summaries
+│   │   │   │   │   └── summaries
+│   │   │   │   ├── summaries
+│   │   │   │   ├── tasks
+│   │   │   │   │   └── summaries
+│   │   │   │   └── verification
+│   │   │   ├── perf
+│   │   │   ├── utils
+│   │   │   ├── validate
+│   │   │   └── watchers
+│   │   ├── slack-controller
+│   │   │   └── tm-mobile-cursor
+│   │   │       └── mobile-native-fresh
+│   │   ├── src-nextgen
+│   │   │   └── layout
+│   │   ├── src-reference
+│   │   │   ├── assets
+│   │   │   │   └── SVG
+│   │   │   └── components
+│   │   ├── summaries
+│   │   │   └── _heartbeat
+│   │   └── validation
+│   │       ├── .archive
+│   │       ├── .completed
+│   │       ├── .failed
+│   │       ├── diff
+│   │       │   ├── .archive
+│   │       │   ├── .completed
+│   │       │   └── .failed
+│   │       └── snapshots
+│   │           ├── .archive
+│   │           ├── .completed
+│   │           └── .failed
+│   └── z_bloated_archive_graveyard
+├── tm-safety_backups
+│   ├── 240718-PT_PRE-1.4.1E_inclRUNNER_APPRUNS_SAFE-FALLBACK_backup_tm-mobile-cursor
+│   │   ├── config
+│   │   ├── docs
+│   │   │   └── snippets
+│   │   │       └── pulled-chat-snippets
+│   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│   │   │           ├── 3_ELEMENTS_conversion_blocks
+│   │   │           ├── BACKGROUND_AGENT_RULES
+│   │   │           ├── Clickable_Element_Audit
+│   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│   │   ├── mobile-native-fresh
+│   │   │   ├── .husky
+│   │   │   ├── assets
+│   │   │   │   └── AppIcon
+│   │   │   │       ├── imessenger
+│   │   │   │       └── watchkit
+│   │   │   │           └── AppIcon.appiconset
+│   │   │   ├── backend
+│   │   │   │   └── src
+│   │   │   │       ├── config
+│   │   │   │       ├── controllers
+│   │   │   │       ├── db
+│   │   │   │       ├── middleware
+│   │   │   │       ├── routes
+│   │   │   │       └── utils
+│   │   │   ├── config
+│   │   │   ├── data
+│   │   │   ├── docs
+│   │   │   │   └── TASKS 250626
+│   │   │   ├── eslint-plugin-custom
+│   │   │   ├── eslint-plugin-thoughtmarks
+│   │   │   ├── eslint-rules
+│   │   │   ├── scripts
+│   │   │   ├── src
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── tasks
+│   │   │   │   ├── docs
+│   │   │   │   └── summaries
+│   │   │   │       ├── .archive
+│   │   │   │       └── .processed
+│   │   │   ├── tasks_FAILED
+│   │   │   │   ├── .archive
+│   │   │   │   ├── .completed
+│   │   │   │   │   ├── cleanup
+│   │   │   │   │   ├── docs
+│   │   │   │   │   ├── hybrid_blocks
+│   │   │   │   │   ├── recovery_troubleshooting
+│   │   │   │   │   ├── v1.2.2
+│   │   │   │   │   ├── v1.3.1
+│   │   │   │   │   └── v1.3.2
+│   │   │   │   │       └── docs
+│   │   │   │   ├── .failed
+│   │   │   │   │   └── v1.4.0
+│   │   │   │   │       ├── 1_Troubleshooting
+│   │   │   │   │       └── docs
+│   │   │   │   ├── cleanup
+│   │   │   │   ├── docs
+│   │   │   │   ├── hybrid_blocks
+│   │   │   │   └── v1.4.0
+│   │   │   │       ├── auto-role-view_v3
+│   │   │   │       │   └── auto_roleview_v3_package
+│   │   │   │       ├── auto-role-view_v4
+│   │   │   │       ├── docs
+│   │   │   │       └── v1.4.1d
+│   │   │   ├── tests
+│   │   │   └── thoughtmarks-dev-tools
+│   │   │       └── scripts
+│   │   ├── references
+│   │   │   ├── hybrid-blocks
+│   │   │   └── web-src
+│   │   ├── scripts
+│   │   ├── slack-controller
+│   │   │   └── tm-mobile-cursor
+│   │   │       └── mobile-native-fresh
+│   │   ├── src-nextgen
+│   │   └── src-reference
+│   │       ├── assets
+│   │       │   └── SVG
+│   │       └── components
+│   ├── 250720-PT_v1.4.200_prephase-01_ROLLBACK-SAFE
+│   │   ├── config
+│   │   ├── docs
+│   │   │   └── snippets
+│   │   │       └── pulled-chat-snippets
+│   │   │           ├── [CURSOR]_JSX_hybrid-block-v1
+│   │   │           ├── 3_ELEMENTS_conversion_blocks
+│   │   │           ├── BACKGROUND_AGENT_RULES
+│   │   │           ├── Clickable_Element_Audit
+│   │   │           ├── ModalSpecCard_SCOPED_OVERRIDE
+│   │   │           └── REFACTOR_COND_DASH_REFACTOR
+│   │   ├── gpt_cursor_runner
+│   │   │   └── validation
+│   │   ├── mobile-native-fresh
+│   │   │   ├── .github
+│   │   │   │   └── workflows
+│   │   │   ├── .husky
+│   │   │   ├── assets
+│   │   │   │   └── AppIcon
+│   │   │   │       ├── imessenger
+│   │   │   │       └── watchkit
+│   │   │   │           └── AppIcon.appiconset
+│   │   │   ├── backend
+│   │   │   │   └── src
+│   │   │   │       ├── config
+│   │   │   │       ├── controllers
+│   │   │   │       ├── db
+│   │   │   │       ├── middleware
+│   │   │   │       ├── routes
+│   │   │   │       └── utils
+│   │   │   ├── captures
+│   │   │   ├── config
+│   │   │   ├── data
+│   │   │   ├── docs
+│   │   │   │   └── TASKS 250626
+│   │   │   ├── e2e
+│   │   │   ├── eslint-plugin-custom
+│   │   │   ├── eslint-plugin-thoughtmarks
+│   │   │   ├── eslint-rules
+│   │   │   ├── mobile-native-fresh
+│   │   │   │   └── tasks
+│   │   │   ├── scripts
+│   │   │   │   └── tracer
+│   │   │   ├── src
+│   │   │   │   ├── __tests__
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   ├── layout
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── testing
+│   │   │   │   │   └── interaction
+│   │   │   │   │       └── rules
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── src-nextgen
+│   │   │   │   ├── .archive
+│   │   │   │   │   ├── documentation-backup
+│   │   │   │   │   │   └── backup-2025-07-19T17-57-11-539Z
+│   │   │   │   │   ├── old-executive
+│   │   │   │   │   └── old-roadmaps
+│   │   │   │   ├── .cleanup
+│   │   │   │   ├── .deprecated
+│   │   │   │   ├── .dev-strategy
+│   │   │   │   ├── components
+│   │   │   │   ├── config
+│   │   │   │   ├── docs
+│   │   │   │   │   ├── phases
+│   │   │   │   │   ├── strategy
+│   │   │   │   │   └── technical
+│   │   │   │   ├── features
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── scripts
+│   │   │   │   │   ├── deployment
+│   │   │   │   │   └── validation
+│   │   │   │   ├── services
+│   │   │   │   ├── summaries
+│   │   │   │   │   ├── archived
+│   │   │   │   │   ├── phase-0
+│   │   │   │   │   ├── phase-1
+│   │   │   │   │   └── phase-2
+│   │   │   │   ├── theme
+│   │   │   │   ├── tracking
+│   │   │   │   ├── types
+│   │   │   │   ├── utils
+│   │   │   │   └── validation
+│   │   │   │       ├── accessibility
+│   │   │   │       ├── performance
+│   │   │   │       └── visual
+│   │   │   ├── src-reference
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── tasks
+│   │   │   │   ├── docs
+│   │   │   │   └── summaries
+│   │   │   │       ├── .archive
+│   │   │   │       ├── .processed
+│   │   │   │       ├── archived
+│   │   │   │       └── reverify
+│   │   │   ├── tasks_FAILED
+│   │   │   │   ├── .archive
+│   │   │   │   ├── .completed
+│   │   │   │   │   ├── cleanup
+│   │   │   │   │   ├── docs
+│   │   │   │   │   ├── hybrid_blocks
+│   │   │   │   │   ├── recovery_troubleshooting
+│   │   │   │   │   ├── v1.2.2
+│   │   │   │   │   ├── v1.3.1
+│   │   │   │   │   └── v1.3.2
+│   │   │   │   │       └── docs
+│   │   │   │   ├── .failed
+│   │   │   │   │   └── v1.4.0
+│   │   │   │   │       ├── 1_Troubleshooting
+│   │   │   │   │       └── docs
+│   │   │   │   ├── cleanup
+│   │   │   │   ├── docs
+│   │   │   │   ├── hybrid_blocks
+│   │   │   │   └── v1.4.0
+│   │   │   │       ├── auto-role-view_v3
+│   │   │   │       │   └── auto_roleview_v3_package
+│   │   │   │       ├── auto-role-view_v4
+│   │   │   │       ├── docs
+│   │   │   │       └── v1.4.1d
+│   │   │   ├── tests
+│   │   │   ├── THAWED-REFERENCE
+│   │   │   │   ├── src
+│   │   │   │   │   ├── __tests__
+│   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── debug
+│   │   │   │   │   │   ├── layout
+│   │   │   │   │   │   └── ui
+│   │   │   │   │   ├── config
+│   │   │   │   │   ├── features
+│   │   │   │   │   │   ├── ai
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── auth
+│   │   │   │   │   │   │   ├── components
+│   │   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── bins
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── content
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── home
+│   │   │   │   │   │   │   ├── components
+│   │   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── search
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   ├── settings
+│   │   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   │   └── screens
+│   │   │   │   │   │   └── thoughtmarks
+│   │   │   │   │   │       └── screens
+│   │   │   │   │   ├── hooks
+│   │   │   │   │   ├── navigation
+│   │   │   │   │   ├── services
+│   │   │   │   │   ├── testing
+│   │   │   │   │   │   └── interaction
+│   │   │   │   │   │       └── rules
+│   │   │   │   │   ├── theme
+│   │   │   │   │   ├── types
+│   │   │   │   │   └── utils
+│   │   │   │   ├── src-nextgen
+│   │   │   │   │   ├── .archive
+│   │   │   │   │   │   ├── documentation-backup
+│   │   │   │   │   │   │   └── backup-2025-07-19T17-57-11-539Z
+│   │   │   │   │   │   ├── old-executive
+│   │   │   │   │   │   └── old-roadmaps
+│   │   │   │   │   ├── .cleanup
+│   │   │   │   │   ├── .deprecated
+│   │   │   │   │   ├── .dev-strategy
+│   │   │   │   │   ├── components
+│   │   │   │   │   ├── config
+│   │   │   │   │   ├── docs
+│   │   │   │   │   │   ├── phases
+│   │   │   │   │   │   ├── strategy
+│   │   │   │   │   │   └── technical
+│   │   │   │   │   ├── features
+│   │   │   │   │   ├── hooks
+│   │   │   │   │   ├── navigation
+│   │   │   │   │   ├── scripts
+│   │   │   │   │   │   ├── deployment
+│   │   │   │   │   │   └── validation
+│   │   │   │   │   ├── services
+│   │   │   │   │   ├── summaries
+│   │   │   │   │   │   ├── archived
+│   │   │   │   │   │   ├── phase-0
+│   │   │   │   │   │   ├── phase-1
+│   │   │   │   │   │   └── phase-2
+│   │   │   │   │   ├── theme
+│   │   │   │   │   ├── tracking
+│   │   │   │   │   ├── types
+│   │   │   │   │   ├── utils
+│   │   │   │   │   └── validation
+│   │   │   │   │       ├── accessibility
+│   │   │   │   │       ├── performance
+│   │   │   │   │       └── visual
+│   │   │   │   └── src-reference
+│   │   │   │       ├── components
+│   │   │   │       │   ├── debug
+│   │   │   │       │   └── ui
+│   │   │   │       ├── config
+│   │   │   │       ├── features
+│   │   │   │       │   ├── ai
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── auth
+│   │   │   │       │   │   ├── components
+│   │   │   │       │   │   ├── hooks
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── bins
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── content
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── home
+│   │   │   │       │   │   ├── components
+│   │   │   │       │   │   ├── hooks
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── search
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   ├── settings
+│   │   │   │       │   │   ├── hooks
+│   │   │   │       │   │   └── screens
+│   │   │   │       │   └── thoughtmarks
+│   │   │   │       │       └── screens
+│   │   │   │       ├── hooks
+│   │   │   │       ├── navigation
+│   │   │   │       ├── services
+│   │   │   │       ├── theme
+│   │   │   │       ├── types
+│   │   │   │       └── utils
+│   │   │   ├── thoughtmarks-dev-tools
+│   │   │   │   └── scripts
+│   │   │   └── verification
+│   │   ├── references
+│   │   │   ├── hybrid-blocks
+│   │   │   └── web-src
+│   │   ├── scripts
+│   │   │   └── mobile-native-fresh
+│   │   │       ├── src-nextgen
+│   │   │       │   └── summaries
+│   │   │       └── tasks
+│   │   │           └── summaries
+│   │   ├── slack-controller
+│   │   │   └── tm-mobile-cursor
+│   │   │       └── mobile-native-fresh
+│   │   └── src-reference
+│   │       ├── assets
+│   │       │   └── SVG
+│   │       └── components
+│   ├── temp_extraction
+│   └── z_bloated_archive_graveyard
+└── watchdog
+/Users/sawyer/gitSync/_GPTsync
+├── _gpt5intake
+│   ├── _meta
+│   │   ├── deps
+│   │   └── samples-scaffold
+│   │       └── Users
+│   │           └── sawyer
+│   │               ├── .cloudflared
+│   │               └── gitSync
+│   │                   ├── gpt-cursor-runner
+│   │                   │   ├── _gpt5intake
+│   │                   │   ├── docs
+│   │                   │   ├── scan-results
+│   │                   │   ├── scripts
+│   │                   │   └── templates
+│   │                   └── tm-mobile-cursor
+│   │                       ├── docs
+│   │                       │   └── Thoughtmarks_Teams_Kickstart
+│   │                       ├── mobile-native-fresh
+│   │                       │   ├── backend
+│   │                       │   └── src-nextgen
+│   │                       ├── references
+│   │                       │   ├── backend
+│   │                       │   └── web-src
+│   │                       └── tasks
+│   ├── core-scripts-recursive
+│   │   ├── core-scripts
+│   │   │   └── Users
+│   │   │       └── sawyer
+│   │   │           └── gitSync
+│   │   │               └── gpt-cursor-runner
+│   │   │                   └── scripts
+│   │   │                       └── core
+│   │   └── Users
+│   │       └── sawyer
+│   │           └── gitSync
+│   │               └── gpt-cursor-runner
+│   │                   ├── config
+│   │                   ├── dashboard
+│   │                   ├── docs
+│   │                   ├── gpt_cursor_runner
+│   │                   ├── scripts
+│   │                   │   ├── core
+│   │                   │   ├── daemons
+│   │                   │   ├── ghost
+│   │                   │   ├── monitor
+│   │                   │   ├── tunnels
+│   │                   │   ├── watchdogs
+│   │                   │   └── web
+│   │                   └── server
+│   │                       ├── commands
+│   │                       │   └── archived
+│   │                       ├── database
+│   │                       ├── handlers
+│   │                       ├── middleware
+│   │                       ├── routes
+│   │                       └── utils
+│   ├── CYOPS
+│   │   └── core-scripts-recursive
+│   │       └── Users
+│   │           └── sawyer
+│   │               └── gitSync
+│   │                   └── gpt-cursor-runner
+│   │                       ├── config
+│   │                       ├── dashboard
+│   │                       ├── docs
+│   │                       ├── gpt_cursor_runner
+│   │                       ├── scripts
+│   │                       │   ├── core
+│   │                       │   ├── daemons
+│   │                       │   ├── ghost
+│   │                       │   ├── monitor
+│   │                       │   ├── tunnels
+│   │                       │   ├── watchdogs
+│   │                       │   └── web
+│   │                       └── server
+│   │                           ├── commands
+│   │                           │   └── archived
+│   │                           ├── database
+│   │                           ├── handlers
+│   │                           ├── middleware
+│   │                           ├── routes
+│   │                           └── utils
+│   ├── dashboard
+│   │   └── api
+│   ├── gpt_cursor_runner
+│   ├── MAIN
+│   │   └── validation
+│   ├── surgical-ghost
+│   │   ├── CYOPS
+│   │   │   └── core-scripts-recursive
+│   │   │       └── Users
+│   │   │           └── sawyer
+│   │   │               └── gitSync
+│   │   │                   └── gpt-cursor-runner
+│   │   │                       ├── config
+│   │   │                       ├── dashboard
+│   │   │                       ├── docs
+│   │   │                       ├── gpt_cursor_runner
+│   │   │                       ├── scripts
+│   │   │                       │   ├── core
+│   │   │                       │   ├── daemons
+│   │   │                       │   ├── ghost
+│   │   │                       │   ├── monitor
+│   │   │                       │   ├── tunnels
+│   │   │                       │   ├── watchdogs
+│   │   │                       │   └── web
+│   │   │                       └── server
+│   │   │                           ├── commands
+│   │   │                           ├── database
+│   │   │                           ├── handlers
+│   │   │                           ├── middleware
+│   │   │                           ├── routes
+│   │   │                           └── utils
+│   │   └── MAIN
+│   │       └── validation
+│   └── Users
+│       └── sawyer
+│           ├── .cloudflared
+│           ├── .pm2
+│           ├── gitSync
+│           │   └── gpt-cursor-runner
+│           │       ├── .archive
+│           │       │   └── legacy
+│           │       ├── config
+│           │       ├── dashboard
+│           │       ├── deployment
+│           │       ├── docs
+│           │       │   ├── architecture
+│           │       │   ├── current
+│           │       │   ├── guides
+│           │       │   └── rules
+│           │       ├── gpt_cursor_runner
+│           │       ├── k8s
+│           │       │   ├── autoscale
+│           │       │   ├── infra
+│           │       │   ├── kafka
+│           │       │   ├── policy
+│           │       │   └── services
+│           │       ├── scripts
+│           │       │   ├── core
+│           │       │   ├── daemons
+│           │       │   ├── ghost
+│           │       │   ├── launchers
+│           │       │   ├── monitor
+│           │       │   ├── tunnels
+│           │       │   └── watchdogs
+│           │       ├── server
+│           │       │   ├── commands
+│           │       │   │   └── archived
+│           │       │   ├── database
+│           │       │   ├── handlers
+│           │       │   ├── middleware
+│           │       │   ├── routes
+│           │       │   └── utils
+│           │       ├── slack
+│           │       └── summaries
+│           │           └── _heartbeat
+│           └── Library
+│               └── LaunchAgents
+└── MAIN
+    └── validation
+/Users/sawyer/gitSync/gpt-cursor-runner
+├── _gpt5intake
+│   ├── _meta
+│   │   ├── deps
+│   │   └── samples
+│   │       └── Users
+│   │           └── sawyer
+│   │               └── gitSync
+│   │                   ├── gpt-cursor-runner
+│   │                   │   ├── _gpt5intake
+│   │                   │   ├── docs
+│   │                   │   ├── scan-results
+│   │                   │   ├── scripts
+│   │                   │   └── templates
+│   │                   └── tm-mobile-cursor
+│   │                       ├── docs
+│   │                       │   └── Thoughtmarks_Teams_Kickstart
+│   │                       ├── mobile-native-fresh
+│   │                       │   ├── backend
+│   │                       │   └── src-nextgen
+│   │                       ├── references
+│   │                       │   ├── backend
+│   │                       │   └── web-src
+│   │                       └── tasks
+│   ├── core-scripts
+│   │   └── Users
+│   │       └── sawyer
+│   │           └── gitSync
+│   │               └── gpt-cursor-runner
+│   │                   └── scripts
+│   │                       └── core
+│   ├── core-scripts-recursive
+│   │   └── Users
+│   │       └── sawyer
+│   │           └── gitSync
+│   │               └── gpt-cursor-runner
+│   │                   ├── config
+│   │                   ├── dashboard
+│   │                   ├── docs
+│   │                   ├── gpt_cursor_runner
+│   │                   ├── scripts
+│   │                   │   ├── core
+│   │                   │   ├── daemons
+│   │                   │   ├── ghost
+│   │                   │   ├── monitor
+│   │                   │   ├── tunnels
+│   │                   │   ├── watchdogs
+│   │                   │   └── web
+│   │                   └── server
+│   │                       ├── commands
+│   │                       │   └── archived
+│   │                       ├── database
+│   │                       ├── handlers
+│   │                       ├── middleware
+│   │                       ├── routes
+│   │                       └── utils
+│   ├── CYOPS
+│   │   └── core-scripts-recursive
+│   │       └── Users
+│   │           └── sawyer
+│   │               └── gitSync
+│   │                   └── gpt-cursor-runner
+│   │                       ├── config
+│   │                       ├── dashboard
+│   │                       ├── docs
+│   │                       ├── gpt_cursor_runner
+│   │                       ├── scripts
+│   │                       │   ├── core
+│   │                       │   ├── daemons
+│   │                       │   ├── ghost
+│   │                       │   ├── monitor
+│   │                       │   ├── tunnels
+│   │                       │   ├── watchdogs
+│   │                       │   └── web
+│   │                       └── server
+│   │                           ├── commands
+│   │                           │   └── archived
+│   │                           ├── database
+│   │                           ├── handlers
+│   │                           ├── middleware
+│   │                           ├── routes
+│   │                           └── utils
+│   ├── dashboard
+│   │   └── api
+│   ├── gpt_cursor_runner
+│   ├── MAIN
+│   │   └── validation
+│   ├── surgical-ghost
+│   │   ├── CYOPS
+│   │   │   └── core-scripts-recursive
+│   │   │       └── Users
+│   │   │           └── sawyer
+│   │   │               └── gitSync
+│   │   │                   └── gpt-cursor-runner
+│   │   │                       ├── config
+│   │   │                       ├── dashboard
+│   │   │                       ├── docs
+│   │   │                       ├── gpt_cursor_runner
+│   │   │                       ├── scripts
+│   │   │                       │   ├── core
+│   │   │                       │   ├── daemons
+│   │   │                       │   ├── ghost
+│   │   │                       │   ├── monitor
+│   │   │                       │   ├── tunnels
+│   │   │                       │   ├── watchdogs
+│   │   │                       │   └── web
+│   │   │                       └── server
+│   │   │                           ├── commands
+│   │   │                           ├── database
+│   │   │                           ├── handlers
+│   │   │                           ├── middleware
+│   │   │                           ├── routes
+│   │   │                           └── utils
+│   │   └── MAIN
+│   │       └── validation
+│   └── Users
+│       └── sawyer
+│           ├── .cloudflared
+│           ├── .pm2
+│           ├── gitSync
+│           │   └── gpt-cursor-runner
+│           │       ├── .archive
+│           │       │   └── legacy
+│           │       ├── config
+│           │       ├── dashboard
+│           │       ├── deployment
+│           │       ├── docs
+│           │       │   ├── api
+│           │       │   ├── architecture
+│           │       │   ├── current
+│           │       │   ├── guides
+│           │       │   └── rules
+│           │       ├── gpt_cursor_runner
+│           │       ├── k8s
+│           │       │   ├── autoscale
+│           │       │   ├── infra
+│           │       │   ├── kafka
+│           │       │   ├── policy
+│           │       │   └── services
+│           │       ├── scripts
+│           │       │   ├── core
+│           │       │   ├── daemons
+│           │       │   ├── ghost
+│           │       │   ├── launchers
+│           │       │   ├── monitor
+│           │       │   ├── tunnels
+│           │       │   └── watchdogs
+│           │       ├── server
+│           │       │   ├── commands
+│           │       │   │   └── archived
+│           │       │   ├── database
+│           │       │   ├── handlers
+│           │       │   ├── middleware
+│           │       │   ├── routes
+│           │       │   └── utils
+│           │       ├── slack
+│           │       └── summaries
+│           │           └── _heartbeat
+│           └── Library
+│               └── LaunchAgents
+│                   └── .disable
+├── .archive
+│   └── legacy
+├── .github
+│   └── workflows
+├── .ruff_cache
+│   ├── 0.12.2
+│   └── 0.12.7
+├── analytics
+├── assets
+├── backups
+├── bin
+├── commands
+├── components
+│   └── dashboard
+│       └── sections
+├── config
+│   └── redis
+├── core
+├── dashboard
+│   ├── api
+│   ├── components
+│   │   ├── hooks
+│   │   └── ui
+│   ├── static
+│   ├── styles
+│   └── templates
+├── data
+│   └── redis
+│       └── appendonlydir
+├── deployment
+├── docs
+│   ├── api
+│   ├── architecture
+│   ├── current
+│   ├── guides
+│   └── rules
+├── foo
+│   └── bar
+├── gpt_cursor_runner
+├── init
+├── k8s
+│   ├── autoscale
+│   ├── infra
+│   ├── kafka
+│   ├── policy
+│   └── services
+├── pids
+├── playwright-report
+│   └── data
+├── public
+│   └── status
+├── quarantine
+│   └── .failed-patches
+├── runner
+├── scan-results
+├── scripts
+│   ├── .archive
+│   │   └── legacy
+│   ├── analytics
+│   ├── audit
+│   ├── boot
+│   ├── bridge
+│   ├── cli
+│   ├── cloudflared
+│   ├── compliance
+│   ├── constants
+│   ├── core
+│   ├── daemons
+│   ├── deployment
+│   ├── diagnostics
+│   ├── doc
+│   ├── error-handling
+│   ├── failsafe
+│   ├── freezer
+│   ├── ghost
+│   ├── hooks
+│   ├── internal
+│   ├── launchers
+│   ├── legacy
+│   ├── load-balancing
+│   ├── maintenance
+│   ├── metrics
+│   ├── ml
+│   ├── monitor
+│   ├── orchestrator
+│   ├── performance
+│   ├── pids
+│   ├── python-utils
+│   ├── recovery
+│   ├── registry
+│   ├── relay
+│   ├── repair
+│   ├── rollback
+│   ├── setup
+│   ├── slack
+│   ├── status
+│   ├── stress
+│   ├── system
+│   ├── tasks
+│   │   └── summaries
+│   ├── testing
+│   ├── tunnel
+│   ├── tunnels
+│   ├── typescript-fixes
+│   ├── utils
+│   ├── validate
+│   ├── validators
+│   ├── viewer
+│   ├── watchdog
+│   ├── watchdogs
+│   ├── watchers
+│   └── web
+├── server
+│   ├── commands
+│   │   └── archived
+│   ├── database
+│   ├── handlers
+│   ├── middleware
+│   ├── routes
+│   └── utils
+├── services
+│   ├── registry
+│   ├── relay
+│   └── runner
+├── slack
+├── src
+│   ├── db
+│   │   └── migrations
+│   ├── middleware
+│   └── utils
+├── src-nextgen
+│   ├── __tests__
+│   ├── components
+│   ├── ghost
+│   │   ├── analysis
+│   │   ├── autonomy
+│   │   ├── bridge
+│   │   ├── config
+│   │   ├── dashboard
+│   │   ├── decision
+│   │   ├── generator
+│   │   ├── healer
+│   │   ├── ingestion
+│   │   ├── middleware
+│   │   ├── ml
+│   │   ├── monitoring
+│   │   ├── queue
+│   │   ├── recovery
+│   │   ├── relay
+│   │   ├── shell
+│   │   │   └── test
+│   │   ├── telemetry
+│   │   │   ├── docs
+│   │   │   └── test
+│   │   ├── test
+│   │   ├── utils
+│   │   └── validation
+│   ├── hooks
+│   ├── monitor
+│   │   └── hotpatch
+│   ├── navigation
+│   ├── orchestrator
+│   └── state
+├── state
+├── summaries
+│   └── _heartbeat
+├── tasks
+│   ├── .archive
+│   ├── .completed
+│   ├── .failed
+│   ├── completed
+│   ├── queue
+│   └── summaries
+├── templates
+├── test
+│   └── slack
+├── test-results
+│   ├── dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium
+│   ├── dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox
+│   ├── dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit
+│   ├── dashboard-green-state-Dash-db26d-e-accessible-and-responsive-chromium
+│   ├── dashboard-green-state-Dash-db26d-e-accessible-and-responsive-firefox
+│   └── dashboard-green-state-Dash-db26d-e-accessible-and-responsive-webkit
+├── tests
+│   ├── dashboard
+│   ├── data
+│   └── fixtures
+├── utils
+├── validation
+│   ├── .archive
+│   ├── .completed
+│   ├── .failed
+│   ├── diff
+│   │   ├── .archive
+│   │   ├── .completed
+│   │   └── .failed
+│   └── snapshots
+│       ├── .archive
+│       ├── .completed
+│       └── .failed
+└── web
+    └── monitor
+/Users/sawyer/gitSync/tm-mobile-cursor
+├── _quarantine
+├── docs
+│   ├── _legacy
+│   ├── _unlabeled
+│   ├── snippets
+│   │   └── pulled-chat-snippets
+│   │       ├── [CURSOR]_JSX_hybrid-block-v1
+│   │       ├── 3_ELEMENTS_conversion_blocks
+│   │       ├── BACKGROUND_AGENT_RULES
+│   │       ├── Clickable_Element_Audit
+│   │       ├── ModalSpecCard_SCOPED_OVERRIDE
+│   │       └── REFACTOR_COND_DASH_REFACTOR
+│   └── Thoughtmarks_Teams_Kickstart
+├── mobile-native-fresh
+│   ├── __tests__
+│   │   ├── components
+│   │   │   └── __snapshots__
+│   │   ├── hooks
+│   │   ├── integration
+│   │   ├── types
+│   │   └── utils
+│   ├── _quarantine
+│   │   ├── misplaced.archive
+│   │   │   ├── MAIN
+│   │   │   │   └── summaries
+│   │   │   ├── mobile-native-fresh
+│   │   │   │   └── src-nextgen
+│   │   │   │       ├── components
+│   │   │   │       │   └── text
+│   │   │   │       ├── hooks
+│   │   │   │       ├── services
+│   │   │   │       │   └── api
+│   │   │   │       └── utils
+│   │   │   ├── src-artifact
+│   │   │   │   ├── components
+│   │   │   │   │   ├── debug
+│   │   │   │   │   └── ui
+│   │   │   │   ├── config
+│   │   │   │   ├── features
+│   │   │   │   │   ├── ai
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── auth
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── bins
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── content
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── home
+│   │   │   │   │   │   ├── components
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── search
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   ├── settings
+│   │   │   │   │   │   ├── hooks
+│   │   │   │   │   │   └── screens
+│   │   │   │   │   └── thoughtmarks
+│   │   │   │   │       └── screens
+│   │   │   │   ├── hooks
+│   │   │   │   ├── navigation
+│   │   │   │   ├── services
+│   │   │   │   ├── theme
+│   │   │   │   ├── types
+│   │   │   │   └── utils
+│   │   │   ├── src-reference-complete
+│   │   │   │   ├── components
+│   │   │   │   └── features
+│   │   │   └── THAWED-REFERENCE
+│   │   │       ├── src
+│   │   │       │   ├── __tests__
+│   │   │       │   ├── components
+│   │   │       │   │   ├── debug
+│   │   │       │   │   ├── layout
+│   │   │       │   │   └── ui
+│   │   │       │   ├── config
+│   │   │       │   ├── features
+│   │   │       │   │   ├── ai
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── auth
+│   │   │       │   │   │   ├── components
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── bins
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── content
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── home
+│   │   │       │   │   │   ├── components
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── search
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   ├── settings
+│   │   │       │   │   │   ├── hooks
+│   │   │       │   │   │   └── screens
+│   │   │       │   │   └── thoughtmarks
+│   │   │       │   │       └── screens
+│   │   │       │   ├── hooks
+│   │   │       │   ├── navigation
+│   │   │       │   ├── services
+│   │   │       │   ├── testing
+│   │   │       │   │   └── interaction
+│   │   │       │   │       └── rules
+│   │   │       │   ├── theme
+│   │   │       │   ├── types
+│   │   │       │   └── utils
+│   │   │       ├── src-nextgen
+│   │   │       │   ├── .archive
+│   │   │       │   │   ├── documentation-backup
+│   │   │       │   │   │   └── backup-2025-07-19T17-57-11-539Z
+│   │   │       │   │   ├── old-executive
+│   │   │       │   │   └── old-roadmaps
+│   │   │       │   ├── .cleanup
+│   │   │       │   ├── .deprecated
+│   │   │       │   ├── .dev-strategy
+│   │   │       │   ├── components
+│   │   │       │   ├── config
+│   │   │       │   ├── docs
+│   │   │       │   │   ├── phases
+│   │   │       │   │   ├── strategy
+│   │   │       │   │   └── technical
+│   │   │       │   ├── features
+│   │   │       │   ├── hooks
+│   │   │       │   ├── navigation
+│   │   │       │   ├── scripts
+│   │   │       │   │   ├── deployment
+│   │   │       │   │   └── validation
+│   │   │       │   ├── services
+│   │   │       │   ├── summaries
+│   │   │       │   │   ├── archived
+│   │   │       │   │   ├── phase-0
+│   │   │       │   │   ├── phase-1
+│   │   │       │   │   └── phase-2
+│   │   │       │   ├── theme
+│   │   │       │   ├── tracking
+│   │   │       │   ├── types
+│   │   │       │   ├── utils
+│   │   │       │   └── validation
+│   │   │       │       ├── accessibility
+│   │   │       │       ├── performance
+│   │   │       │       └── visual
+│   │   │       └── src-reference
+│   │   │           ├── components
+│   │   │           │   ├── debug
+│   │   │           │   └── ui
+│   │   │           ├── config
+│   │   │           ├── features
+│   │   │           │   ├── ai
+│   │   │           │   │   └── screens
+│   │   │           │   ├── auth
+│   │   │           │   │   ├── components
+│   │   │           │   │   ├── hooks
+│   │   │           │   │   └── screens
+│   │   │           │   ├── bins
+│   │   │           │   │   └── screens
+│   │   │           │   ├── content
+│   │   │           │   │   └── screens
+│   │   │           │   ├── home
+│   │   │           │   │   ├── components
+│   │   │           │   │   ├── hooks
+│   │   │           │   │   └── screens
+│   │   │           │   ├── search
+│   │   │           │   │   └── screens
+│   │   │           │   ├── settings
+│   │   │           │   │   ├── hooks
+│   │   │           │   │   └── screens
+│   │   │           │   └── thoughtmarks
+│   │   │           │       └── screens
+│   │   │           ├── hooks
+│   │   │           ├── navigation
+│   │   │           ├── services
+│   │   │           ├── theme
+│   │   │           ├── types
+│   │   │           └── utils
+│   │   └── scripts
+│   ├── .git-backup-p4-rollback-1754174905
+│   │   └── hooks
+│   ├── .github
+│   │   └── workflows
+│   ├── .husky
+│   ├── artifacts
+│   │   └── ios.sim.debug.2025-08-03 04-34-04Z
+│   ├── assets
+│   │   └── AppIcon
+│   │       ├── imessenger
+│   │       └── watchkit
+│   │           └── AppIcon.appiconset
+│   ├── backend
+│   │   └── src
+│   │       ├── config
+│   │       ├── controllers
+│   │       ├── db
+│   │       ├── middleware
+│   │       ├── routes
+│   │       └── utils
+│   ├── docs
+│   │   └── TASKS 250626
+│   ├── e2e
+│   │   └── tests
+│   ├── eslint-plugin-custom
+│   ├── eslint-plugin-thoughtmarks
+│   ├── eslint-rules
+│   ├── global
+│   │   └── polyfills
+│   ├── jest
+│   │   └── __mocks__
+│   ├── maestro
+│   │   ├── flows
+│   │   └── screenshots
+│   │       ├── baseline
+│   │       ├── current
+│   │       └── diff
+│   ├── screenshots
+│   ├── scripts
+│   │   └── cli
+│   ├── src-nextgen
+│   │   ├── .archive
+│   │   │   ├── documentation-backup
+│   │   │   │   └── backup-2025-07-19T17-57-11-539Z
+│   │   │   ├── old-executive
+│   │   │   └── old-roadmaps
+│   │   ├── .cleanup
+│   │   ├── .deprecated
+│   │   ├── .dev-strategy
+│   │   ├── components
+│   │   │   ├── ai
+│   │   │   ├── dashboard
+│   │   │   ├── forms
+│   │   │   ├── layout
+│   │   │   ├── tasks
+│   │   │   ├── text
+│   │   │   ├── thoughtmarks
+│   │   │   └── ui
+│   │   ├── config
+│   │   ├── constants
+│   │   ├── contexts
+│   │   ├── core
+│   │   │   ├── layout
+│   │   │   │   └── shell
+│   │   │   └── navigation
+│   │   ├── devtools
+│   │   ├── docs
+│   │   │   ├── phases
+│   │   │   ├── strategy
+│   │   │   └── technical
+│   │   ├── features
+│   │   │   └── auth
+│   │   │       └── hooks
+│   │   ├── hooks
+│   │   │   ├── auth
+│   │   │   └── shared
+│   │   ├── infrastructure
+│   │   ├── integration
+│   │   ├── navigation
+│   │   │   └── hooks
+│   │   ├── screens
+│   │   │   ├── ai
+│   │   │   ├── auth
+│   │   │   ├── bins
+│   │   │   ├── content
+│   │   │   ├── dashboard
+│   │   │   ├── search
+│   │   │   ├── settings
+│   │   │   ├── thoughtmarks
+│   │   │   └── voice
+│   │   ├── scripts
+│   │   │   ├── deployment
+│   │   │   └── validation
+│   │   ├── services
+│   │   ├── shell
+│   │   │   ├── auth
+│   │   │   ├── automation
+│   │   │   ├── bins
+│   │   │   ├── contracts
+│   │   │   ├── home
+│   │   │   ├── mounts
+│   │   │   ├── navigation
+│   │   │   ├── profile
+│   │   │   ├── search
+│   │   │   ├── settings
+│   │   │   ├── thoughtmarks
+│   │   │   ├── validation
+│   │   │   └── wrappers
+│   │   ├── state
+│   │   │   └── stores
+│   │   ├── summaries
+│   │   │   ├── archived
+│   │   │   ├── phase-0
+│   │   │   ├── phase-1
+│   │   │   └── phase-2
+│   │   ├── tests
+│   │   ├── theme
+│   │   ├── tracking
+│   │   ├── types
+│   │   ├── utils
+│   │   │   ├── __tests__
+│   │   │   └── core
+│   │   └── validation
+│   │       ├── accessibility
+│   │       ├── performance
+│   │       └── visual
+│   ├── src-reference
+│   │   ├── components
+│   │   │   ├── debug
+│   │   │   └── ui
+│   │   ├── config
+│   │   ├── features
+│   │   │   ├── ai
+│   │   │   │   └── screens
+│   │   │   ├── auth
+│   │   │   │   ├── components
+│   │   │   │   ├── hooks
+│   │   │   │   └── screens
+│   │   │   ├── bins
+│   │   │   │   └── screens
+│   │   │   ├── content
+│   │   │   │   └── screens
+│   │   │   ├── home
+│   │   │   │   ├── components
+│   │   │   │   ├── hooks
+│   │   │   │   └── screens
+│   │   │   ├── search
+│   │   │   │   └── screens
+│   │   │   ├── settings
+│   │   │   │   ├── hooks
+│   │   │   │   └── screens
+│   │   │   └── thoughtmarks
+│   │   │       └── screens
+│   │   ├── hooks
+│   │   ├── navigation
+│   │   ├── services
+│   │   ├── theme
+│   │   ├── types
+│   │   └── utils
+│   ├── summaries
+│   │   ├── _heartbeat
+│   │   └── .completed
+│   ├── tasks
+│   │   ├── summaries
+│   │   │   ├── .archived
+│   │   │   └── .processed
+│   │   └── tasks_FAILED
+│   │       ├── .archive
+│   │       ├── .completed
+│   │       │   ├── cleanup
+│   │       │   ├── docs
+│   │       │   ├── hybrid_blocks
+│   │       │   ├── recovery_troubleshooting
+│   │       │   ├── v1.2.2
+│   │       │   ├── v1.3.1
+│   │       │   └── v1.3.2
+│   │       │       └── docs
+│   │       ├── .failed
+│   │       │   └── v1.4.0
+│   │       │       ├── 1_Troubleshooting
+│   │       │       └── docs
+│   │       ├── cleanup
+│   │       ├── docs
+│   │       ├── hybrid_blocks
+│   │       └── v1.4.0
+│   │           ├── auto-role-view_v3
+│   │           │   └── auto_roleview_v3_package
+│   │           ├── auto-role-view_v4
+│   │           ├── docs
+│   │           └── v1.4.1d
+│   ├── tests
+│   ├── thoughtmarks-dev-tools
+│   │   └── scripts
+│   ├── utils
+│   └── validations
+│       ├── diff
+│       │   ├── .archive
+│       │   ├── .completed
+│       │   └── .failed
+│       └── snapshots
+│           ├── .archive
+│           ├── .completed
+│           └── .failed
+├── references
+│   ├── backend
+│   │   └── src
+│   │       ├── config
+│   │       ├── controllers
+│   │       ├── db
+│   │       ├── middleware
+│   │       ├── routes
+│   │       └── utils
+│   ├── react-native
+│   │   └── src
+│   │       ├── components
+│   │       ├── hooks
+│   │       ├── navigation
+│   │       ├── screens
+│   │       ├── services
+│   │       └── types
+│   ├── shared
+│   ├── swiftui
+│   │   └── Thoughtmarks
+│   │       ├── Assets.xcassets
+│   │       │   └── AppIcon.appiconset
+│   │       ├── Models
+│   │       └── Utils
+│   └── web-src
+│       ├── public
+│       │   └── fonts
+│       └── src
+│           ├── assets
+│           │   └── animations
+│           ├── components
+│           │   └── ui
+│           ├── features
+│           │   └── voice
+│           ├── hooks
+│           ├── pages
+│           │   ├── ai
+│           │   ├── bins
+│           │   ├── content
+│           │   ├── legal
+│           │   └── settings
+│           │       ├── account
+│           │       ├── automation
+│           │       └── legal
+│           ├── theme
+│           └── types
+├── scripts
+│   ├── audit
+│   └── mobile-native-fresh
+│       ├── captures
+│       ├── src-nextgen
+│       │   ├── phase-0
+│       │   │   └── summaries
+│       │   ├── phase-1
+│       │   │   └── summaries
+│       │   └── phase-2
+│       │       └── summaries
+│       ├── summaries
+│       ├── tasks
+│       │   └── summaries
+│       └── verification
+├── slack-controller
+│   └── tm-mobile-cursor
+│       └── mobile-native-fresh
+├── summaries
+├── tasks
+│   ├── docs
+│   ├── hybrid_blocks
+│   └── recovery_troubleshooting
+└── tm-mobile-cursor
+    └── mobile-native-fresh
+        └── src-nextgen
+/Users/sawyer/gitSync/.cursor-cache
+├── .archive
+├── .backups
+│   ├── .CYOPS
+│   ├── .MAIN
+│   ├── inflight
+│   └── summaries
+│       ├── .archive
+│       ├── CYOPS
+│       │   ├── _heartbeat
+│       │   └── .archive
+│       │       └── NEW CONFIG
+│       └── MAIN
+│           ├── _heartbeat
+│           ├── .archive
+│           ├── .archived
+│           └── .processed
+├── .cursor-verified-cache
+├── .docs
+│   ├── configAlias
+│   └── trees
+├── CYOPS
+│   ├── .archive
+│   │   └── tasks
+│   ├── .completed
+│   ├── .failed
+│   ├── .heartbeat
+│   │   └── .archive
+│   ├── .logs
+│   │   └── .archive
+│   ├── analytics
+│   │   ├── metrics
+│   │   ├── optimizations
+│   │   └── reports
+│   ├── backups
+│   │   └── phase5-completion-2025-07-28T09-39-44-006Z
+│   ├── config
+│   │   ├── backups
+│   │   └── schemas
+│   ├── dashboard
+│   ├── docs
+│   ├── ghost
+│   │   ├── .heartbeat
+│   │   │   └── .archive
+│   │   └── .logs
+│   │       └── .archive
+│   ├── healer
+│   ├── health
+│   ├── load-balancer
+│   │   ├── configs
+│   │   ├── health
+│   │   ├── monitoring
+│   │   └── routing
+│   ├── ml-data
+│   │   ├── features
+│   │   ├── models
+│   │   └── predictions
+│   ├── performance
+│   │   ├── metrics
+│   │   ├── optimizations
+│   │   └── workers
+│   ├── pids
+│   ├── queue
+│   │   ├── data
+│   │   │   └── default
+│   │   └── dead-letter
+│   ├── relay
+│   ├── rollback
+│   │   ├── backups
+│   │   │   ├── backup-1753770407794-0ocoxeyg1-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   ├── backup-1753770507423-qzodvzgn2-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   ├── backup-1753770557076-1kcishniu-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   ├── backup-1753770610425-uk0tz5gp3-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   ├── backup-1753770627922-i7tbbrjbc-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   ├── backup-1753771110567-2n755pcwo-critical
+│   │   │   │   └── configs
+│   │   │   │       └── redis
+│   │   │   └── backup-1753771304088-k3e55sl3m-critical
+│   │   │       └── configs
+│   │   │           └── redis
+│   │   ├── dependencies
+│   │   ├── history
+│   │   └── snapshots
+│   │       ├── snapshot-1753770610449-lkkoknsyd
+│   │       ├── snapshot-1753770627950-ptwfyvjtb
+│   │       ├── snapshot-1753771110600-yg9t4ge1f
+│   │       └── snapshot-1753771304119-z9bnucsl9
+│   ├── snapshots
+│   ├── summaries
+│   │   ├── _heartbeat
+│   │   ├── .archive
+│   │   │   ├── dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium
+│   │   │   ├── dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox
+│   │   │   └── dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit
+│   │   ├── .completed
+│   │   ├── .failed
+│   │   ├── .heartbeat
+│   │   └── .logs
+│   ├── telemetry
+│   │   ├── analytics
+│   │   ├── api
+│   │   └── escalations
+│   ├── test
+│   ├── test-output
+│   ├── test-reports
+│   └── validation
+│       ├── .archive
+│       ├── .completed
+│       ├── .failed
+│       ├── diff
+│       │   ├── .archive
+│       │   ├── .completed
+│       │   └── .failed
+│       └── snapshots
+│           ├── .archive
+│           ├── .completed
+│           └── .failed
+├── MAIN
+│   ├── .archive
+│   ├── .completed
+│   ├── .failed
+│   ├── .heartbeat
+│   │   └── .archive
+│   ├── .logs
+│   ├── backups
+│   ├── maintenance
+│   │   └── micropatches
+│   ├── scripts
+│   ├── summaries
+│   │   ├── _heartbeat
+│   │   ├── .archive
+│   │   └── .completed
+│   ├── tasks
+│   ├── ui-patch-inbox
+│   └── validation
+│       ├── .archive
+│       ├── .completed
+│       └── screenshots
+│           ├── .failed
+│           ├── baseline
+│           ├── current
+│           └── diff
+├── ROOT
+│   ├── .archive
+│   ├── .completed
+│   ├── .failed
+│   ├── .heartbeat
+│   │   └── .archive
+│   ├── .logs
+│   │   └── MAIN
+│   └── summaries
+│       ├── .archive
+│       ├── .failed
+│       └── .heartbeat
+└── summaries
+
+3292 directories
