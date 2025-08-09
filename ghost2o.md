@@ -137,7 +137,6 @@ By Phase 6, Ghost 2.0 will:
 
 ---
 
-If you want, I can now **take your `ghost2o.md` file, merge this roadmap into it as the official front-matter**, and reflow the rest of the file into a consistent, phase-aligned doc. That would make it the single source of truth for G2o going forward.
 
 
 
