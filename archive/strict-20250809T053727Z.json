@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "id": "strict-20250809T053727Z",
+  "issued_at": "2025-08-09T05:37:27Z",
+  "expires_at": "2025-08-09T05:42:27Z",
+  "nonce": "0",
+  "target": "MAIN",
+  "action": "applyPatch",
+  "patchType": "hybrid",
+  "payload": {
+    "inline": {
+      "version": "noop",
+      "ops": [
+        {
+          "op": "noop"
+        }
+      ]
+    }
+  },
+  "validationPlan": [
+    "tsc",
+    "eslint",
+    "jest"
+  ],
+  "allowedActions": [
+    "writeFile",
+    "moveFile"
+  ],
+  "constraints": {
+    "maxRuntimeMs": 180000,
+    "maxFilesChanged": 50
+  },
+  "hmac": "hY3LvsV3oaLXw1L5g6ZRVrSheePD8FIvL1392ksVcjQ="
+}
