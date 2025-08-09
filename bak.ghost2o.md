@@ -138,7 +138,71 @@ By Phase 6, Ghost 2.0 will:
 ---
 
 
+# 0) App Manifest Checklist — G2o Bi-Directional Bridge (v1.0.0)
 
+Manifest ID: g2o-bridge-v1.0.0
+Revision: 2025-08-09T00:00:00Z
+Scope: CYOPS (ghost-bridge, gpt-cursor-runner) + CLOUD `_GPTsync`
+
+- Repos (absolute paths)
+  - ghost-bridge: `/Users/sawyer/gitSync/ghost-bridge`
+  - gpt-cursor-runner: `/Users/sawyer/gitSync/gpt-cursor-runner`
+  - CLOUD repo: `/Users/sawyer/gitSync/_GPTsync`
+
+- CLOUD directories (must exist)
+  - `commands/`, `results/`, `diffs/`, `archive/`, `dead_letter/`, `meta/`, `logs/`, `summaries/`
+  - `.gitignore` includes `commands/.retries.json` (present)
+
+- PM2 processes
+  - `gpt-executor` (python3, cwd=`ghost-bridge`, env: `CLOUD`, `GPT_BRIDGE_HMAC_SECRET`)
+  - `patch-executor` (node loop, monitors CYOPS and MAIN patch inboxes)
+
+- Executor hardening (ghost-bridge)
+  - Path banners on startup: print `CLOUD`, `CMDS`, `META`
+  - Ignore hidden control files; never write `commands/.retries.json`
+  - Use `meta/retries.json` only; publish retries index updates
+  - HMAC verification; immediate DLQ for bad HMAC (gap to implement)
+  - Integrity JSON includes `results_sha256`, `diff_sha256`, and input SHA (gap to implement)
+
+- Publisher (ghost-bridge/publish_github.py)
+  - Stage ONLY: `context results diffs summaries logs archive dead_letter meta`
+  - File lock `.bridge.lock`; backoff + pull --rebase; safe author/email env
+
+- Patch Executor (gpt-cursor-runner)
+  - Monitors: `/Users/sawyer/gitSync/.cursor-cache/{CYOPS,MAIN}/patches`
+  - Handles `patchData.patch || patchData` (does NOT descend into `payload.inline` → gap)
+  - Uses `git add -A` in `final.git` path (unsafe; replace with restricted staging or disable) (gap)
+
+- Security & secrets
+  - `GPT_BRIDGE_HMAC_SECRET` supplied via PM2 env; never logged
+  - Secret rotation window supported operationally (two-key window)
+
+- Observability
+  - `_GPTsync/results/*.json`, `*.integrity.json`, `diffs/*.patch`
+  - PM2 logs for executor; dashboard card shows `patch-executor` status
+
+- Validation recipes (CYOPS)
+  - `pre-commit` at repo roots (ghost-bridge, optionally gpt-cursor-runner)
+  - Signed no-op smoke test creates `archive/results/diffs` and a single commit
+  - No `commands/.retries.json` created; retries index lives under `meta/`
+
+- Required patches (12)
+  1) Executor `payload.inline` compatibility
+  2) Executor integrity: add input SHA; extend structure per §18
+  3) Executor: immediate DLQ on bad HMAC
+  4) Executor: explicit empty-diff guard (produce header even when empty)
+  5) Publisher: assert-only safe dirs; belt-and-suspenders checks
+  6) Patch-executor: remove `git add -A`; restrict/disable git in `final`
+  7) Patch-executor: unified summaries + index writer
+  8) CLOUD repo pre-commit hook to block `commands/.retries.json`
+  9) Smoke-test helper script to emit signed no-op
+  10) PM2 ecosystem secret wiring + docs (no plaintext)
+  11) Reporter roll-up: integrity + audit lines
+  
+  
+  
+  
+  --------------------------------------------
 
 
 
