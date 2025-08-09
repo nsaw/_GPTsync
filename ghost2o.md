@@ -1,6 +1,213 @@
 # ROADMAP GHOST2o -- DON'T START UNTIL YOU'VE READ THE WHOLE THING (VERIFICATION AND CORRECTIONS IN NEXT SECTION)
 
---- 
+--- OVERVIEW ---<<<<<< MISSION: Evolve Ghost Runner → Cursor → Local for **full repo context** + **bi-directional live edits** >>>>>>
+
+        ```md
+        ## A. Ingest: give me *continuous* read-only context
+
+        **Goal:** I can “see” your repo + runtime status without touching your machine.
+
+        * **Local Reporter (daemon):**
+
+          * Watches repo paths you choose (e.g., `/Users/sawyer/gitSync/{tm-mobile-cursor,gpt-cursor-runner}`).
+          * Emits every \~30–60s:
+
+            * `manifest.json` (tree, sizes, mtime, git head, branch)
+            * `hashes.json` (top-N large files + critical paths: src/, app/, config/, scripts/)
+            * `status.json` (git status, dirty files, branch, unpushed commits)
+            * `validation/*.json` (tsc/eslint/jest summary, lighthouse/perf if applicable)
+            * `runtime/logs/*.log` tail excerpts (last 2–5 KB per stream)
+        * **Publish** those artifacts to a **cloud-read** location I can fetch via web (read-only token or public link):
+
+          * Option A: GitHub repo `nsaw/ghost-context` (readable; I don’t need write)
+          * Option B: S3/GCS bucket with signed-URL index
+          * Option C: Dropbox/Drive folder with direct-file links
+        * **Privacy filters:** redact `.env`, secrets, PII, and any paths you exclude.
+
+        > With that, I can *pull* your current state on demand and reason accurately.
+
+        ## B. Command Queue: give you *safe write* via Cursor
+
+        **Goal:** I generate patch JSON; your machine applies it, not me.
+
+        * **Queue location (write by you / Ghost only):**
+
+          * `ghost-queue/commands/` (cloud folder or GitHub repo)
+          * Files: `patch-<ts>-<id>.json`, `hotfix-*.json`, `lint-*.json`
+        * **Runner behavior:**
+
+          * Polls `commands/` every 10–15s
+          * Verifies HMAC signature + schema
+          * Applies mutations through Cursor (or direct fs ops if allowed)
+          * Emits `executions/<id>.json` with exit codes, diffs, and artifacts
+          * Moves consumed command to `archive/`
+
+        > Critical: I **don’t** need to POST to your machine (I can’t). Your runner **pulls** my commands from the queue you control.
+
+        ## C. Feedback: close the loop with validation + logs
+
+        **Goal:** I know if a patch worked and whether to send a hotpatch.
+
+        * **Runner writes to cloud:**
+
+          * `summaries/<id>.md` (human-readable)
+          * `results/<id>.json` (structured: pass/fail per step, timings)
+          * `logs/<id>-stdout.log`, `logs/<id>-stderr.log` (truncated)
+          * `diffs/<id>.patch` (optional)
+        * **I poll** those via the web (read-only) and respond with:
+
+          * Next patch / hotpatch
+          * Lint-only fix
+          * Abort / rollback instruction
+
+        ## D. Security model (non-negotiable)
+
+        * **Least privilege PATs** (repo read-only for context; queue repo write for runner only).
+        * **Verification:** All command files signed with **HMAC** + embedded nonce + expiry.
+        * **Allowlist:** Runner only reads from your queue repo/bucket; never arbitrary URLs.
+        * **Secrets hygiene:** `.env` never published. Summaries scrubbed by a sanitizer.
+        * **Audit:** Append-only `audit.log` in context repo (who/what/when, content hashes).
+        * **mTLS** if you add a push channel later; otherwise polling keeps the attack surface small.
+
+        ## E. Slack & tunnels (reality check)
+
+        * Slack is optional. If the Slack node is flaky, keep it out of the critical path.
+        * Tunnels (Cloudflare/Ngrok) are **only** for dev convenience. Prefer polling from cloud storage for reliability + simplicity.
+        * Fly shell has zero access to your *local* Mac unless you deliberately bridge it. Don’t rely on it.
+
+        ---
+
+        # 2) CI Tagging System (for my answers)
+
+        I’ll attach a header/footer block on factual / reference answers:
+
+        * **CI:** 0.00–1.00 numeric confidence (my internal estimate).
+        * **Verify-tier:**
+
+          * **V3 (Autoverified):** cites ≥2 reputable sources or uses your ground-truth files; low ambiguity.
+          * **V2 (Check once):** cites ≥1 source or uses stable knowledge; moderate ambiguity.
+          * **V1 (Verify):** no live source or high ambiguity; you should verify.
+          * **V0 (Unknown):** I don’t know / needs research.
+        * **Citations:** present/absent; if present, I’ll include them inline per section.
+        * **Drift note (if applicable):** I’ll call out where my answer could be stale or risky.
+
+        *(I’ll start using this immediately on answers that involve facts, status, or references.)*
+
+        ---
+
+        # 3) I added your TODO
+
+        I set a reminder for **Monday, Aug 11, 2025 at 10:00 AM PT** to set up the cloud-based ruleset/reference directory that mirrors `.cursor/rules/*.mdc`.
+        Got it! I’ll remind you then.
+        #DONE
+
+        ---
+
+        # 4) How to set up a **Custom GPT CLI Bridge** (minimal, safe, effective)
+
+        ## Objectives
+
+        * **Pull**: Give me continuous read-only repo + runtime context (Section 1A).
+        * **Apply**: Consume patch commands from a queue and execute safely (Section 1B).
+        * **Report**: Publish results/logs back (Section 1C).
+        * **Secure**: HMAC, allowlists, redaction (Section 1D).
+
+        ## Minimal spec (Node or Python)
+
+        ### Endpoints/paths (cloud)
+
+        * `context/manifest.json`, `context/status.json`, `context/hashes.json`
+        * `validations/*.json`
+        * `logs/*.log` (rotated/truncated)
+        * `commands/*.json` (incoming patches)
+        * `results/*.json`, `summaries/*.md`, `diffs/*.patch`, `executions/*.json`, `archive/*.json`
+
+        ### Local services (on your Mac)
+
+        1. **Reporter**
+
+        * Watches repo roots; rebuilds context artifacts every 30–60s.
+        * Runs `tsc --noEmit`, `eslint`, `yarn test:unit` (or your scripts).
+        * Redacts/separates secrets.
+        * Pushes artifacts to cloud (Git push or S3 sync).
+
+        2. **Executor**
+
+        * Polls `commands/` → validates schema + HMAC + expiry.
+        * Executes:
+
+          * If patch targets Cursor: write hybrid block to the listening folder Cursor consumes (your existing `/tasks/patches`), or call Cursor’s CLI if you’ve exposed one.
+          * If direct FS change: apply mutations via a safe writer that backs up, writes, and validates.
+        * Runs **post-mutation validation** (your enforced pipeline: tsc, eslint, unit tests, runtime audit with Expo start/validate scripts).
+        * Emits `results/*.json`, `summaries/*.md`, `logs/*`.
+
+        3. **Sanitizer**
+
+        * Scrubs `.md` summaries and `.log` files of secrets/paths before publish.
+
+        ### Security
+
+        * `.env.bridge` for tokens (never committed).
+        * HMAC signature on every `commands/*.json`:
+
+          * Include `issued_at`, `expires_at`, `nonce`, `hash(content)`.
+        * Verify `schemaVersion` and `allowedActions`.
+        * Rate-limit executor; queue depth guardrails; lock file to avoid concurrent stomps.
+
+        ### Local install sketch (Node)
+
+        * `pnpm i` (or yarn/npm) for:
+
+          * `chokidar` (watch), `execa` (proc), `node-forge`/`jose` (HMAC), `isomorphic-git` (git ops), `fs-extra`, `zod` (schema)
+        * `bridge.config.json`:
+
+          * repoRoots, include/exclude, publishTarget (Git/S3), cadence, validationCommands, cursorPatchDir.
+
+        ### Operational flow
+
+        * `bridge start` → spawns reporter + executor
+        * Reporter: publish `context/*` → cloud
+        * I read `context/*` via web, craft `commands/*.json`
+        * Executor: picks it up, applies, validates, publishes `results/*`, `summaries/*`
+        * I read results, decide next step automatically (patch/hotfix/abort)
+
+        > If you want, I can draft the exact folder tree + base `zod` schemas for `manifest.json`, `results.json`, `command.json`, and a reference `eslint/tsc/jest` runner. Just say “ship the schema set.”
+
+        ---
+
+        ## FAQ quick hits
+
+        * **Can I POST/GET to your runner?** I can **GET** public artifacts for reading via web. I **cannot** reliably POST webhooks from here. That’s why the **polling queue** is the right design.
+        * **Can you tail logs?** Not directly on your Mac. Yes, if your runner publishes rolling truncations to cloud and I poll them.
+        * **Does Slack need to be in the loop?** No. It’s optional UI.
+        * **Does Fly shell help?** Only for workloads *already on Fly*. It won’t reach into your Mac.
+
+        ---
+
+        ## What you’ll get out of this
+
+        * I’ll operate with **live repo awareness** (manifests, hashes, status).
+        * I’ll **auto-react** to validation failures with lint/hotpatch guidance.
+        * You keep **hard security boundaries** (push-only queue, sanitized outputs).
+        * The system is **recoverable** and **auditable** without fragile webhooks.
+
+        ---
+
+        **Next actions I recommend:**
+
+        1. Approve the architecture above (A–E).
+        2. Tell me to **“ship the schema set”** and I’ll give you:
+
+           * `command.schema.json` (with HMAC fields)
+           * `results.schema.json`, `manifest.schema.json`, `status.schema.json`
+           * Reference `bridge.config.json`
+        3. Choose **cloud target** (GitHub repo vs S3 vs Drive).
+        4. I’ll generate a minimal **Node-based bridge** scaffold you can `pnpm start` today.
+
+        ---
+
+        **CI for this answer:** CI 0.88 • Verify-tier V1 (architecture; depends on your infra choices).
+        Drift note: The POST limitation is a hard constraint of this interface; if tool capabilities change, we can reconsider a push model.```
 
 ## **G2o Roadmap — Streamlined Execution Plan**
 
@@ -1332,213 +1539,10 @@ Say the word and I’ll ship an **updated tar** with those tweaks pre-baked.
         Applies them locally or in Cursor
         That’s the only way to get real-time, repo-aware, two-way automation.``` 
         
+        
+        
+        
 ## Here’s the no-BS blueprint + the guardrails.
 
-# 1) Evolve Ghost Runner → Cursor → Local for **full repo context** + **bi-directional live edits**
-
-## A. Ingest: give me *continuous* read-only context
-
-**Goal:** I can “see” your repo + runtime status without touching your machine.
-
-* **Local Reporter (daemon):**
-
-  * Watches repo paths you choose (e.g., `/Users/sawyer/gitSync/{tm-mobile-cursor,gpt-cursor-runner}`).
-  * Emits every \~30–60s:
-
-    * `manifest.json` (tree, sizes, mtime, git head, branch)
-    * `hashes.json` (top-N large files + critical paths: src/, app/, config/, scripts/)
-    * `status.json` (git status, dirty files, branch, unpushed commits)
-    * `validation/*.json` (tsc/eslint/jest summary, lighthouse/perf if applicable)
-    * `runtime/logs/*.log` tail excerpts (last 2–5 KB per stream)
-* **Publish** those artifacts to a **cloud-read** location I can fetch via web (read-only token or public link):
-
-  * Option A: GitHub repo `nsaw/ghost-context` (readable; I don’t need write)
-  * Option B: S3/GCS bucket with signed-URL index
-  * Option C: Dropbox/Drive folder with direct-file links
-* **Privacy filters:** redact `.env`, secrets, PII, and any paths you exclude.
-
-> With that, I can *pull* your current state on demand and reason accurately.
-
-## B. Command Queue: give you *safe write* via Cursor
-
-**Goal:** I generate patch JSON; your machine applies it, not me.
-
-* **Queue location (write by you / Ghost only):**
-
-  * `ghost-queue/commands/` (cloud folder or GitHub repo)
-  * Files: `patch-<ts>-<id>.json`, `hotfix-*.json`, `lint-*.json`
-* **Runner behavior:**
-
-  * Polls `commands/` every 10–15s
-  * Verifies HMAC signature + schema
-  * Applies mutations through Cursor (or direct fs ops if allowed)
-  * Emits `executions/<id>.json` with exit codes, diffs, and artifacts
-  * Moves consumed command to `archive/`
-
-> Critical: I **don’t** need to POST to your machine (I can’t). Your runner **pulls** my commands from the queue you control.
-
-## C. Feedback: close the loop with validation + logs
-
-**Goal:** I know if a patch worked and whether to send a hotpatch.
-
-* **Runner writes to cloud:**
-
-  * `summaries/<id>.md` (human-readable)
-  * `results/<id>.json` (structured: pass/fail per step, timings)
-  * `logs/<id>-stdout.log`, `logs/<id>-stderr.log` (truncated)
-  * `diffs/<id>.patch` (optional)
-* **I poll** those via the web (read-only) and respond with:
-
-  * Next patch / hotpatch
-  * Lint-only fix
-  * Abort / rollback instruction
-
-## D. Security model (non-negotiable)
-
-* **Least privilege PATs** (repo read-only for context; queue repo write for runner only).
-* **Verification:** All command files signed with **HMAC** + embedded nonce + expiry.
-* **Allowlist:** Runner only reads from your queue repo/bucket; never arbitrary URLs.
-* **Secrets hygiene:** `.env` never published. Summaries scrubbed by a sanitizer.
-* **Audit:** Append-only `audit.log` in context repo (who/what/when, content hashes).
-* **mTLS** if you add a push channel later; otherwise polling keeps the attack surface small.
-
-## E. Slack & tunnels (reality check)
-
-* Slack is optional. If the Slack node is flaky, keep it out of the critical path.
-* Tunnels (Cloudflare/Ngrok) are **only** for dev convenience. Prefer polling from cloud storage for reliability + simplicity.
-* Fly shell has zero access to your *local* Mac unless you deliberately bridge it. Don’t rely on it.
-
----
-
-# 2) CI Tagging System (for my answers)
-
-I’ll attach a header/footer block on factual / reference answers:
-
-* **CI:** 0.00–1.00 numeric confidence (my internal estimate).
-* **Verify-tier:**
-
-  * **V3 (Autoverified):** cites ≥2 reputable sources or uses your ground-truth files; low ambiguity.
-  * **V2 (Check once):** cites ≥1 source or uses stable knowledge; moderate ambiguity.
-  * **V1 (Verify):** no live source or high ambiguity; you should verify.
-  * **V0 (Unknown):** I don’t know / needs research.
-* **Citations:** present/absent; if present, I’ll include them inline per section.
-* **Drift note (if applicable):** I’ll call out where my answer could be stale or risky.
-
-*(I’ll start using this immediately on answers that involve facts, status, or references.)*
-
----
-
-# 3) I added your TODO
-
-I set a reminder for **Monday, Aug 11, 2025 at 10:00 AM PT** to set up the cloud-based ruleset/reference directory that mirrors `.cursor/rules/*.mdc`.
-Got it! I’ll remind you then.
-#DONE
-
----
-
-# 4) How to set up a **Custom GPT CLI Bridge** (minimal, safe, effective)
-
-## Objectives
-
-* **Pull**: Give me continuous read-only repo + runtime context (Section 1A).
-* **Apply**: Consume patch commands from a queue and execute safely (Section 1B).
-* **Report**: Publish results/logs back (Section 1C).
-* **Secure**: HMAC, allowlists, redaction (Section 1D).
-
-## Minimal spec (Node or Python)
-
-### Endpoints/paths (cloud)
-
-* `context/manifest.json`, `context/status.json`, `context/hashes.json`
-* `validations/*.json`
-* `logs/*.log` (rotated/truncated)
-* `commands/*.json` (incoming patches)
-* `results/*.json`, `summaries/*.md`, `diffs/*.patch`, `executions/*.json`, `archive/*.json`
-
-### Local services (on your Mac)
-
-1. **Reporter**
-
-* Watches repo roots; rebuilds context artifacts every 30–60s.
-* Runs `tsc --noEmit`, `eslint`, `yarn test:unit` (or your scripts).
-* Redacts/separates secrets.
-* Pushes artifacts to cloud (Git push or S3 sync).
-
-2. **Executor**
-
-* Polls `commands/` → validates schema + HMAC + expiry.
-* Executes:
-
-  * If patch targets Cursor: write hybrid block to the listening folder Cursor consumes (your existing `/tasks/patches`), or call Cursor’s CLI if you’ve exposed one.
-  * If direct FS change: apply mutations via a safe writer that backs up, writes, and validates.
-* Runs **post-mutation validation** (your enforced pipeline: tsc, eslint, unit tests, runtime audit with Expo start/validate scripts).
-* Emits `results/*.json`, `summaries/*.md`, `logs/*`.
-
-3. **Sanitizer**
-
-* Scrubs `.md` summaries and `.log` files of secrets/paths before publish.
-
-### Security
-
-* `.env.bridge` for tokens (never committed).
-* HMAC signature on every `commands/*.json`:
-
-  * Include `issued_at`, `expires_at`, `nonce`, `hash(content)`.
-* Verify `schemaVersion` and `allowedActions`.
-* Rate-limit executor; queue depth guardrails; lock file to avoid concurrent stomps.
-
-### Local install sketch (Node)
-
-* `pnpm i` (or yarn/npm) for:
-
-  * `chokidar` (watch), `execa` (proc), `node-forge`/`jose` (HMAC), `isomorphic-git` (git ops), `fs-extra`, `zod` (schema)
-* `bridge.config.json`:
-
-  * repoRoots, include/exclude, publishTarget (Git/S3), cadence, validationCommands, cursorPatchDir.
-
-### Operational flow
-
-* `bridge start` → spawns reporter + executor
-* Reporter: publish `context/*` → cloud
-* I read `context/*` via web, craft `commands/*.json`
-* Executor: picks it up, applies, validates, publishes `results/*`, `summaries/*`
-* I read results, decide next step automatically (patch/hotfix/abort)
-
-> If you want, I can draft the exact folder tree + base `zod` schemas for `manifest.json`, `results.json`, `command.json`, and a reference `eslint/tsc/jest` runner. Just say “ship the schema set.”
-
----
-
-## FAQ quick hits
-
-* **Can I POST/GET to your runner?** I can **GET** public artifacts for reading via web. I **cannot** reliably POST webhooks from here. That’s why the **polling queue** is the right design.
-* **Can you tail logs?** Not directly on your Mac. Yes, if your runner publishes rolling truncations to cloud and I poll them.
-* **Does Slack need to be in the loop?** No. It’s optional UI.
-* **Does Fly shell help?** Only for workloads *already on Fly*. It won’t reach into your Mac.
-
----
-
-## What you’ll get out of this
-
-* I’ll operate with **live repo awareness** (manifests, hashes, status).
-* I’ll **auto-react** to validation failures with lint/hotpatch guidance.
-* You keep **hard security boundaries** (push-only queue, sanitized outputs).
-* The system is **recoverable** and **auditable** without fragile webhooks.
-
----
-
-**Next actions I recommend:**
-
-1. Approve the architecture above (A–E).
-2. Tell me to **“ship the schema set”** and I’ll give you:
-
-   * `command.schema.json` (with HMAC fields)
-   * `results.schema.json`, `manifest.schema.json`, `status.schema.json`
-   * Reference `bridge.config.json`
-3. Choose **cloud target** (GitHub repo vs S3 vs Drive).
-4. I’ll generate a minimal **Node-based bridge** scaffold you can `pnpm start` today.
-
----
-
-**CI for this answer:** CI 0.88 • Verify-tier V1 (architecture; depends on your infra choices).
-Drift note: The POST limitation is a hard constraint of this interface; if tool capabilities change, we can reconsider a push model.
+# 1) 
  
