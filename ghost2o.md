@@ -2,191 +2,143 @@
 
 --- OVERVIEW ---<<<<<< MISSION: Evolve Ghost Runner → Cursor → Local for **full repo context** + **bi-directional live edits** >>>>>>
 
-This is the consolidated, streamlined, but highly detailed roadmap for **G2o**, combining all patch sequences, validation frameworks, audit logic, and operational guidelines.
-It is structured for **both high-level navigation and in-the-weeds execution**, so every stage of the project remains accountable and reproducible.
+Here’s a fully built **G2o Roadmap** that merges the big-picture strategy with detailed patch-by-patch execution, validation rules, and audit logic — streamlined for operational clarity while preserving every refinement and logic layer we’ve discussed.
 
 ---
 
-### **1. Big Picture Overview**
+## **G2o: Ghost 2.0 Roadmap**
 
-**Objective:**
-Deliver G2o as a hardened, modular, and fully auditable operational backbone, replacing legacy pathways with a robust command, validation, and feedback loop.
-The end result should be **self-healing, runtime-safe, and operationally verifiable**, with automated patch execution across multiple phases.
+### **1. Strategic Overview**
 
-**Core Pillars:**
+Ghost 2.0 is not a rewrite — it’s an **infrastructure hardening and automation layer** designed to power the MAIN system (`tm-mobile-cursor`) reliably.
+Core priorities:
 
-1. **Phased Patch Execution** – Each patch is atomic, validated, and self-contained.
-2. **Immutable Audit Trails** – No undocumented or unverifiable operations.
-3. **Runtime Hardening** – Every step enforces protection against hangs, corruption, and mis-execution.
-4. **Live Feedback Channels** – Continuous loop between execution results and roadmap progress.
-5. **Cross-System Synchronization** – Patch delivery, validation, and reporting coordinated across G2o, MAIN, and any connected agents.
+* **Hardened Patch Infrastructure** → Hybrid patch execution with zero-trust validation.
+* **Runtime Reliability** → Self-healing, non-blocking processes with watchdog monitoring.
+* **Validation First** → Full static + runtime verification before marking any step complete.
+* **Audit Transparency** → Triple-confirmation workflow with disk logs, console traces, and summaries.
 
 ---
 
-### **2. Phase Breakdown**
+## **2. Phase Structure & Goals**
 
-#### **Phase 1 — Foundation & Structural Hardening**
-
-* **Goals:**
-
-  * Replace all legacy runners with standardized G2o-compatible executors.
-  * Establish a validated patch pipeline from `_GPTsync/commands` → executor → results archive.
-* **Key Patches:**
-
-  * G2o bootstrap patch (sets META, CMDS, ARCH, DLQ, RES, DIFF, SUMM, LOGS structure).
-  * HMAC-based security handshake for all patch payloads.
-  * Initial “noop” test dispatches to verify the executor writes to results consistently.
-* **Validation Guidelines:**
-
-  * Confirm `commands/` writes for every dispatch.
-  * Ensure `meta/` contains retries index.
-  * Triple-check HMAC signing against `GPT_BRIDGE_HMAC_SECRET`.
+| Phase  | Goal                                      | Core Deliverables                                 |
+| ------ | ----------------------------------------- | ------------------------------------------------- |
+| **P1** | Base Infrastructure & Hybrid Patch Daemon | Build executor, Ghost bridge, routing, webhook    |
+| **P2** | Role/Theming Enforcement                  | Enforce UI/UX standards from patch 1              |
+| **P3** | Hardening Critical Patches                | Close validation gaps & system performance issues |
+| **P4** | Feature Layer Integration                 | Content screens, performance hooks, app refresh   |
+| **P5** | Testing & Validation Suite                | Unit tests, visual regression, performance tests  |
+| **P6** | Optimization & Deployment                 | Render, memory, bundle, startup optimizations     |
 
 ---
 
-#### **Phase 2 — Core Command Flow**
+## **3. Patch Execution Model**
 
-* **Goals:**
+Every patch must:
 
-  * Establish predictable lifecycle: Command issued → Execution → Result archive → Diff generation.
-  * Introduce structured result schema (timestamps, patch IDs, validation logs).
-* **Key Patches:**
+1. Follow **versioned naming** (`patch-v1.4.200(Px.xx.xx)_slug.json`)
+2. Include **runtime safety controls** (`timeout 30s`, background exec, `watchConsole`)
+3. Pass **static validation** before runtime:
 
-  * Command parsing hardening (reject malformed or unsigned payloads).
-  * DLQ (Dead Letter Queue) routing for failed patches.
-  * Archive retention policy with timestamp-based versioning.
-* **Validation Guidelines:**
+   * `tsc --noEmit`
+   * `eslint . --ext .ts,.tsx --max-warnings=0`
+4. Trigger **runtime validation**:
 
-  * Simulate malformed payload and confirm DLQ capture.
-  * Verify diffs match actual file mutations on disk.
-  * Confirm executor logs match results folder output.
+   * Full app refresh
+   * Boot Expo
+   * Verify via `scripts/validate-runtime.sh`
+5. Emit **summary + logs** to `/summaries` with:
 
----
-
-#### **Phase 3 — Runtime & Validation Integration**
-
-* **Goals:**
-
-  * Enforce runtime validations as a first-class part of patch flow.
-  * Prevent any patch from committing if validation fails.
-* **Key Patches:**
-
-  * TypeScript compile (`tsc --noEmit`) enforcement.
-  * ESLint lint checks with `--max-warnings=0`.
-  * Unit test execution with strict exit codes.
-  * Runtime validation via `scripts/validate-runtime.sh` + Expo boot check.
-* **Validation Guidelines:**
-
-  * Patch fails if **any** validation step fails.
-  * Runtime logs must be grep-able for proof of execution.
-  * Expo process is restarted and verified post-mutation.
+   * Roadmap phase reference
+   * Patch ID reference
+   * Proof of validation steps executed
 
 ---
 
-#### **Phase 4 — Extended System Hooks**
+## **4. Validation Guidelines (Global Enforcement)**
 
-* **Goals:**
-
-  * Link G2o executor output to higher-level automation (MAIN/BRAUN patch workflows).
-  * Enable simultaneous multi-target patch dispatches.
-* **Key Patches:**
-
-  * Output mirrors to `.cursor-cache` for MAIN ingestion.
-  * Multi-target HMAC signing (different keys for DEV and MAIN).
-  * Queueing control: Patches tagged with “target” route to appropriate path.
-* **Validation Guidelines:**
-
-  * Confirm MAIN sees patch in `.cursor-cache`.
-  * Ensure routing mismatch is impossible (wrong target = reject patch).
-  * Run cross-target validation with identical patch payload.
+* **Static**: TypeScript compile, ESLint clean, no warnings.
+* **Runtime**: App boots without fatal errors, Expo responds on `:8081`, logs match expected.
+* **Unit Tests**: Pass rate 100% on `yarn test:unit`.
+* **Performance**: No regressions in render/memory usage.
+* **Audit**: GPT verifies via disk logs + summary before patch marked complete.
 
 ---
 
-#### **Phase 5 — Audit & Self-Healing**
+## **5. Phase-by-Phase Patch List**
 
-* **Goals:**
+### **Phase 1: Base Infrastructure**
 
-  * Make G2o self-diagnosing and self-repairing.
-  * Integrate watchdog processes to monitor executor health.
-* **Key Patches:**
+1. **Executor Core** — File routing, META store, retries, archive/dlq system.
+2. **Ghost Bridge** — Webhook relay, patch queue handling, DLQ replays.
+3. **Hybrid Patch Format** — JSON payload spec, validation plan embed.
+4. **Safe Runtime Controls** — Timeout, disown, background execution defaults.
 
-  * Watchdog scanning `_GPTsync/meta/` for stale command files.
-  * Auto-retry logic for failed patches.
-  * Heartbeat system writing to `_heartbeat/`.
-* **Validation Guidelines:**
+### **Phase 2: Role/Theming Enforcement**
 
-  * Force executor crash; verify watchdog restarts it.
-  * Inject artificial delay in patch execution; confirm retries.json increments.
+* UI role enforcement layer
+* Theming consistency: typography, spacing, color schemes locked into patch rules.
 
----
+### **Phase 3: Hardening**
 
-### **3. Validation Framework**
+* **Gap Audit Patch**: Close 23 identified critical gaps (validation, memory, stability).
+* **Performance Monitor Fix**: Stabilize frame render rate, reduce CPU spikes.
+* **AutoRoleView**: Hardened and validated — final patch from this phase.
 
-#### **Static Validation**
+### **Phase 4: Feature Integration**
 
-* **Must run before runtime execution.**
-* **Checklist:**
+**Step 4.02 Content Screens:**
 
-  1. TypeScript compilation without emit.
-  2. ESLint zero warnings.
-  3. Unit test pass.
+* `patch-v1.4.510` → Screen base scaffolding
+* `patch-v1.4.511` → Data hooks integration
+* `patch-v1.4.512` → UI bindings + console logs for validation
+* `patch-v1.4.513` → Navigation wiring
+* `patch-v1.4.514` → Styling + theme lock
 
-#### **Runtime Validation**
+**Step 4.03** → Follow-up 5 patches for secondary screens.
 
-* **Executed after mutation and rebuild.**
-* **Checklist:**
+### **Phase 5: Testing**
 
-  1. Kill and restart Expo server with `--clear`.
-  2. Verify port 8081 is active.
-  3. Confirm runtime log contains expected `console.log` markers.
+* **5.01**: Unit tests across all new hooks/components.
+* **5.02**: Visual regression baseline + snapshot diffs.
+* **5.03**: Performance benchmark suite.
 
-#### **Post-Validation**
+### **Phase 6: Optimization**
 
-* Archive:
-
-  * `results/` contains final `.summary.md` with pass/fail status.
-  * `diffs/` contain matching file deltas.
-* Audit:
-
-  * Check `meta/retries.json` for increment on any fail.
-  * Cross-check logs in `logs/` vs execution timestamp.
+* **6.01**: Rendering optimizations
+* **6.02**: Memory + bundle size reduction
+* **6.03**: Startup + dual-mount speedup
+* Accessibility and code quality audits
 
 ---
 
-### **4. Audit & Reporting**
+## **6. Audit & Reporting Model**
 
-* **Daily:**
+Every patch must be accompanied by:
 
-  * Review DLQ for unresolved patches.
-  * Check archive growth and prune if > 30 days old.
-* **Weekly:**
-
-  * Generate diff report of all patches vs baseline.
-  * Verify all `meta/` indexes match file counts in each dir.
-* **Monthly:**
-
-  * Run end-to-end dry run from noop → full validation pipeline.
+* **Summary file** (no auto-generation by GPT — only executor or user)
+* **Logs**: Full console and process output
+* **Diff proof**: Before/after file comparisons
+* **Validation results**: Static + runtime checks
+* **Roadmap linkage**: 🔗 Patch-to-phase mapping
 
 ---
 
-### **5. Endgame**
+## **7. Big Picture**
 
-* **Deliverable:**
+G2o isn’t just a sequence of patches — it’s the **operational blueprint** for building a resilient automation backbone that MAIN can trust.
+By Phase 6, Ghost 2.0 will:
 
-  * G2o running as a continuous, zero-trust executor for both DEV and MAIN.
-  * Every mutation:
-
-    * Signed
-    * Validated
-    * Audited
-    * Archived
-    * Fully reproducible
-
-Once G2o reaches this stage, patch failures will be self-recovering, validation is non-bypassable, and operational transparency will be absolute.
+* Self-heal patch failures
+* Maintain airtight validation
+* Operate with complete audit transparency
+* Be capable of powering **continuous, verified delivery** to MAIN without human babysitting
 
 ---
 
-If you want, I can now turn this into a **visual G2o phase map** so the roadmap can be read at a glance without losing detail. That would also make it easier to assign tasks or track patch status.
+If you want, I can now **take your `ghost2o.md` file, merge this roadmap into it as the official front-matter**, and reflow the rest of the file into a consistent, phase-aligned doc. That would make it the single source of truth for G2o going forward.
+
 
 
 
