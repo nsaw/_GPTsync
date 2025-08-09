@@ -1,0 +1,7 @@
+==> Verifying app config
+Validating --config path unset--
+[32m✓[0m Configuration is valid
+--> Verified app config
+==> Building image
+==> Building image
+Error: failed to fetch an image or build from source: dockerfile '/Users/sawyer/gitSync/.cursor-cache/Dockerfile' not found

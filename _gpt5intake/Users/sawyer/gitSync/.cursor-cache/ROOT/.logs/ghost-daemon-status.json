@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-08-04T17:56:17.694Z",
+  "daemon": "ghost-unified",
+  "components": {
+    "ghostRelay": {
+      "healthy": true,
+      "critical": true,
+      "external": false
+    },
+    "ghostViewer": {
+      "healthy": true,
+      "critical": true,
+      "external": false
+    },
+    "ghostBridge": {
+      "healthy": false,
+      "critical": false,
+      "external": false
+    },
+    "cloudflareTunnel": {
+      "healthy": false,
+      "critical": true,
+      "external": true
+    }
+  }
+}

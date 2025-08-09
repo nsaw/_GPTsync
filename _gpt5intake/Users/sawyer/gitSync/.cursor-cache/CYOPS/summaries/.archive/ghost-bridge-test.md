@@ -1,0 +1,1 @@
+Test summary from ghost bridge

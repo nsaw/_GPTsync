@@ -1,0 +1,19 @@
+❌ slack CF /health not reachable
+❌ dashboard api status unreachable
+❌ fly health fail
+❌ CF /slack/commands no response
+❌ fly /slack/commands no response
+❌ CF->Fly /slack/commands still failing
+❌ Fly health still failing
+❌ CF->Fly /slack/commands still failing (post-redeploy)
+❌ Fly health failing (post-redeploy)
+❌ CF->Fly /slack/commands still failing (root-deploy)
+❌ Fly health failing (root-deploy)
+❌ CF->Fly /slack/commands still failing (dedicated-config)
+❌ slack CF /health unreachable (dedicated-config)
+❌ Fly health failing (root-deploy-2)
+❌ monitor not served
+✅ Fly health ok (redeploy)
+❌ monitor down
+❌ slack /slack/commands failed
+❌ fly /monitor down

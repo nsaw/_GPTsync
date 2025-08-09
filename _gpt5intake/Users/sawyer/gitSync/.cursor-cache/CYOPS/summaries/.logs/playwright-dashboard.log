@@ -1,0 +1,158 @@
+yarn run v1.22.22
+$ playwright test tests/dashboard-green-state.spec.ts
+
+Running 6 tests using 6 workers
+
+[1A[2K[1/6] [firefox] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive
+[1A[2K[2/6] [chromium] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status
+[1A[2K[3/6] [firefox] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status
+[1A[2K[4/6] [chromium] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive
+[1A[2K[5/6] [webkit] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status
+[1A[2K[6/6] [webkit] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive
+[1A[2K  1) [chromium] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"dashboard"[39m
+    Received string:    [31m"cloudflare tunnel error | gpt-cursor-runner.thoughtmarks.app | cloudflare"[39m
+
+      102 |     // Check for dashboard title or header
+      103 |     const title = await page.title();
+    > 104 |     expect(title.toLowerCase()).toContain("dashboard");
+          |                                 ^
+      105 |
+      106 |     // Verify no console errors
+      107 |     const consoleErrors: string[] = [];
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:104:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-chromium/error-context.md
+
+
+[1A[2K  2) [webkit] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"dashboard"[39m
+    Received string:    [31m"cloudflare tunnel error | gpt-cursor-runner.thoughtmarks.app | cloudflare"[39m
+
+      102 |     // Check for dashboard title or header
+      103 |     const title = await page.title();
+    > 104 |     expect(title.toLowerCase()).toContain("dashboard");
+          |                                 ^
+      105 |
+      106 |     // Verify no console errors
+      107 |     const consoleErrors: string[] = [];
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:104:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-webkit/error-context.md
+
+
+[1A[2K  3) [firefox] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"dashboard"[39m
+    Received string:    [31m"cloudflare tunnel error | gpt-cursor-runner.thoughtmarks.app | cloudflare"[39m
+
+      102 |     // Check for dashboard title or header
+      103 |     const title = await page.title();
+    > 104 |     expect(title.toLowerCase()).toContain("dashboard");
+          |                                 ^
+      105 |
+      106 |     // Verify no console errors
+      107 |     const consoleErrors: string[] = [];
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:104:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-firefox/error-context.md
+
+
+[1A[2K  4) [chromium] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+
+      11 |
+      12 |     // Wait for dashboard to load
+    > 13 |     await page.waitForLoadState("networkidle");
+         |                ^
+      14 |
+      15 |     // Wait for component health indicators to appear
+      16 |     await page.waitForSelector(
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:13:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium/error-context.md
+
+
+[1A[2K  5) [webkit] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+
+      11 |
+      12 |     // Wait for dashboard to load
+    > 13 |     await page.waitForLoadState("networkidle");
+         |                ^
+      14 |
+      15 |     // Wait for component health indicators to appear
+      16 |     await page.waitForSelector(
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:13:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit/error-context.md
+
+
+[1A[2K  6) [firefox] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[data-testid="component-health"], .component-status, .status-indicator') to be visible[22m
+
+
+      14 |
+      15 |     // Wait for component health indicators to appear
+    > 16 |     await page.waitForSelector(
+         |                ^
+      17 |       '[data-testid="component-health"], .component-status, .status-indicator',
+      18 |       { timeout: 30000 },
+      19 |     );
+        at /Users/sawyer/gitSync/gpt-cursor-runner/tests/dashboard-green-state.spec.ts:16:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox/error-context.md
+
+
+[1A[2K  6 failed
+    [chromium] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+    [chromium] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+    [firefox] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+    [firefox] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+    [webkit] › tests/dashboard-green-state.spec.ts:4:7 › Dashboard Green-State Enforcement › all dashboard components must show green status 
+    [webkit] › tests/dashboard-green-state.spec.ts:91:7 › Dashboard Green-State Enforcement › dashboard must be accessible and responsive 
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m

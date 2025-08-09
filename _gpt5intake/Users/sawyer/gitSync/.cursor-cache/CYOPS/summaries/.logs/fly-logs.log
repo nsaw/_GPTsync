@@ -1,0 +1,100 @@
+[2m2025-08-08T05:05:12Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:12.016743549 [01K22TZN9Y7EV03ZMYADGR999Z:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:05:13Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:05:13 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:05:13Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:05:14Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:05:14Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:05:14Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 2.191s
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 189, in _run_module_as_main
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 112, in _get_module_details
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/__init__.py", line 11, in <module>
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .main import app, main
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 34, in <module>
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.slack_handler import (
+[2m2025-08-08T05:05:17Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]ImportError: cannot import name 'handle_slack_event' from 'gpt_cursor_runner.slack_handler' (/app/gpt_cursor_runner/slack_handler.py)
+[2m2025-08-08T05:05:19Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:05:19Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:05:19Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:05:19Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][   15.665794] reboot: Restarting system
+[2m2025-08-08T05:05:19Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T05:05:19Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:05:19 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 189, in _run_module_as_main
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 112, in _get_module_details
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/__init__.py", line 11, in <module>
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from .main import app, main
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 34, in <module>
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.slack_handler import (
+[2m2025-08-08T05:05:23Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]ImportError: cannot import name 'handle_slack_event' from 'gpt_cursor_runner.slack_handler' (/app/gpt_cursor_runner/slack_handler.py)
+[2m2025-08-08T05:05:25Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:05:25Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:05:25Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:05:25Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][   13.359818] reboot: Restarting system
+[2m2025-08-08T05:05:26Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:26.660482955 [01K22TZN9Y7EV03ZMYADGR999Z:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:05:26Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:26.660676348 [01K22TZN9Y7EV03ZMYADGR999Z:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:05:28Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:05:28Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:05:28Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:05:28Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 2.031s
+[2m2025-08-08T05:05:32Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:05:32 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22
+[2m2025-08-08T05:05:32Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]Starting machine
+[2m2025-08-08T05:05:33Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:05:33.267491955 [01K22TZNC4YSJEDCN1X4TARFX2:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:05:33Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025-08-08T05:05:33.267707345 [01K22TZNC4YSJEDCN1X4TARFX2:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:05:34Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:05:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:05:35Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 189, in _run_module_as_main
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 112, in _get_module_details
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/__init__.py", line 11, in <module>
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from .main import app, main
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 34, in <module>
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.slack_handler import (
+[2m2025-08-08T05:05:36Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]ImportError: cannot import name 'handle_slack_event' from 'gpt_cursor_runner.slack_handler' (/app/gpt_cursor_runner/slack_handler.py)
+[2m2025-08-08T05:05:36Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]Machine started in 3.313s
+[2m2025-08-08T05:05:36Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]machine started in 3.441250522s
+[2m2025-08-08T05:05:37Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:05:37Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:05:38Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:05:38Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][   11.280256] reboot: Restarting system
+[2m2025-08-08T05:05:39Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:39.869005352 [01K22TZN9Y7EV03ZMYADGR999Z:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:05:39Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:39.869156384 [01K22TZN9Y7EV03ZMYADGR999Z:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:05:41Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:05:41Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:05:41Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:05:41Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 2.101s
+[2m2025-08-08T05:05:42Z[0m proxy[7814162c462698] [32msea[0m [[34minfo[0m]waiting for machine to be reachable on 0.0.0.0:5555 (waited 5.922150834s so far)
+[2m2025-08-08T05:05:44Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]2025/08/08 05:05:44 INFO SSH listening listen_address=[fdaa:20:8401:a7b:3a3:8ebf:20bb:2]:22
+[2m2025-08-08T05:05:45Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:05:45 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 189, in _run_module_as_main
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 112, in _get_module_details
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/__init__.py", line 11, in <module>
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from .main import app, main
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 34, in <module>
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.slack_handler import (
+[2m2025-08-08T05:05:48Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m]ImportError: cannot import name 'handle_slack_event' from 'gpt_cursor_runner.slack_handler' (/app/gpt_cursor_runner/slack_handler.py)
+[2m2025-08-08T05:05:49Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:05:49Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:05:49Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:05:49Z[0m app[7814162c462698] [32msea[0m [[34minfo[0m][   16.036251] reboot: Restarting system
+[2m2025-08-08T05:05:49Z[0m runner[7814162c462698] [32msea[0m [[34minfo[0m]machine has reached its max restart count of 10
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]Traceback (most recent call last):
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 189, in _run_module_as_main
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "<frozen runpy>", line 112, in _get_module_details
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/__init__.py", line 11, in <module>
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from .main import app, main
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]  File "/app/gpt_cursor_runner/main.py", line 34, in <module>
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]    from gpt_cursor_runner.slack_handler import (
+[2m2025-08-08T05:05:49Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]ImportError: cannot import name 'handle_slack_event' from 'gpt_cursor_runner.slack_handler' (/app/gpt_cursor_runner/slack_handler.py)
+[2m2025-08-08T05:05:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 1
+[2m2025-08-08T05:05:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-08-08T05:05:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-08-08T05:05:51Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][   11.209816] reboot: Restarting system
+[2m2025-08-08T05:05:53Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:53.230414901 [01K22TZN9Y7EV03ZMYADGR999Z:main] Running Firecracker v1.12.1
+[2m2025-08-08T05:05:53Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025-08-08T05:05:53.230601913 [01K22TZN9Y7EV03ZMYADGR999Z:main] Listening on API socket ("/fc.sock").
+[2m2025-08-08T05:05:54Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Starting init (commit: 6c3309ba)...
+[2m2025-08-08T05:05:55Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m Preparing to run: `python3 -m gpt_cursor_runner.main` as root
+[2m2025-08-08T05:05:55Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-08-08T05:05:55Z[0m runner[784e2e9a999e18] [32msea[0m [[34minfo[0m]Machine started in 2.177s
+[2m2025-08-08T05:06:00Z[0m app[784e2e9a999e18] [32msea[0m [[34minfo[0m]2025/08/08 05:06:00 INFO SSH listening listen_address=[fdaa:20:8401:a7b:105:8333:22fa:2]:22

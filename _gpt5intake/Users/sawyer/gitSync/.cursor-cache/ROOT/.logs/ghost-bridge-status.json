@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-08-08T15:29:48.865Z",
+  "status": "running",
+  "patchDetectionStats": {
+    "totalExtracted": 0,
+    "lastExtractionTime": 0,
+    "extractionFailures": 0,
+    "lastExtractionFailureTime": 0
+  },
+  "errorCount": 0,
+  "uptime": 30
+}
