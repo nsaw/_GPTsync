@@ -96,21 +96,11 @@ Make sure your environment has these variables set:
 
 ```bash
 # Slack Configuration
-SLACK_BOT_TOKEN=xoxb-your-bot-token
-SLACK_APP_TOKEN=xapp-1-A0993AM77HC-9314802706357-94b1344c346eaacb4e32389bb340d68ac64e96235cc67345dc67a0c125d2d53b
-SLACK_SIGNING_SECRET=your-signing-secret
-SLACK_CLIENT_ID=your-client-id
-SLACK_CLIENT_SECRET=your-client-secret
 
-# Your provided tokens
-ACCESS_TOKEN="xoxe.xoxp-1-Mi0yLTkxNzU2MzI3ODc0MDgtOTE3NTYzMjgxODc1Mi05MTU2ODcyODMwMzg2LTkzMzg0OTI1NDU5MDQtN2ZiYjQ1NGZkZTFjM2E4NDE1MTMzNDhkYWNkYjVhNjAxNDQ2YmI4MzY3ZWM2ZDNlODY5ZjY1NTAyZDY1ZTQyMg"
-REFRESH_TOKEN="xoxe-1-My0xLTkxNzU2MzI3ODc0MDgtOTE1Njg3MjgzMDM4Ni05MzM4NDkyNTUxMDQwLWI4Yzg3YzkzZTAyYmZjZTFkNjA3MGFjYjQ2YjNkODAzZTdhNDJlNjM3YmE4ZDU4YmMxNDM5M2I3ZTc3MGIyNDQ"
-```
 
 ## 📋 App Information
 
-- **App ID**: `A0993AM77HC`
-- **App Token**: `xapp-1-A0993AM77HC-9314802706357-94b1344c346eaacb4e32389bb340d68ac64e96235cc67345dc67a0c125d2d53b`
+
 - **Base URL**: `https://gpt-cursor-runner.fly.dev`
 
 ## 🎉 Status: READY FOR SLACK INTEGRATION
