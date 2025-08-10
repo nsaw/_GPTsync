@@ -80,6 +80,11 @@
     "mtime": 1753742332
   },
   {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/.env",
+    "size": 8385,
+    "mtime": 1754798399
+  },
+  {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/CONTRIBUTING.md",
     "size": 5594,
     "mtime": 1753742332
@@ -3051,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 21675808,
-    "mtime": 1754798764
+    "size": 21676256,
+    "mtime": 1754798805
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -39993,10 +39998,5 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/onlineManager.js",
     "size": 1483,
     "mtime": 1754636782
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/hydration.d.ts",
-    "size": 262,
-    "mtime": 1754636783
   }
 ]
