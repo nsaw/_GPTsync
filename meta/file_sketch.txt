@@ -109,7 +109,7 @@
 ./config/super_autolinter_config.json 1172 1754587778
 ./config/nginx.conf 1312 1753694124
 ./config/dashboard.env 268 1754886290
-./config/ecosystem.config.js 10044 1754951715
+./config/ecosystem.config.js 10044 1754952739
 ./config/ecosystem.config.js.bak 9875 1754773096
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
@@ -250,7 +250,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2866 1754890285
 ./env.template 9454 1754815601
-./.tarignore 366 1754951722
+./.tarignore 366 1754952739
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
@@ -1329,10 +1329,10 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754952709
+./.git/index 395875 1754952740
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1754952546
+./.git/FETCH_HEAD 1407 1754952751
 ./jest.config.js.bak 322 1754773096
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
