@@ -1110,7 +1110,7 @@ M  dashboard/start.sh
 M  dashboard/static/monitor.js
 M  dashboard/styles/alerts.css
 M  dashboard/templates/dashboard.html
- M dashboard/templates/index-nextgen.html
+M  dashboard/templates/index-nextgen.html
 M  dashboard/templates/index.html
 M  dashboard/templates/monitor-enhanced.html
 M  dashboard_daemon.py
