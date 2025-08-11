@@ -38,8 +38,8 @@
 ./patch-metrics.json 223 1754587778
 ./test-dashboard.spec.js.bak 1417 1754955671
 ./.ghost-relay.log 7943144 1753233799
-./index.html 34517 1754956154
-./.DS_Store 36868 1754956164
+./index.html 49691 1754956179
+./.DS_Store 36868 1754956209
 ./core/webhook-handler.js 4295 1754955672
 ./core/webhook-thoughtmarks-server.js 14216 1754955672
 ./core/start-MAIN.sh 4866 1754955671
@@ -336,7 +336,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13336973 1754956152
+./logs/watchdog-tunnel.log 13337265 1754956213
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -348,7 +348,7 @@
 ./logs/metrics-aggregator-daemon-out-13.log 1480 1754677396
 ./logs/telemetry-api-error-14.log 0 1754603524
 ./logs/metrics-aggregator-daemon-combined-11.log 1321709 1754942916
-./logs/.DS_Store 8196 1754956164
+./logs/.DS_Store 8196 1754956204
 ./logs/ghost-runner-out-2.log 3152 1754636801
 ./logs/cloudflare-tunnel.log 320981 1753672474
 ./logs/cloudflared.ingress.validate.log 81 1754641826
@@ -794,7 +794,7 @@
 ./scripts/ghost-venv-fix.sh 429 1754955671
 ./scripts/system-log-health-audit.sh.bak 1103 1754955669
 ./scripts/test-all-daemons.sh.bak 6542 1754955669
-./scripts/.DS_Store 20484 1754956140
+./scripts/.DS_Store 20484 1754956169
 ./scripts/role-aware-router.js 207 1754955704
 ./scripts/test-1password-integration.sh 2290 1754955671
 ./scripts/test-yaml-patch-detection.js 8689 1754955704
@@ -1344,12 +1344,12 @@
 ./gpt_cursor_runner.egg-info/dependency_links.txt 1 1752865091
 ./integration_test_p7.ts 12926 1754955672
 ./.env.backup.20250810_212329 4315 1754886209
-./.git/.DS_Store 6148 1754956140
+./.git/.DS_Store 6148 1754956209
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395979 1754956155
+./.git/index 396083 1754956207
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754956125
