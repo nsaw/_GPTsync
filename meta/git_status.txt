@@ -1,4 +1,4 @@
-M  .DS_Store
+MM .DS_Store
 A  .archive/legacy/ecosystem.config.js
 M  .cursor-config.json
 M  .eslintrc.js
@@ -1107,9 +1107,11 @@ M  dashboard/components/ui/SystemHealthPanel.tsx
 M  dashboard/components/ui/index.ts
 A  dashboard/log-reader.json
 M  dashboard/start.sh
+A  dashboard/static/g2o_monitor.js
 M  dashboard/static/monitor.js
 M  dashboard/styles/alerts.css
 M  dashboard/templates/dashboard.html
+A  dashboard/templates/g2o_monitor.html
 M  dashboard/templates/index-nextgen.html
 M  dashboard/templates/index.html
 M  dashboard/templates/monitor-enhanced.html
