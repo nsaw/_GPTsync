@@ -1,7 +1,7 @@
 {
   "ts": "",
   "priority_patch_964": {
-    "in_root": false,
+    "in_root": true,
     "completed": false
   },
   "surgical_fixes": {
