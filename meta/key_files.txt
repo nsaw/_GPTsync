@@ -1,0 +1,2 @@
+/Users/sawyer/gitSync/gpt-cursor-runner/package.json
+/Users/sawyer/gitSync/gpt-cursor-runner/tsconfig.json
