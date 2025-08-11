@@ -38,7 +38,7 @@
 ./test-dashboard.spec.js.bak 1417 1754955671
 ./.ghost-relay.log 7943144 1753233799
 ./index.html 34517 1754262482
-./.DS_Store 36868 1754955785
+./.DS_Store 36868 1754955824
 ./core/webhook-handler.js 4295 1754955672
 ./core/webhook-thoughtmarks-server.js 14216 1754955672
 ./core/start-MAIN.sh 4866 1754955671
@@ -260,7 +260,7 @@
 ./README.md 3382 1754193655
 ./fix_dev_env_urls.sh 2812 1754955671
 ./.env.backup.20250811_124739 4429 1754941659
-./dashboard/.DS_Store 10244 1754942164
+./dashboard/.DS_Store 10244 1754955837
 ./dashboard/requirements.txt 43 1753694124
 ./dashboard/log-reader.json 225 1754955499
 ./dashboard/start.sh.bak 826 1754955669
@@ -335,7 +335,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13335221 1754955784
+./logs/watchdog-tunnel.log 13335513 1754955845
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1348,7 +1348,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395979 1754955795
+./.git/index 395979 1754955836
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754955743
