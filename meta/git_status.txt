@@ -39,13 +39,13 @@ A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runn
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/doc-daemon.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/enhanced-doc-daemon.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/metrics-aggregator-daemon.js
-A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-api.js
+AM _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-api.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-orchestrator-daemon.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-orchestrator.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-patch-relay.ts
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-relay.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-unified-daemon.js
-A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-viewer.js
+AM _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-viewer.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/integrate-with-gpt-runner.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/repair-ghost-bridge-viewer.sh
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/route-summary.js
@@ -60,7 +60,7 @@ A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runn
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-dashboard.sh
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-delivery-system.sh
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-endpoints.sh
-A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-executor-pause-processed-summary.js
+AM _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-executor-pause-processed-summary.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-executor.py
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-ghost-relay.sh
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-ghost-status.sh
@@ -681,7 +681,7 @@ A  _gpt5intake/_meta/deps/mobile-native-fresh-npm-ls.txt
 A  _gpt5intake/_meta/deps/tm-mobile-cursor-pip-freeze.txt
 A  _gpt5intake/_meta/env_vars.txt
 A  _gpt5intake/_meta/missing-notes.txt
-A  _gpt5intake/_meta/pm2_jlist.json
+AM _gpt5intake/_meta/pm2_jlist.json
 A  _gpt5intake/_meta/pm2_list.txt
 A  _gpt5intake/_meta/samples/Users/sawyer/gitSync/gpt-cursor-runner/README.md
 A  _gpt5intake/_meta/samples/Users/sawyer/gitSync/gpt-cursor-runner/_gpt5intake/README.md
@@ -745,7 +745,7 @@ A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scr
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/monitor/dual-monitor-server.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/repair-cf-tunnel.sh
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/tunnels/gpt-cf-run.sh
-A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/unified-patch-monitor.js
+AM _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/unified-patch-monitor.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-components.sh
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-daemon-health.sh
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-dashboard.sh
@@ -901,13 +901,13 @@ A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/doc-daemon.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/enhanced-doc-daemon.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/metrics-aggregator-daemon.js
-A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-api.js
+AM _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-api.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-orchestrator-daemon.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/daemons/telemetry-orchestrator.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-patch-relay.ts
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-relay.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-unified-daemon.js
-A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-viewer.js
+AM _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/ghost-viewer.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/integrate-with-gpt-runner.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/repair-ghost-bridge-viewer.sh
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/ghost/route-summary.js
@@ -930,9 +930,9 @@ A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-patch-runner.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-patch-watchers.sh
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-performance.sh
-A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-pm2-restart-heartbeats.js
+AM _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-pm2-restart-heartbeats.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-roles.sh
-A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-rotation-slack-watchdog-main-cyops.js
+AM _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-rotation-slack-watchdog-main-cyops.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-runtime.sh
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/validate-summary-writes.sh
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/scripts/watchdogs/alert-engine-daemon-watchdog.sh
@@ -1044,7 +1044,7 @@ A  _gpt5intake/surgical-ghost/MAIN/validation/ULTRA-VALIDATION-README.md
 A  _gpt5intake/surgical-ghost/MAIN/validation/run-maestro-tests.sh
 A  _gpt5intake/surgical-ghost/MAIN/validation/strict-runtime-validation.cjs
 A  _gpt5intake/surgical-ghost/MAIN/validation/ultra-runtime-validation.sh
-A  _gpt5intake/surgical-ghost/MAIN/validation/validate-ui-integration.js
+AM _gpt5intake/surgical-ghost/MAIN/validation/validate-ui-integration.js
 A  alert-engine-dashboard-fix-summary.md
 M  analytics/predict.json
 D  assets/1C2023C0-CDBC-4A88-B9D3-F7EBCB4E6ADA.PNG
@@ -1430,7 +1430,7 @@ M  scripts/daemons/autonomous-decision-daemon.js
 M  scripts/daemons/doc-daemon.js
 M  scripts/daemons/enhanced-doc-daemon.js
 M  scripts/daemons/metrics-aggregator-daemon.js
-A  scripts/daemons/telemetry-api.js
+AM scripts/daemons/telemetry-api.js
 M  scripts/daemons/telemetry-orchestrator-daemon.js
 M  scripts/daemons/telemetry-orchestrator.js
 M  scripts/deploy-advanced-systems.sh
@@ -1495,7 +1495,7 @@ M  scripts/ghost-verification-ping.sh
 M  scripts/ghost/ghost-patch-relay.ts
 M  scripts/ghost/ghost-relay.js
 M  scripts/ghost/ghost-unified-daemon.js
-A  scripts/ghost/ghost-viewer.js
+AM scripts/ghost/ghost-viewer.js
 M  scripts/ghost/integrate-with-gpt-runner.js
 M  scripts/ghost/repair-ghost-bridge-viewer.sh
 M  scripts/ghost/route-summary.js
@@ -1638,7 +1638,7 @@ M  scripts/tunnel-tracer-diagnostic.sh
 M  scripts/tunnel/launch-viewer-tunnel.js
 A  scripts/tunnels/check-and-failover.sh
 A  scripts/tunnels/gpt-cf-run.sh
-A  scripts/unified-patch-monitor.js
+AM scripts/unified-patch-monitor.js
 M  scripts/unified-patch-router.js
 M  scripts/update-all-tunnel-configs.sh
 M  scripts/update-slack-app-manifest.sh
@@ -1651,7 +1651,7 @@ M  scripts/validate-daemon-health.sh
 M  scripts/validate-dashboard.sh
 M  scripts/validate-delivery-system.sh
 M  scripts/validate-endpoints.sh
-A  scripts/validate-executor-pause-processed-summary.js
+AM scripts/validate-executor-pause-processed-summary.js
 A  scripts/validate-executor.py
 M  scripts/validate-ghost-relay.sh
 M  scripts/validate-ghost-status.sh
@@ -1659,7 +1659,7 @@ A  scripts/validate-log-failure-and-stuck.js
 A  scripts/validate-patch-runner.js
 M  scripts/validate-patch-watchers.sh
 M  scripts/validate-performance.sh
-A  scripts/validate-pm2-restart-heartbeats.js
+AM scripts/validate-pm2-restart-heartbeats.js
 M  scripts/validate-roles.sh
 A  scripts/validate-rotation-slack-watchdog-main-cyops.js
 M  scripts/validate-runtime.sh
@@ -1748,7 +1748,7 @@ M  server/handlers/handlePatchRevert.js
 M  server/handlers/handlePauseRunner.js
 M  server/handlers/handleProceed.js
 M  server/handlers/handleReserved1.js
-M  server/handlers/handleReserved2.js
+MM server/handlers/handleReserved2.js
 M  server/handlers/handleRestartRunner.js
 M  server/handlers/handleRevertPhase.js
 M  server/handlers/handleRoadmap.js
@@ -1779,13 +1779,13 @@ M  server/middleware/validateSlackWebhook.js
 M  server/middleware/validation.js
 M  server/patchRouter.js
 M  server/routes/api.js
-M  server/routes/slack.js
+MM server/routes/slack.js
 M  server/slack-app.js
 M  server/socketModeHandler.js
 M  server/status-server.js
 M  server/utils/patchManager.js
 M  server/utils/runnerController.js
-M  server/utils/stateManager.js
+MM server/utils/stateManager.js
 M  services/registry/index.js
 M  services/registry/registry.json
 M  services/relay/index.js
@@ -1962,3 +1962,4 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? scripts/monitor/handoff_close_the_loop.sh
