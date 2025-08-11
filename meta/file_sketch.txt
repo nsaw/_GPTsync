@@ -96,7 +96,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754950334
-./config/logs.json 158 1754951295
+./config/logs.json 158 1754951629
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -109,7 +109,7 @@
 ./config/super_autolinter_config.json 1172 1754587778
 ./config/nginx.conf 1312 1753694124
 ./config/dashboard.env 268 1754886290
-./config/ecosystem.config.js 10044 1754951582
+./config/ecosystem.config.js 10044 1754951606
 ./config/ecosystem.config.js.bak 9875 1754773096
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
@@ -250,7 +250,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2866 1754890285
 ./env.template 9454 1754815601
-./.tarignore 366 1754951446
+./.tarignore 366 1754951605
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
@@ -258,7 +258,7 @@
 ./.env.backup.20250811_124739 4429 1754941659
 ./dashboard/.DS_Store 10244 1754942164
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754951295
+./dashboard/log-reader.json 225 1754951629
 ./dashboard/start.sh.bak 826 1754773095
 ./dashboard/app.py 38371 1754809312
 ./dashboard/app.py.bak 38348 1754773095
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754951584
+./.git/index 395875 1754951630
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754951330
