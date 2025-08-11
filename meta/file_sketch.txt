@@ -96,7 +96,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754954680
-./config/logs.json 158 1754954589
+./config/logs.json 158 1754955490
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -258,7 +258,7 @@
 ./.env.backup.20250811_124739 4429 1754941659
 ./dashboard/.DS_Store 10244 1754942164
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754954590
+./dashboard/log-reader.json 225 1754955490
 ./dashboard/start.sh.bak 826 1754773095
 ./dashboard/app.py 38371 1754809312
 ./dashboard/app.py.bak 38348 1754773095
@@ -329,7 +329,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13333761 1754955405
+./logs/watchdog-tunnel.log 13334053 1754955466
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754955029
+./.git/index 395875 1754955491
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754955293
@@ -1379,7 +1379,7 @@
 ./performance_monitor_clean.py.bak 26946 1754773095
 ./analytics/predict.json 17 1754587778
 ./pm2/ecosystem.g2o.p1.config.js 492 1754952817
-./pm2/pm2-defaults.json 72 1754954560
+./pm2/pm2-defaults.json 72 1754955477
 ./pm2/ecosystem.config.js 478 1754954680
 ./simple_flask_server.py.bak 1613 1754773095
 ./debug-config.sh.bak 1257 1754773095
