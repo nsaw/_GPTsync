@@ -250,7 +250,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2866 1754890285
 ./env.template 9454 1754815601
-./.tarignore 366 1754953733
+./.tarignore 366 1754953738
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754953733
+./.git/index 395875 1754953736
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754953523
