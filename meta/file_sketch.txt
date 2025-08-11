@@ -113,7 +113,7 @@
 ./config/ecosystem.config.js.bak 9875 1754773096
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
-./config/failover.json 547 1754946965
+./config/failover.json 547 1754951400
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
 ./_gpt5intake/.DS_Store 10244 1754942169
@@ -250,7 +250,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2866 1754890285
 ./env.template 9454 1754815601
-./.tarignore 366 1754951370
+./.tarignore 366 1754951380
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754951371
+./.git/index 395875 1754951401
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754951330
