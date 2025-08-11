@@ -49,7 +49,7 @@
 ./patch_executor_daemon.py.bak 29705 1754773095
 ./.env.development.backup.20250810_213210 4692 1754886730
 ./braun_daemon.py.bak 9060 1754773095
-./test-dashboard.spec.js 1417 1754890134
+./test-dashboard.spec.js 1417 1754955667
 ./LICENSE 1063 1753694124
 ./fix_template_files.sh 3536 1754887135
 ./requirements.txt 81 1754525883
@@ -89,14 +89,14 @@
 ./tmp_test_target.tsx.bak_20250718_145604 198 1752875764
 ./config/slack-app-manifest-thoughtmarks.app.yaml 7036 1754939737
 ./config/ecosystem.config.js.bak_20250808_114237 8537 1754678557
-./config/policy.json 1164 1754890036
+./config/policy.json 1164 1754955667
 ./config/tunnel-config.yml 549 1754442771
 ./config/production.js.bak 421 1754773097
 ./config/webhook-thoughtmarks.env.backup 981 1754773017
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754955577
-./config/logs.json 158 1754955499
+./config/logs.json 174 1754955662
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -113,7 +113,7 @@
 ./config/ecosystem.config.js.bak 9875 1754773096
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
-./config/failover.json 547 1754952624
+./config/failover.json 597 1754955661
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
 ./_gpt5intake/.DS_Store 10244 1754942169
@@ -248,7 +248,7 @@
 ./test-health.sh 582 1754773096
 ./playwright.config.ts.bak 668 1754773096
 ./.cursorrules 1495 1754359937
-./validate-dashboard.js 2866 1754890285
+./validate-dashboard.js 2866 1754955667
 ./env.template 9454 1754815601
 ./.tarignore 366 1754954635
 ./scan-results/README.md 1916 1754031827
@@ -329,7 +329,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13334345 1754955571
+./logs/watchdog-tunnel.log 13334637 1754955633
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -789,7 +789,7 @@
 ./scripts/.DS_Store 18436 1754942164
 ./scripts/role-aware-router.js 207 1754773098
 ./scripts/test-1password-integration.sh 2290 1754773096
-./scripts/test-yaml-patch-detection.js 8556 1754611224
+./scripts/test-yaml-patch-detection.js 8688 1754955663
 ./scripts/telemetry-orchestrator.js.bak 8177 1754773096
 ./scripts/summary-monitor copy.js 898 1754773098
 ./scripts/repair-cf-tunnel.sh 2172 1754773096
@@ -865,9 +865,9 @@
 ./scripts/typescript-zero-errors-summary.md 5259 1754340972
 ./scripts/fix-all-remaining-errors.js.bak 5295 1754773096
 ./scripts/validate-ghost-relay.sh.bak 1983 1754773095
-./scripts/validate-patch-runner.js 3472 1754625677
+./scripts/validate-patch-runner.js 3472 1754955667
 ./scripts/verify_slack_commands.js 2584 1754773098
-./scripts/validate-rotation-slack-watchdog-main-cyops.js 3357 1754626950
+./scripts/validate-rotation-slack-watchdog-main-cyops.js 3357 1754955667
 ./scripts/validate-runtime.sh 1219 1754773097
 ./scripts/start_self_regulating_system.sh.bak 12005 1754773095
 ./scripts/alert-engine.js.bak 8960 1754773096
@@ -889,7 +889,7 @@
 ./scripts/postSummaryAutofill.js 21789 1754773098
 ./scripts/start-fly-deployment.sh 3699 1754773097
 ./scripts/ghost-dispatch.js 1183 1754773098
-./scripts/validate-pm2-restart-heartbeats.js 2241 1754630054
+./scripts/validate-pm2-restart-heartbeats.js 2345 1754955668
 ./scripts/ghost-route-status-server.sh 602 1754773097
 ./scripts/fire-escape.sh 137 1754773096
 ./scripts/kill-zombies.js 1244 1754773098
@@ -926,7 +926,7 @@
 ./scripts/README.md 4709 1753993158
 ./scripts/reliable-status.js 8922 1754773098
 ./scripts/heartbeat-monitor.js.bak 582 1754773096
-./scripts/unified-patch-monitor.js 14574 1754626534
+./scripts/unified-patch-monitor.js 15115 1754955668
 ./scripts/launch-all-systems.sh.bak 620 1754773030
 ./scripts/register-all-slack-commands.sh.bak 1670 1754773095
 ./scripts/monitor-core.js.bak 2002 1754773096
@@ -942,7 +942,7 @@
 ./scripts/monitor-core.js 2002 1754773098
 ./scripts/test_slack_command.py.bak 2494 1754769479
 ./scripts/replace-tilde-paths.sh 1425 1754773096
-./scripts/validate-log-failure-and-stuck.js 3776 1754629531
+./scripts/validate-log-failure-and-stuck.js 3776 1754955667
 ./scripts/accurate-patch-status.js 11657 1754773098
 ./scripts/start-cyops.js.bak 151 1754773096
 ./scripts/tail-monitor-loop.js 1171 1754773098
@@ -1071,7 +1071,7 @@
 ./scripts/launch-all-systems.sh 620 1754773096
 ./scripts/ghost-bridge-fallback.sh.bak 1009 1754773095
 ./scripts/ghost-venv-fix.sh.bak 429 1754773095
-./scripts/validate-executor-pause-processed-summary.js 3637 1754630054
+./scripts/validate-executor-pause-processed-summary.js 3714 1754955668
 ./scripts/postSummaryAutofill.js.bak 21789 1754773096
 ./scripts/update-all-tunnel-configs.sh.bak 10788 1754773095
 ./scripts/spawnSafe.js.bak 239 1754773096
@@ -1270,7 +1270,7 @@
 ./gpt_cursor_runner/patch_reverter.py 11746 1754785922
 ./gpt_cursor_runner/request_validator.py 16575 1754773097
 ./gpt_cursor_runner/error_recovery.py.bak 15159 1754773095
-./gpt_cursor_runner/rate_limiter.py 11186 1754773097
+./gpt_cursor_runner/rate_limiter.py 11186 1754955669
 ./gpt_cursor_runner/__init__.py 627 1754773097
 ./gpt_cursor_runner/patch_metrics.py 10482 1754942351
 ./gpt_cursor_runner/webhook_handler.py 10193 1754773097
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754955578
+./.git/index 395875 1754955669
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754955540
@@ -1337,7 +1337,7 @@
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
 ./patch_executor_daemon.py 29728 1754773097
-./test-results/.last-run.json 45 1754890256
+./test-results/.last-run.json 45 1754955667
 ./enhanced_braun_daemon.py 14591 1754773097
 ./debug-backend.sh 1265 1754773096
 ./braun_patch_processor.py 4300 1754773097
@@ -1378,9 +1378,9 @@
 ./env.example 1788 1754938306
 ./performance_monitor_clean.py.bak 26946 1754773095
 ./analytics/predict.json 17 1754587778
-./pm2/ecosystem.g2o.p1.config.js 492 1754952817
+./pm2/ecosystem.g2o.p1.config.js 507 1754955661
 ./pm2/pm2-defaults.json 72 1754955477
-./pm2/ecosystem.config.js 478 1754955577
+./pm2/ecosystem.config.js 478 1754955667
 ./simple_flask_server.py.bak 1613 1754773095
 ./debug-config.sh.bak 1257 1754773095
 ./src/.DS_Store 6148 1754708957
