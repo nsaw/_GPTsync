@@ -32,13 +32,14 @@
 ./fix_linting_errors.sh 3990 1754955671
 ./phase3_ml_monitor.py.bak 14723 1754955669
 ./temp/tmp_test_target.tsx.bak_20250718_115406 198 1752864846
+./.archive/.DS_Store 6148 1754956140
 ./tasks/.DS_Store 8196 1753766359
 ./fix_template_files.sh.bak 3536 1754955669
 ./patch-metrics.json 223 1754587778
 ./test-dashboard.spec.js.bak 1417 1754955671
 ./.ghost-relay.log 7943144 1753233799
-./index.html 34517 1754262482
-./.DS_Store 36868 1754955824
+./index.html 34517 1754956154
+./.DS_Store 36868 1754956164
 ./core/webhook-handler.js 4295 1754955672
 ./core/webhook-thoughtmarks-server.js 14216 1754955672
 ./core/start-MAIN.sh 4866 1754955671
@@ -55,7 +56,7 @@
 ./LICENSE 1063 1753694124
 ./fix_template_files.sh 3536 1754955671
 ./requirements.txt 81 1754525883
-./test/.DS_Store 6148 1754942164
+./test/.DS_Store 6148 1754956135
 ./test/test-confirm-patch-4.ts.bak 80 1754955671
 ./test/test-confirm-patch-4.ts 80 1754955672
 ./test/test-confirm-patch-5.ts 80 1754955672
@@ -118,7 +119,7 @@
 ./config/failover.json 597 1754955661
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
-./_gpt5intake/.DS_Store 10244 1754942169
+./_gpt5intake/.DS_Store 10244 1754956145
 ./_gpt5intake/_gpt5intake.tar.gz 17877727 1754690835
 ./_gpt5intake/_core-scripts-recursive.tar.gz 231331 1754693656
 ./_gpt5intake/DESIRED_STATE.md 331 1754677463
@@ -157,7 +158,7 @@
 ./patches/patch-v3.4.3(P4.04.00)_ghost-self-bootstrap-daemon.json 4580 1753683074
 ./patches/stress-test-1753771657971-5.json 733 1753771657
 ./.patchrc 1482 1753694124
-./.ruff_cache/.DS_Store 6148 1754942164
+./.ruff_cache/.DS_Store 6148 1754956140
 ./.ruff_cache/CACHEDIR.TAG 43 1751862066
 ./.ruff_cache/.gitignore 35 1751862066
 ./k8s/.DS_Store 6148 1754262850
@@ -170,7 +171,7 @@
 ./jest.config.js 322 1754955672
 ./cyops_daemon.py 8776 1754955671
 ./pyproject.toml 2914 1754421669
-./node_modules/.DS_Store 106500 1754942169
+./node_modules/.DS_Store 106500 1754956145
 ./node_modules/.package-lock.json 375720 1754889924
 ./test-monitor.js 937 1754955672
 ./tests/test6.txt 5 1753760512
@@ -212,7 +213,7 @@
 ./server/slack-app.js.bak 1214 1754955671
 ./server/status-server.js 1522 1754955672
 ./server/patchRouter.js.bak 5897 1754955671
-./server/.DS_Store 6148 1754942164
+./server/.DS_Store 6148 1754956140
 ./server/slack-app.js 1214 1754955672
 ./server/index.js 1307 1754955672
 ./server/index.js.bak 1307 1754955671
@@ -260,7 +261,7 @@
 ./README.md 3382 1754193655
 ./fix_dev_env_urls.sh 2812 1754955671
 ./.env.backup.20250811_124739 4429 1754941659
-./dashboard/.DS_Store 10244 1754955889
+./dashboard/.DS_Store 10244 1754956140
 ./dashboard/requirements.txt 43 1753694124
 ./dashboard/log-reader.json 225 1754955499
 ./dashboard/start.sh.bak 826 1754955669
@@ -335,7 +336,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13336681 1754956091
+./logs/watchdog-tunnel.log 13336973 1754956152
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -347,7 +348,7 @@
 ./logs/metrics-aggregator-daemon-out-13.log 1480 1754677396
 ./logs/telemetry-api-error-14.log 0 1754603524
 ./logs/metrics-aggregator-daemon-combined-11.log 1321709 1754942916
-./logs/.DS_Store 8196 1754942169
+./logs/.DS_Store 8196 1754956164
 ./logs/ghost-runner-out-2.log 3152 1754636801
 ./logs/cloudflare-tunnel.log 320981 1753672474
 ./logs/cloudflared.ingress.validate.log 81 1754641826
@@ -793,7 +794,7 @@
 ./scripts/ghost-venv-fix.sh 429 1754955671
 ./scripts/system-log-health-audit.sh.bak 1103 1754955669
 ./scripts/test-all-daemons.sh.bak 6542 1754955669
-./scripts/.DS_Store 18436 1754942164
+./scripts/.DS_Store 20484 1754956140
 ./scripts/role-aware-router.js 207 1754955704
 ./scripts/test-1password-integration.sh 2290 1754955671
 ./scripts/test-yaml-patch-detection.js 8689 1754955704
@@ -1219,7 +1220,7 @@
 ./.eslintrc.js 1171 1754955672
 ./.shellrc.bak 810 1754670763
 ./fix_linting_precise.sh 7101 1754955670
-./src-nextgen/.DS_Store 8196 1754708957
+./src-nextgen/.DS_Store 8196 1754956140
 ./templates/thoughtpilot-free.env 840 1754030415
 ./templates/README.md 2036 1754030713
 ./templates/thoughtpilot-enterprise.env 2194 1754030488
@@ -1343,15 +1344,15 @@
 ./gpt_cursor_runner.egg-info/dependency_links.txt 1 1752865091
 ./integration_test_p7.ts 12926 1754955672
 ./.env.backup.20250810_212329 4315 1754886209
-./.git/.DS_Store 6148 1754708957
+./.git/.DS_Store 6148 1754956140
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395979 1754955987
+./.git/index 395979 1754956155
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1754955943
+./.git/FETCH_HEAD 1407 1754956125
 ./jest.config.js.bak 322 1754955671
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
