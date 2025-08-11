@@ -96,7 +96,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754952481
-./config/logs.json 158 1754951629
+./config/logs.json 158 1754952685
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -125,7 +125,7 @@
 ./_gpt5intake/_core-scripts.tar.gz 14934 1754692619
 ./.pre-commit-config.yaml 3957 1754587721
 ./patch-log.json 765 1753184131
-./.phase_audit/P0.GREEN 1 1754951731
+./.phase_audit/P0.GREEN 1 1754952708
 ./Dockerfile 536 1754600030
 ./Makefile 48 1753694124
 ./debug-backend.sh.bak 1265 1754773095
@@ -258,7 +258,7 @@
 ./.env.backup.20250811_124739 4429 1754941659
 ./dashboard/.DS_Store 10244 1754942164
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754951629
+./dashboard/log-reader.json 225 1754952685
 ./dashboard/start.sh.bak 826 1754773095
 ./dashboard/app.py 38371 1754809312
 ./dashboard/app.py.bak 38348 1754773095
@@ -1329,7 +1329,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 395875 1754952654
+./.git/index 395875 1754952709
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754952546
