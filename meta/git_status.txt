@@ -1068,7 +1068,7 @@ M  components/dashboard/sections/TunnelStatusGrid.js
 D  comprehensive_syntax_fix.py
 M  config/config.json
 M  config/ecosystem.config.js
-A  config/failover.json
+AM config/failover.json
 M  config/feature-bundle_ui-dashboard_slash-preview_release.json
 A  config/logs.json
 M  config/performance_monitor_config.json
