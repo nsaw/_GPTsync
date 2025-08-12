@@ -7,6 +7,7 @@ M  .github/workflows/ci.yml
 M  .gitignore
 A  .gitignore.executable
 M  .markdownlint.json
+A  .phase_audit/P0.GREEN
 M  .pre-commit-config.yaml
 M  .tarignore
 M  Dockerfile
