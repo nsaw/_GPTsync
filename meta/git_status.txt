@@ -1460,7 +1460,7 @@ M  scripts/doc/doc-runner.js
 M  scripts/dual-view-monitor.js
 D  scripts/dualMonitor.js
 M  scripts/enhanced-document-daemon.js
-M  scripts/enhanced-patch-validator.js
+MM scripts/enhanced-patch-validator.js
 M  scripts/error-handling/comprehensive_error_fix.py
 M  scripts/error-handling/critical_syntax_fixer.py
 M  scripts/error-handling/efficient_syntax_fixer.py
@@ -1548,7 +1548,7 @@ D  scripts/orchestrator-server.js
 D  scripts/orchestrator.js
 M  scripts/patch-executor-simple.js
 M  scripts/patch-executor.bak.js
-M  scripts/patch-executor.js
+MM scripts/patch-executor.js
 M  scripts/patch-format-converter.js
 M  scripts/patch-relay-main.js
 M  scripts/patch-validation-loop.js
@@ -1691,7 +1691,7 @@ M  scripts/validate/full-validator.js
 M  scripts/validate/system-validation.js
 M  scripts/validate/trigger-summary-repair.js
 M  scripts/validate/validate-ghost-tunnel.sh
-M  scripts/validate/validation-runner.js
+MM scripts/validate/validation-runner.js
 M  scripts/validate/visual-ai-check.sh
 M  scripts/vault-to-env.sh
 M  scripts/verify_slack_commands.js
