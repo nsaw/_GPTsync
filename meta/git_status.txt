@@ -1092,7 +1092,7 @@ M  cyops_daemon.py
 M  dashboard/api/__init__.py
 M  dashboard/api/orchestrator.py
 M  dashboard/api/status.py
-M  dashboard/app.py
+MM dashboard/app.py
 M  dashboard/components/hooks/index.ts
 M  dashboard/components/hooks/useDaemonHealth.ts
 M  dashboard/components/hooks/useLogStream.ts
@@ -2002,7 +2002,9 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? config/STRICT_TICKER.json
 ?? public/g2o-monitor.html
+?? scripts/pm2/
 ?? scripts/validators/
 ?? scripts/visual-validation-summarize.sh
 ?? tests/playwright/
