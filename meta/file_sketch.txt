@@ -39,7 +39,7 @@
 ./test-dashboard.spec.js.bak 1417 1754955671
 ./.ghost-relay.log 7943144 1753233799
 ./index.html 49691 1754956179
-./.DS_Store 36868 1754957699
+./.DS_Store 36868 1754957742
 ./core/webhook-handler.js 4295 1754955672
 ./core/webhook-thoughtmarks-server.js 14216 1754955672
 ./core/start-MAIN.sh 4866 1754955671
@@ -254,7 +254,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2878 1754955676
 ./env.template 9454 1754815601
-./.tarignore 366 1754957648
+./.tarignore 366 1754957713
 ./fix_linting_errors.sh.bak 3990 1754955669
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
@@ -348,7 +348,7 @@
 ./logs/metrics-aggregator-daemon-out-13.log 1480 1754677396
 ./logs/telemetry-api-error-14.log 0 1754603524
 ./logs/metrics-aggregator-daemon-combined-11.log 1321709 1754942916
-./logs/.DS_Store 8196 1754957699
+./logs/.DS_Store 8196 1754957734
 ./logs/ghost-runner-out-2.log 3152 1754636801
 ./logs/cloudflare-tunnel.log 320981 1753672474
 ./logs/cloudflared.ingress.validate.log 81 1754641826
@@ -1344,12 +1344,12 @@
 ./gpt_cursor_runner.egg-info/dependency_links.txt 1 1752865091
 ./integration_test_p7.ts 12926 1754955672
 ./.env.backup.20250810_212329 4315 1754886209
-./.git/.DS_Store 6148 1754957699
+./.git/.DS_Store 6148 1754957742
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396283 1754957700
+./.git/index 396283 1754957743
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754957652
