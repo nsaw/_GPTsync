@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24178000,
-    "mtime": 1755022927
+    "size": 24178336,
+    "mtime": 1755022957
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3432,7 +3432,7 @@
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.env.development.local",
     "size": 61,
-    "mtime": 1755022923
+    "mtime": 1755022936
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/tsconfig-temp.json",
