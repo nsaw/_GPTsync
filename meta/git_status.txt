@@ -1353,7 +1353,7 @@ A  pids/relay.pid
 A  pids/telemetry-api.pid
 A  pids/tunnel-restart-count.txt
 A  pids/tunnel-restart-time.txt
-A  playwright-report/index.html
+AM playwright-report/index.html
 A  playwright.config.js
 A  playwright.config.ts
 A  pm2/ecosystem.config.js
@@ -1924,7 +1924,7 @@ D  test-patch-gpt-interface.json
 D  test-patch-simple.json
 D  test-patch.json
 D  test-real-worker.txt
-A  test-results/.last-run.json
+AM test-results/.last-run.json
 D  test-unified-summaries.txt
 D  test.js
 D  test.txt
@@ -1970,4 +1970,11 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? playwright-report/data/
 ?? scripts/core/unified-ultra-validation.sh
+?? test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-chromium/
+?? test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-firefox/
+?? test-results/dashboard-green-state-Dash-811d6-ents-must-show-green-status-webkit/
+?? test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-chromium/
+?? test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-firefox/
+?? test-results/dashboard-green-state-Dash-db26d-e-accessible-and-responsive-webkit/
