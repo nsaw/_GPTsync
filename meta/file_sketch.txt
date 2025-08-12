@@ -112,11 +112,11 @@
 ./config/super_autolinter_config.json 1172 1754587778
 ./config/nginx.conf 1312 1753694124
 ./config/dashboard.env 268 1754886290
-./config/ecosystem.config.js 10044 1754964631
+./config/ecosystem.config.js 10044 1754964668
 ./config/ecosystem.config.js.bak 10044 1754958142
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
-./config/failover.json 547 1754961261
+./config/failover.json 547 1754964724
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
 ./_gpt5intake/.DS_Store 10244 1754958144
@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13370845 1754964558
+./logs/watchdog-tunnel.log 13371137 1754964696
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1350,10 +1350,10 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754964633
+./.git/index 396633 1754964669
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1754964396
+./.git/FETCH_HEAD 1407 1754964681
 ./jest.config.js.bak 322 1754958140
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
