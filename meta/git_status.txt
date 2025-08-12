@@ -2003,5 +2003,6 @@ M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
 ?? public/g2o-monitor.html
+?? scripts/validators/
 ?? scripts/visual-validation-summarize.sh
 ?? tests/playwright/
