@@ -98,7 +98,7 @@
 ./config/webhook-thoughtmarks.env.backup 981 1754773017
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
-./config/ports.json 112 1754959074
+./config/ports.json 0 1754960168
 ./config/logs.json 158 1754960074
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
@@ -112,7 +112,7 @@
 ./config/super_autolinter_config.json 1172 1754587778
 ./config/nginx.conf 1312 1753694124
 ./config/dashboard.env 268 1754886290
-./config/ecosystem.config.js 10044 1754960111
+./config/ecosystem.config.js 10044 1754960156
 ./config/ecosystem.config.js.bak 10044 1754958142
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
@@ -254,7 +254,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2878 1754958143
 ./env.template 9454 1754815601
-./.tarignore 366 1754959078
+./.tarignore 366 1754960131
 ./fix_linting_errors.sh.bak 3990 1754958140
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13351718 1754960102
+./logs/watchdog-tunnel.log 13351865 1754960147
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1350,10 +1350,10 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754960114
+./.git/index 396633 1754960168
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1754959968
+./.git/FETCH_HEAD 1407 1754960150
 ./jest.config.js.bak 322 1754958140
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
@@ -1403,7 +1403,7 @@
 ./pm2/executor.env 76 1754955675
 ./pm2/pm2-defaults.json 72 1754960036
 ./pm2/ecosystem.g2o.p1.config.js.bak 507 1754958142
-./pm2/ecosystem.config.js 478 1754959079
+./pm2/ecosystem.config.js 478 1754960166
 ./pm2/ecosystem.config.js.bak 602 1754958141
 ./simple_flask_server.py.bak 1636 1754958140
 ./debug-config.sh.bak 1257 1754958140
