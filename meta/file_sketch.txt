@@ -116,7 +116,7 @@
 ./config/ecosystem.config.js.bak 10044 1754984362
 ./config/phase3_ml_config.json 939 1754587778
 ./config/slack-app-manifest.yaml.bak 6923 1754939788
-./config/failover.json 547 1754984521
+./config/failover.json 547 1754984708
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
 ./_gpt5intake/.DS_Store 10244 1754974622
@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13452750 1754984628
+./logs/watchdog-tunnel.log 13452897 1754984663
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
