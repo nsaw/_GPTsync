@@ -2007,6 +2007,7 @@ D  yarn.lock
 ?? scripts/p0/
 ?? scripts/pm2/
 ?? scripts/tools/
+?? scripts/utils/runShell.js
 ?? scripts/validators/
 ?? scripts/visual-validation-summarize.sh
 ?? tests/playwright/
