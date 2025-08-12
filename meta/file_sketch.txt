@@ -99,7 +99,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754974922
-./config/logs.json 158 1754974812
+./config/logs.json 158 1754975916
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -263,7 +263,7 @@
 ./.env.backup.20250811_124739 4429 1754941659
 ./dashboard/.DS_Store 10244 1754974622
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754974812
+./dashboard/log-reader.json 225 1754975916
 ./dashboard/start.sh.bak 826 1754972616
 ./dashboard/app.py 39047 1754972618
 ./dashboard/app.py.bak 39047 1754972616
@@ -1350,10 +1350,10 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754975338
+./.git/index 396633 1754975917
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1754975704
+./.git/FETCH_HEAD 1407 1754975911
 ./jest.config.js.bak 322 1754972616
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
