@@ -2000,3 +2000,5 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? __tests__/
+?? scripts/validate-simlogs.sh
