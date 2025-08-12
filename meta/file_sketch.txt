@@ -338,7 +338,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13680365 1755033644
+./logs/watchdog-tunnel.log 13680657 1755033707
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -771,6 +771,7 @@
 ./scripts/deploy-to-fly.sh 1913 1755028630
 ./scripts/attach-ghost-to-warp.sh 11465 1755028630
 ./scripts/patch-format-converter.js.bak 13189 1755028629
+./scripts/visual-validation-summarize.sh 423 1755033705
 ./scripts/fix-final-logevent-errors.js.bak 4918 1755028629
 ./scripts/ghost-heartbeat.sh 431 1755028629
 ./scripts/fix-eslint-errors.sh.bak 4129 1755028625
@@ -1339,7 +1340,7 @@
 ./gpt_cursor_runner/slack_proxy.py.bak 6379 1755028625
 ./gpt_cursor_runner/error_handler.py.bak 18586 1755028625
 ./braun_daemon.py 9290 1755028631
-./playwright.config.ts 678 1755028633
+./playwright.config.ts 202 1755033696
 ./fix_dev_env_urls.sh.bak 2812 1755028625
 ./gpt_cursor_runner.egg-info/PKG-INFO 4905 1752865091
 ./gpt_cursor_runner.egg-info/not-zip-safe 1 1752865091
