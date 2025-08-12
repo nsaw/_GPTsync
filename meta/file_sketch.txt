@@ -280,6 +280,7 @@
 ./public/index.html 49692 1754956395
 ./public/.DS_Store 6148 1754708957
 ./public/runner_fallback.html 225 1753694124
+./public/g2o-monitor.html 1239 1755033667
 ./logs/telemetry-orchestrator.log 37879 1754344278
 ./logs/main-summary-monitor.log 763 1753591521
 ./logs/dashboard-uplink-combined-10.log 812 1754677348
@@ -337,7 +338,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13680073 1755033581
+./logs/watchdog-tunnel.log 13680365 1755033644
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
