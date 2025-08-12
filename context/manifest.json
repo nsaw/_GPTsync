@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24283056,
-    "mtime": 1755032333
+    "size": 24283504,
+    "mtime": 1755032373
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3278,6 +3278,11 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/eslint-plugin-thoughtmarks.cjs",
     "size": 10500,
     "mtime": 1753742332
+  },
+  {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/jest.config.js",
+    "size": 722,
+    "mtime": 1755032373
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.eslintrc.cjs",
@@ -39993,10 +39998,5 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryClient.cjs",
     "size": 11076,
     "mtime": 1754636780
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/onlineManager.js",
-    "size": 1483,
-    "mtime": 1754636782
   }
 ]
