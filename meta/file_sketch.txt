@@ -98,7 +98,7 @@
 ./config/webhook-thoughtmarks.env.backup 981 1754773017
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
-./config/ports.json 0 1754960168
+./config/ports.json 112 1754961492
 ./config/logs.json 158 1754961354
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
@@ -254,7 +254,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2878 1754958143
 ./env.template 9454 1754815601
-./.tarignore 366 1754961410
+./.tarignore 366 1754961492
 ./fix_linting_errors.sh.bak 3990 1754958140
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
@@ -1350,7 +1350,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754961447
+./.git/index 396633 1754961487
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754961357
@@ -1403,7 +1403,7 @@
 ./pm2/executor.env 76 1754955675
 ./pm2/pm2-defaults.json 72 1754961312
 ./pm2/ecosystem.g2o.p1.config.js.bak 507 1754958142
-./pm2/ecosystem.config.js 478 1754960166
+./pm2/ecosystem.config.js 478 1754961492
 ./pm2/ecosystem.config.js.bak 602 1754958141
 ./simple_flask_server.py.bak 1636 1754958140
 ./debug-config.sh.bak 1257 1754958140
