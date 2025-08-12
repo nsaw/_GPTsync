@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-12T07:14:28Z",
-  "patch": "patch-v2.0.072(P7.02.01)_log-failure-gate-test.json",
+  "ts": "2025-08-12T07:53:49Z",
+  "patch": "patch-v2.0.023(P2.03.01)_pause-on-log-failure.json",
   "error": "missing-or-empty-summary"
 }
