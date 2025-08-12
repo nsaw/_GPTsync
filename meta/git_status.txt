@@ -1727,6 +1727,7 @@ M  scripts/watchdogs/patch-confirmation-watchdog.js
 M  scripts/watchdogs/patch-executor-watchdog.js
 M  scripts/watchdogs/patch-executor-watchdog.sh
 M  scripts/watchdogs/patch-queue-validator.js
+A  scripts/watchdogs/phase_orchestrator.sh
 A  scripts/watchdogs/ping-health.sh
 M  scripts/watchdogs/process-limiter.js
 A  scripts/watchdogs/restart-on-fail.sh
@@ -1996,4 +1997,3 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
-?? scripts/watchdogs/phase_orchestrator.sh
