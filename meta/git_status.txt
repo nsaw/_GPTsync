@@ -136,7 +136,7 @@ A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runn
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handlePauseRunner.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleProceed.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved1.js
-R  pids/python-watchdog.lock -> _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
+A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRestartRunner.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRevertPhase.js
 A  _gpt5intake/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRoadmap.js
@@ -340,7 +340,7 @@ A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/autofill-results-1753
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/autofill-results-1753507519016.md
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/autolinter_stats.json
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cf-gpt-cursor-runner.tail
-A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cloudflared.ps
+R  pids/python-watchdog.lock -> _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cloudflared.ps
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cloudflared.tail
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cloudflared.tail2
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/logs/cloudflared.tunnel.list
@@ -502,7 +502,7 @@ A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handlePatc
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handlePauseRunner.js
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleProceed.js
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved1.js
-AM _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
+A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRestartRunner.js
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRevertPhase.js
 A  _gpt5intake/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRoadmap.js
@@ -827,7 +827,7 @@ A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/ser
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handlePauseRunner.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleProceed.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved1.js
-AM _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
+A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRestartRunner.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRevertPhase.js
 A  _gpt5intake/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRoadmap.js
@@ -998,7 +998,7 @@ A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handlePauseRunner.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleProceed.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved1.js
-AM _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
+A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleReserved2.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRestartRunner.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRevertPhase.js
 A  _gpt5intake/surgical-ghost/CYOPS/core-scripts-recursive/Users/sawyer/gitSync/gpt-cursor-runner/server/handlers/handleRoadmap.js
@@ -1068,9 +1068,9 @@ M  components/dashboard/sections/TunnelStatusGrid.js
 D  comprehensive_syntax_fix.py
 M  config/config.json
 M  config/ecosystem.config.js
-AM config/failover.json
+A  config/failover.json
 M  config/feature-bundle_ui-dashboard_slash-preview_release.json
-AM config/logs.json
+A  config/logs.json
 M  config/performance_monitor_config.json
 M  config/phase3_ml_config.json
 A  config/policy.json
@@ -1356,8 +1356,8 @@ A  pids/tunnel-restart-time.txt
 A  playwright-report/index.html
 A  playwright.config.js
 A  playwright.config.ts
-AM pm2/ecosystem.config.js
-AM pm2/ecosystem.g2o.p1.config.js
+A  pm2/ecosystem.config.js
+A  pm2/ecosystem.g2o.p1.config.js
 A  pm2/pm2-defaults.json
 A  public/index.html
 M  public/status/unified-status.json
@@ -1756,7 +1756,7 @@ M  server/handlers/handlePatchRevert.js
 M  server/handlers/handlePauseRunner.js
 M  server/handlers/handleProceed.js
 M  server/handlers/handleReserved1.js
-MM server/handlers/handleReserved2.js
+M  server/handlers/handleReserved2.js
 M  server/handlers/handleRestartRunner.js
 M  server/handlers/handleRevertPhase.js
 M  server/handlers/handleRoadmap.js
@@ -1970,4 +1970,3 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
-?? src-nextgen/ghost/healer/.!97876!ghostAutopilotHealer.ts
