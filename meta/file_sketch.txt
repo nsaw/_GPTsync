@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13435085 1754980473
+./logs/watchdog-tunnel.log 13435377 1754980535
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1127,7 +1127,7 @@
 ./summaries/patch-v3.5.22(P13.04.14)_global-shell-hardening-and-unified-system-bootstrap.md 3574 1753694124
 ./summaries/patch-v3.3.37(P14.02.02)_patch-trace-autofill-for-summaries.md 8229 1753694124
 ./summaries/patch-v3.3.19(P14.00.02)_ghost-viewer-render-diff-rows.md 5569 1753694124
-./summaries/_ghost-relay-validation.log 353 1754980331
+./summaries/_ghost-relay-validation.log 353 1754980526
 ./summaries/patch-v3.5.16(P13.04.07)_ghost-dual-status-monitor.md 4455 1753694124
 ./summaries/patch-v3.5.0(P13.00.00)_ghost-relay-hook-init.md 3796 1753694124
 ./summaries/patch-v3.3.27(P14.01.02)_system-health-watchdog-injection.md 4528 1753694124
