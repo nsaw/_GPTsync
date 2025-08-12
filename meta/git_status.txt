@@ -1526,7 +1526,7 @@ M  scripts/monitor-core.js
 M  scripts/monitor-ghost-health.sh
 M  scripts/monitor/compliance-monitor.js
 M  scripts/monitor/dual-monitor-server.js
-AM scripts/monitor/failure_emitter_main.sh
+A  scripts/monitor/failure_emitter_main.sh
 A  scripts/monitor/handoff_close_the_loop.sh
 A  scripts/monitor/queue_counters_multi.sh
 M  scripts/multi-environment-manager.js
