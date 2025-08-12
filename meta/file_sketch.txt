@@ -254,7 +254,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2878 1755028633
 ./env.template 9454 1754815601
-./.tarignore 366 1754984983
+./.tarignore 366 1755029397
 ./fix_linting_errors.sh.bak 3990 1755028625
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13660217 1755029322
+./logs/watchdog-tunnel.log 13660509 1755029384
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1354,10 +1354,10 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 401415 1755028675
+./.git/index 401415 1755029404
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1755029156
+./.git/FETCH_HEAD 1407 1755029371
 ./jest.config.js.bak 322 1755028629
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
