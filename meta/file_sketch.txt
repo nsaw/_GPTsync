@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13660509 1755029384
+./logs/watchdog-tunnel.log 13660801 1755029446
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -717,7 +717,7 @@
 ./logs/ghost-status-daemon.log 204 1753298970
 ./logs/autonomous-decision-daemon-error-16.log 0 1754637813
 ./logs/cyops-daemon-manager.log 763 1753591521
-./__tests__/sanity.test.ts 85 1755029242
+./__tests__/sanity.test.ts 85 1755029442
 ./.mypy_cache/.DS_Store 6148 1754942164
 ./.mypy_cache/CACHEDIR.TAG 190 1752864287
 ./.mypy_cache/.gitignore 34 1752864287
@@ -919,7 +919,7 @@
 ./scripts/validate-summary-writes.sh.bak 359 1755028626
 ./scripts/agent-status-display.js.bak 7951 1755028629
 ./scripts/restart-ghost-shell.js.bak 887 1755028629
-./scripts/validate-simlogs.sh 896 1755029242
+./scripts/validate-simlogs.sh 896 1755029442
 ./scripts/ghost-summary-checker.sh.bak 386 1755028625
 ./scripts/accurate-patch-status.js.bak 11657 1755028629
 ./scripts/cursor_runner_selfcheck_v1.sh.bak 359 1754773095
