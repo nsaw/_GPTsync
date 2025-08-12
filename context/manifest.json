@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24284176,
-    "mtime": 1755032433
+    "size": 24284624,
+    "mtime": 1755032473
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3236,8 +3236,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/jest.setup.js",
-    "size": 2224,
-    "mtime": 1755032381
+    "size": 1076,
+    "mtime": 1755032470
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.detoxrc.js",
@@ -6256,13 +6256,13 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/__mocks__/fileMock.js",
-    "size": 35,
-    "mtime": 1755032390
+    "size": 33,
+    "mtime": 1755032443
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/__mocks__/styleMock.js",
-    "size": 21,
-    "mtime": 1755032397
+    "size": 19,
+    "mtime": 1755032450
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/artifacts/ios.sim.debug.2025-08-03 04-34-04Z/detox.log",
