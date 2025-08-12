@@ -1723,6 +1723,7 @@ M  scripts/watchdogs/main-patch-routing-monitor.js
 M  scripts/watchdogs/metrics-aggregator-daemon-watchdog.sh
 A  scripts/watchdogs/p0_fail_halt_watch.sh
 A  scripts/watchdogs/p0_release_on_summary.sh
+A  scripts/watchdogs/p0_seed_sla_watch.sh
 M  scripts/watchdogs/patch-confirmation-watchdog.js
 M  scripts/watchdogs/patch-executor-watchdog.js
 M  scripts/watchdogs/patch-executor-watchdog.sh
@@ -1997,4 +1998,3 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
-?? scripts/watchdogs/p0_seed_sla_watch.sh
