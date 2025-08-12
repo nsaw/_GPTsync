@@ -128,7 +128,6 @@
 ./_gpt5intake/_core-scripts.tar.gz 14934 1754692619
 ./.pre-commit-config.yaml 3957 1754587721
 ./patch-log.json 765 1753184131
-./.phase_audit/P0.GREEN 1 1754972514
 ./Dockerfile 536 1754600030
 ./Makefile 48 1753694124
 ./debug-backend.sh.bak 1265 1754972616
@@ -337,7 +336,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13400190 1754972639
+./logs/watchdog-tunnel.log 13400337 1754972674
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1350,7 +1349,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754972629
+./.git/index 396508 1754972678
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754972640
