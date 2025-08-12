@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24283504,
-    "mtime": 1755032373
+    "size": 24283840,
+    "mtime": 1755032403
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3236,8 +3236,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/jest.setup.js",
-    "size": 2164,
-    "mtime": 1753917532
+    "size": 2224,
+    "mtime": 1755032381
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.detoxrc.js",
@@ -6253,6 +6253,16 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.expo/devices.json",
     "size": 20,
     "mtime": 1754020021
+  },
+  {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/__mocks__/fileMock.js",
+    "size": 35,
+    "mtime": 1755032390
+  },
+  {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/__mocks__/styleMock.js",
+    "size": 21,
+    "mtime": 1755032397
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/artifacts/ios.sim.debug.2025-08-03 04-34-04Z/detox.log",
@@ -39988,15 +39998,5 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queriesObserver.d.cts",
     "size": 1586,
     "mtime": 1754636781
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryObserver.cjs",
-    "size": 17658,
-    "mtime": 1754636780
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryClient.cjs",
-    "size": 11076,
-    "mtime": 1754636780
   }
 ]
