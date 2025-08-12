@@ -1,4 +1,4 @@
-M  .DS_Store
+MM .DS_Store
 A  .archive/legacy/ecosystem.config.js
 M  .cursor-config.json
 M  .eslintrc.js
