@@ -339,7 +339,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13688541 1755035367
+./logs/watchdog-tunnel.log 13688833 1755035428
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -799,7 +799,7 @@
 ./scripts/ghost-venv-fix.sh 429 1755028629
 ./scripts/system-log-health-audit.sh.bak 1103 1755028625
 ./scripts/test-all-daemons.sh.bak 6542 1755028625
-./scripts/.DS_Store 20484 1755035125
+./scripts/.DS_Store 20484 1755035415
 ./scripts/role-aware-router.js 207 1755028667
 ./scripts/test-1password-integration.sh 2290 1755028629
 ./scripts/test-yaml-patch-detection.js 8689 1755028667
