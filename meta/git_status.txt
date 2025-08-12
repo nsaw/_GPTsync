@@ -2005,6 +2005,7 @@ D  yarn.lock
 ?? config/STRICT_TICKER.json
 ?? public/g2o-monitor.html
 ?? scripts/pm2/
+?? scripts/tools/
 ?? scripts/validators/
 ?? scripts/visual-validation-summarize.sh
 ?? tests/playwright/
