@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-12T21:30:40Z",
-  "patch": "patch-v2.0.992(P5.02.01)_playwright-visual-g2o-monitor-fallback.json",
-  "error": "validate-shell-failed"
+  "ts": "2025-08-12T21:36:40Z",
+  "patch": "patch-v2.0.993(P5.02.02)_visual-validate-loop-and-monitor-route.json",
+  "error": "missing-or-empty-summary"
 }
