@@ -337,7 +337,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13434209 1754980288
+./logs/watchdog-tunnel.log 13434501 1754980350
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -722,7 +722,7 @@
 ./.mypy_cache/.gitignore 34 1752864287
 ./.gitignore 4418 1754436447
 ./package-lock.json 376460 1754889924
-./package.json 1924 1754600055
+./package.json 1958 1754980370
 ./setup.py.bak 2113 1754979990
 ./test-dashboard.js 4430 1754979993
 ./.env 4477 1754941659
@@ -1235,7 +1235,7 @@
 ./setup.cfg 339 1754773217
 ./docker-compose.yml 135 1753694124
 ./braun_patch_processor.py.bak 4392 1754979990
-./playwright-report/index.html 466309 1754980141
+./playwright-report/index.html 466425 1754980337
 ./slack/7_auto_cloudflare_tunnel_watchdog_and_webhook_sync.js 2968 1754979993
 ./slack/slack-slash-command-logic.md 12618 1754534790
 ./slack/manifest-slash-diff.md 3751 1753694124
@@ -1334,7 +1334,7 @@
 ./gpt_cursor_runner/slack_proxy.py.bak 6287 1754979990
 ./gpt_cursor_runner/error_handler.py.bak 18586 1754979990
 ./braun_daemon.py 9198 1754979992
-./playwright.config.ts 668 1754979993
+./playwright.config.ts 678 1754980370
 ./fix_dev_env_urls.sh.bak 2812 1754979990
 ./gpt_cursor_runner.egg-info/PKG-INFO 4905 1752865091
 ./gpt_cursor_runner.egg-info/not-zip-safe 1 1752865091
@@ -1350,7 +1350,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 400662 1754980332
+./.git/index 400799 1754980373
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754980243
@@ -1358,6 +1358,7 @@
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
 ./patch_executor_daemon.py 29843 1754979992
+./test-results/.last-run.json 341 1754980337
 ./enhanced_braun_daemon.py 14706 1754979992
 ./debug-backend.sh 1265 1754979991
 ./braun_patch_processor.py 4415 1754979992
