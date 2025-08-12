@@ -254,7 +254,7 @@
 ./.cursorrules 1495 1754359937
 ./validate-dashboard.js 2878 1754958143
 ./env.template 9454 1754815601
-./.tarignore 366 1754961259
+./.tarignore 0 1754961296
 ./fix_linting_errors.sh.bak 3990 1754958140
 ./scan-results/README.md 1916 1754031827
 ./.env.development.backup.20250810_213302 4692 1754886782
@@ -1350,7 +1350,7 @@
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754961261
+./.git/index 396633 1754961299
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754961126
