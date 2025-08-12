@@ -39,7 +39,7 @@
 ./test-dashboard.spec.js.bak 1425 1754972618
 ./.ghost-relay.log 7943144 1753233799
 ./index.html 49691 1754956179
-./.DS_Store 36868 1754959445
+./.DS_Store 38916 1754974622
 ./core/webhook-handler.js 4295 1754972620
 ./core/webhook-thoughtmarks-server.js 14216 1754972620
 ./core/start-MAIN.sh 4866 1754972615
@@ -56,7 +56,7 @@
 ./LICENSE 1063 1753694124
 ./fix_template_files.sh 3536 1754972618
 ./requirements.txt 81 1754525883
-./test/.DS_Store 6148 1754958144
+./test/.DS_Store 6148 1754974622
 ./test/test-confirm-patch-4.ts.bak 80 1754972617
 ./test/test-confirm-patch-4.ts 80 1754972620
 ./test/test-confirm-patch-5.ts 80 1754972620
@@ -99,7 +99,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754973650
-./config/logs.json 158 1754973566
+./config/logs.json 158 1754974633
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -119,7 +119,7 @@
 ./config/failover.json 547 1754973479
 ./.cursor-config.json 439 1754587777
 ./_gpt5intake/surgical-ghost.tar.gz 267737 1754699820
-./_gpt5intake/.DS_Store 10244 1754958144
+./_gpt5intake/.DS_Store 10244 1754974622
 ./_gpt5intake/_gpt5intake.tar.gz 17877727 1754690835
 ./_gpt5intake/_core-scripts-recursive.tar.gz 231331 1754693656
 ./_gpt5intake/DESIRED_STATE.md 331 1754677463
@@ -170,7 +170,7 @@
 ./jest.config.js 322 1754972618
 ./cyops_daemon.py 8822 1754972619
 ./pyproject.toml 2914 1754421669
-./node_modules/.DS_Store 106500 1754958153
+./node_modules/.DS_Store 106500 1754974622
 ./node_modules/.package-lock.json 375720 1754889924
 ./test-monitor.js 937 1754972620
 ./tests/test6.txt 5 1753760512
@@ -260,9 +260,9 @@
 ./README.md 3382 1754193655
 ./fix_dev_env_urls.sh 2812 1754972618
 ./.env.backup.20250811_124739 4429 1754941659
-./dashboard/.DS_Store 10244 1754958144
+./dashboard/.DS_Store 10244 1754974622
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754973535
+./dashboard/log-reader.json 225 1754974633
 ./dashboard/start.sh.bak 826 1754972616
 ./dashboard/app.py 39047 1754972618
 ./dashboard/app.py.bak 39047 1754972616
@@ -348,7 +348,7 @@
 ./logs/metrics-aggregator-daemon-out-13.log 1480 1754677396
 ./logs/telemetry-api-error-14.log 0 1754603524
 ./logs/metrics-aggregator-daemon-combined-11.log 1321709 1754942916
-./logs/.DS_Store 8196 1754959445
+./logs/.DS_Store 8196 1754974622
 ./logs/ghost-runner-out-2.log 3152 1754636801
 ./logs/cloudflare-tunnel.log 320981 1753672474
 ./logs/cloudflared.ingress.validate.log 81 1754641826
@@ -794,7 +794,7 @@
 ./scripts/ghost-venv-fix.sh 429 1754972617
 ./scripts/system-log-health-audit.sh.bak 1103 1754972616
 ./scripts/test-all-daemons.sh.bak 6542 1754972616
-./scripts/.DS_Store 20484 1754959188
+./scripts/.DS_Store 20484 1754974622
 ./scripts/role-aware-router.js 207 1754972660
 ./scripts/test-1password-integration.sh 2290 1754972617
 ./scripts/test-yaml-patch-detection.js 8689 1754972660
@@ -1344,12 +1344,12 @@
 ./gpt_cursor_runner.egg-info/dependency_links.txt 1 1752865091
 ./integration_test_p7.ts 12926 1754972620
 ./.env.backup.20250810_212329 4315 1754886209
-./.git/.DS_Store 6148 1754959440
+./.git/.DS_Store 6148 1754974622
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396508 1754974595
+./.git/index 396508 1754974634
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754974561
