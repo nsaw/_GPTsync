@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-12T22:02:08Z",
-  "patch": "patch-v2.0.996(P0.00.24)_HOTPATCH_inline-validation-naming-guard.json",
+  "ts": "2025-08-12T22:45:16Z",
+  "patch": "patch-v2.0.998(P0.00.24)_lane-keeper_inline-guarded-baton-and-core-gates.json",
   "error": "missing-or-empty-summary"
 }
