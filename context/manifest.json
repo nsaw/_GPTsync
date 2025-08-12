@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24284624,
-    "mtime": 1755032473
+    "size": 24284960,
+    "mtime": 1755032503
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3236,8 +3236,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/jest.setup.js",
-    "size": 1076,
-    "mtime": 1755032470
+    "size": 624,
+    "mtime": 1755032501
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.detoxrc.js",
