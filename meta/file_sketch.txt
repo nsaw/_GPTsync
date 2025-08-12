@@ -336,7 +336,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13401797 1754972986
+./logs/watchdog-tunnel.log 13402089 1754973047
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1345,6 +1345,7 @@
 ./integration_test_p7.ts 12926 1754972620
 ./.env.backup.20250810_212329 4315 1754886209
 ./.git/.DS_Store 6148 1754959440
+./.git/index.lock 0 1754973071
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
