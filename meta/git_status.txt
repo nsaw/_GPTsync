@@ -1366,7 +1366,7 @@ A  playwright-report/data/e9226f3cb785985996fb6dfec5a46f11019b8cae.png
 A  playwright-report/data/f3ecdce72726dd4299f814d753d45f0986a4bbda.png
 A  playwright-report/index.html
 A  playwright.config.js
-A  playwright.config.ts
+AM playwright.config.ts
 A  pm2/ecosystem.config.js
 A  pm2/ecosystem.g2o.p1.config.js
 A  pm2/pm2-defaults.json
@@ -2003,3 +2003,5 @@ M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
 ?? public/g2o-monitor.html
+?? scripts/visual-validation-summarize.sh
+?? tests/playwright/
