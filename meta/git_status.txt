@@ -1,4 +1,4 @@
-MM .DS_Store
+M  .DS_Store
 A  .archive/legacy/ecosystem.config.js
 M  .cursor-config.json
 M  .eslintrc.js
@@ -1357,7 +1357,7 @@ A  playwright-report/index.html
 A  playwright.config.js
 A  playwright.config.ts
 A  pm2/ecosystem.config.js
-AM pm2/ecosystem.g2o.p1.config.js
+A  pm2/ecosystem.g2o.p1.config.js
 A  pm2/pm2-defaults.json
 A  public/index.html
 M  public/status/unified-status.json
