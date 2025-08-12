@@ -39,7 +39,7 @@
 ./test-dashboard.spec.js.bak 1425 1754958141
 ./.ghost-relay.log 7943144 1753233799
 ./index.html 49691 1754956179
-./.DS_Store 36868 1754958955
+./.DS_Store 36868 1754958997
 ./core/webhook-handler.js 4295 1754958143
 ./core/webhook-thoughtmarks-server.js 14216 1754958143
 ./core/start-MAIN.sh 4866 1754958142
@@ -99,7 +99,7 @@
 ./config/webhook-tunnel-config.yml 395 1753939636
 ./config/slack-app-manifest-v2.yaml 7036 1754939733
 ./config/ports.json 112 1754958017
-./config/logs.json 174 1754958138
+./config/logs.json 174 1754958989
 ./config/config.json 77 1754600046
 ./config/slack-app-manifest.yaml 6924 1754942442
 ./config/system_monitor_config.json 1189 1754762115
@@ -263,7 +263,7 @@
 ./.env.backup.20250811_124739 4429 1754941659
 ./dashboard/.DS_Store 10244 1754958144
 ./dashboard/requirements.txt 43 1753694124
-./dashboard/log-reader.json 225 1754957908
+./dashboard/log-reader.json 225 1754958989
 ./dashboard/start.sh.bak 826 1754958140
 ./dashboard/app.py 38505 1754958141
 ./dashboard/app.py.bak 38505 1754958140
@@ -349,7 +349,7 @@
 ./logs/metrics-aggregator-daemon-out-13.log 1480 1754677396
 ./logs/telemetry-api-error-14.log 0 1754603524
 ./logs/metrics-aggregator-daemon-combined-11.log 1321709 1754942916
-./logs/.DS_Store 8196 1754958950
+./logs/.DS_Store 8196 1754958997
 ./logs/ghost-runner-out-2.log 3152 1754636801
 ./logs/cloudflare-tunnel.log 320981 1753672474
 ./logs/cloudflared.ingress.validate.log 81 1754641826
@@ -1345,12 +1345,12 @@
 ./gpt_cursor_runner.egg-info/dependency_links.txt 1 1752865091
 ./integration_test_p7.ts 12926 1754958143
 ./.env.backup.20250810_212329 4315 1754886209
-./.git/.DS_Store 6148 1754958950
+./.git/.DS_Store 6148 1754958997
 ./.git/ORIG_HEAD 41 1754436437
 ./.git/config 566 1753254851
 ./.git/HEAD 39 1753695768
 ./.git/description 73 1751841988
-./.git/index 396633 1754958960
+./.git/index 396633 1754958998
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
 ./.git/FETCH_HEAD 1407 1754958952
