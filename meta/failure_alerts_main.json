@@ -1,8 +1,9 @@
 {
-  "ts": "2025-08-12T01:16:57.3NZ",
-  "failed": 22,
+  "ts": "2025-08-12T20:35:59.3NZ",
+  "failed": 23,
   "rising_edge": 0,
   "last10": [
+    "patch-v1.4.6514(P6.5.00.01)_validation-hardening-and-simlog-fix.json",
     "patch-v1.4.523(P4.03.02)_autoroleview-prop-fix-comprehensive.json",
     "patch-v1.4.9999(P4.99.00)_validation-critical-remediation.json",
     "patch-v1.4.1000(P10.01.01)_ui-interaction-tests.json",
@@ -11,7 +12,6 @@
     "patch-v1.4.600(P5.01.01)_eslint-typescript-critical-fixes.json",
     "patch-v1.4.415(P2.2.04)_performance-optimization-implementation.json",
     "patch-v1.4.230(P0.2.13)_multi-slot-injection-parallel-grid.json",
-    "test-verification.json",
-    "test-patch-5.json"
+    "test-verification.json"
   ]
 }
