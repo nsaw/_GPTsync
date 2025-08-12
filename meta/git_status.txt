@@ -1738,6 +1738,7 @@ D  scripts/watchdogs/tunnel-watchdog.sh
 M  scripts/watchdogs/unified-manager-watchdog.sh
 M  scripts/watchdogs/unified-system-monitor.js
 M  scripts/web/live-status-server.js
+A  scripts/webhook-server.js
 M  scripts/webhook-thoughtmarks-tunnel-daemon.sh
 M  server/commands/archived/handleApproveScreenshot.js
 M  server/commands/archived/handleContinueRunner.js
@@ -1995,4 +1996,3 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
-?? scripts/webhook-server.js
