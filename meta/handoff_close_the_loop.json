@@ -1,7 +1,7 @@
 {
-  "ts": "2025-08-12T02:54:34.3NZ",
+  "ts": "2025-08-12T02:55:21.3NZ",
   "priority_patch_964": {
-    "in_root": false,
+    "in_root": true,
     "completed": false
   },
   "surgical_fixes": {
