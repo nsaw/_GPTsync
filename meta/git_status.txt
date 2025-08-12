@@ -2004,6 +2004,7 @@ D  webhook-handler.js
 D  yarn.lock
 ?? config/STRICT_TICKER.json
 ?? public/g2o-monitor.html
+?? scripts/p0/
 ?? scripts/pm2/
 ?? scripts/tools/
 ?? scripts/validators/
