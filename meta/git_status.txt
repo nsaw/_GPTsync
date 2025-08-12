@@ -2002,3 +2002,4 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? public/g2o-monitor.html
