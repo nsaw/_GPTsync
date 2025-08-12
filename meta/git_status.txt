@@ -1526,7 +1526,9 @@ M  scripts/monitor-core.js
 M  scripts/monitor-ghost-health.sh
 M  scripts/monitor/compliance-monitor.js
 M  scripts/monitor/dual-monitor-server.js
+AM scripts/monitor/failure_emitter_main.sh
 A  scripts/monitor/handoff_close_the_loop.sh
+A  scripts/monitor/queue_counters_multi.sh
 M  scripts/multi-environment-manager.js
 A  scripts/ops/completed_validator.sh
 A  scripts/ops/executor-watchdog.sh
@@ -1561,7 +1563,7 @@ M  scripts/python-utils/fix_syntax.py
 D  scripts/python-utils/fix_syntax_errors.py
 D  scripts/python-utils/fix_syntax_errors_v2.py
 D  scripts/python-utils/fix_thoughtpilot_packages.py
-AM scripts/queue/inject_priority_patch_unified.sh
+A  scripts/queue/inject_priority_patch_unified.sh
 M  scripts/real-time-status-api.js
 M  scripts/realtime-monitor.js
 M  scripts/recovery/kill-zombies.js
