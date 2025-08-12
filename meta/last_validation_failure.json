@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-12T07:53:49Z",
-  "patch": "patch-v2.0.023(P2.03.01)_pause-on-log-failure.json",
-  "error": "missing-or-empty-summary"
+  "ts": "2025-08-12T21:30:40Z",
+  "patch": "patch-v2.0.992(P5.02.01)_playwright-visual-g2o-monitor-fallback.json",
+  "error": "validate-shell-failed"
 }
