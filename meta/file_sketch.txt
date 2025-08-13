@@ -926,7 +926,7 @@
 ./scripts/validate-simlogs.sh 896 1755029442
 ./scripts/ghost-summary-checker.sh.bak 386 1755028625
 ./scripts/accurate-patch-status.js.bak 11657 1755028629
-./scripts/run-shell.js 703 1755048349
+./scripts/run-shell.js 1407 1755048639
 ./scripts/cursor_runner_selfcheck_v1.sh.bak 359 1754773095
 ./scripts/generate-indexes.js 731 1755028667
 ./scripts/enhanced-patch-validator.js.bak 15199 1755028625
