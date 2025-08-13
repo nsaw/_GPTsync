@@ -2002,8 +2002,10 @@ A  validate_fixes.sh
 M  web/monitor/dashboardLayout.js
 D  webhook-handler.js
 D  yarn.lock
+?? .gitkeep-validations
 ?? config/STRICT_TICKER.json
 ?? public/g2o-monitor.html
+?? scripts/README-nb.md
 ?? scripts/find-timeout-disown.js
 ?? scripts/nb
 ?? scripts/nb.js
