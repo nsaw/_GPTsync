@@ -2006,6 +2006,8 @@ D  yarn.lock
 ?? public/g2o-monitor.html
 ?? scripts/p0/
 ?? scripts/pm2/
+?? scripts/probes/
+?? scripts/run-shell.js
 ?? scripts/tools/
 ?? scripts/utils/runShell.js
 ?? scripts/validators/
