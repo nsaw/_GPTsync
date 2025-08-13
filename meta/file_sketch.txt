@@ -259,7 +259,7 @@
 ./.tarignore 366 1755029397
 ./fix_linting_errors.sh.bak 3990 1755028625
 ./scan-results/README.md 1916 1754031827
-./validations/migration-report.md 397529 1755049825
+./validations/migration-report.md 495165 1755049835
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
 ./fix_dev_env_urls.sh 2812 1755028629
@@ -341,7 +341,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13753949 1755049784
+./logs/watchdog-tunnel.log 13754241 1755049852
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -888,7 +888,7 @@
 ./scripts/validate-patch-runner.js 3557 1755028667
 ./scripts/verify_slack_commands.js 2584 1755028667
 ./scripts/validate-rotation-slack-watchdog-main-cyops.js 3550 1755028667
-./scripts/validate-runtime.sh 119 1755049824
+./scripts/validate-runtime.sh 119 1755049834
 ./scripts/start_self_regulating_system.sh.bak 12005 1755028626
 ./scripts/alert-engine.js.bak 8960 1755028630
 ./scripts/fix-zero-errors.js.bak 8473 1755028629
@@ -971,7 +971,7 @@
 ./scripts/accurate-patch-status.js 11589 1755028667
 ./scripts/start-cyops.js.bak 151 1755028629
 ./scripts/tail-monitor-loop.js 1171 1755028667
-./scripts/nb.js 2598 1755049824
+./scripts/nb.js 2598 1755049834
 ./scripts/summary-trace-autofill.js.bak 1419 1755028629
 ./scripts/test-rate-limiting.js.bak 741 1755028629
 ./scripts/ghost-bridge.js 1765 1755028667
@@ -1023,7 +1023,7 @@
 ./scripts/deploy-advanced-systems.sh 4958 1755028629
 ./scripts/start-fly-deployment.sh.bak 3699 1755028625
 ./scripts/performance-optimization-system.js.bak 24129 1755028629
-./scripts/nb 63 1755049824
+./scripts/nb 63 1755049834
 ./scripts/patch-executor.js 4819 1755041669
 ./scripts/alert-validation-monitor.sh 564 1755028630
 ./scripts/autonomous-patch-trigger.js.bak 22154 1755028629
@@ -1081,7 +1081,7 @@
 ./scripts/ghost-status-server-monitor.sh 802 1755028630
 ./scripts/ghost-bridge-fallback.sh 1009 1755028630
 ./scripts/restart-critical-daemons.sh.bak 1868 1755028625
-./scripts/find-timeout-disown.js 1351 1755049824
+./scripts/find-timeout-disown.js 1351 1755049834
 ./scripts/agent-status-display.js 7903 1755028667
 ./scripts/setup-webhook-env.sh.bak 2019 1755028626
 ./scripts/postSummaryHook.sh 165 1755028630
