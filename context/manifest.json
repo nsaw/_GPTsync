@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24469200,
-    "mtime": 1755049002
+    "size": 24469648,
+    "mtime": 1755049042
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3268,6 +3268,11 @@
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.cursor-config.json",
     "size": 3551,
     "mtime": 1753742332
+  },
+  {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/test.log",
+    "size": 15,
+    "mtime": 1755049028
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/fix-spacing-issues.cjs",
@@ -39992,11 +39997,6 @@
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryObserver.cjs",
     "size": 17658,
-    "mtime": 1754636780
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryClient.cjs",
-    "size": 11076,
     "mtime": 1754636780
   }
 ]
