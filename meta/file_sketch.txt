@@ -340,7 +340,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13748693 1755048591
+./logs/watchdog-tunnel.log 13748985 1755048655
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -970,7 +970,7 @@
 ./scripts/accurate-patch-status.js 11589 1755028667
 ./scripts/start-cyops.js.bak 151 1755028629
 ./scripts/tail-monitor-loop.js 1171 1755028667
-./scripts/nb.js 2598 1755048404
+./scripts/nb.js 5197 1755048664
 ./scripts/summary-trace-autofill.js.bak 1419 1755028629
 ./scripts/test-rate-limiting.js.bak 741 1755028629
 ./scripts/ghost-bridge.js 1765 1755028667
@@ -1021,7 +1021,7 @@
 ./scripts/deploy-advanced-systems.sh 4958 1755028629
 ./scripts/start-fly-deployment.sh.bak 3699 1755028625
 ./scripts/performance-optimization-system.js.bak 24129 1755028629
-./scripts/nb 63 1755048404
+./scripts/nb 127 1755048671
 ./scripts/patch-executor.js 4819 1755041669
 ./scripts/alert-validation-monitor.sh 564 1755028630
 ./scripts/autonomous-patch-trigger.js.bak 22154 1755028629
@@ -1079,7 +1079,7 @@
 ./scripts/ghost-status-server-monitor.sh 802 1755028630
 ./scripts/ghost-bridge-fallback.sh 1009 1755028630
 ./scripts/restart-critical-daemons.sh.bak 1868 1755028625
-./scripts/find-timeout-disown.js 1351 1755048404
+./scripts/find-timeout-disown.js 2703 1755048680
 ./scripts/agent-status-display.js 7903 1755028667
 ./scripts/setup-webhook-env.sh.bak 2019 1755028626
 ./scripts/postSummaryHook.sh 165 1755028630
