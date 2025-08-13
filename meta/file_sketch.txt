@@ -341,7 +341,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13751029 1755049109
+./logs/watchdog-tunnel.log 13751321 1755049173
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -971,7 +971,7 @@
 ./scripts/accurate-patch-status.js 11589 1755028667
 ./scripts/start-cyops.js.bak 151 1755028629
 ./scripts/tail-monitor-loop.js 1171 1755028667
-./scripts/nb.js 2852 1755048914
+./scripts/nb.js 2852 1755049156
 ./scripts/summary-trace-autofill.js.bak 1419 1755028629
 ./scripts/test-rate-limiting.js.bak 741 1755028629
 ./scripts/ghost-bridge.js 1765 1755028667
@@ -1367,7 +1367,7 @@
 ./.git/index 401633 1755030493
 ./.git/packed-refs 17689 1754942879
 ./.git/COMMIT_EDITMSG 172 1754439372
-./.git/FETCH_HEAD 1407 1755048989
+./.git/FETCH_HEAD 1407 1755049174
 ./jest.config.js.bak 322 1755028629
 ./test_dashboard_api.js 2106 1754351568
 ./.vscode/settings.json 1270 1754772358
