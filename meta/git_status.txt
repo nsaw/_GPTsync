@@ -2013,6 +2013,7 @@ D  yarn.lock
 ?? scripts/pm2/
 ?? scripts/probes/
 ?? scripts/run-shell.js
+?? scripts/tail-log.js
 ?? scripts/tools/
 ?? scripts/utils/runShell.js
 ?? scripts/validators/
