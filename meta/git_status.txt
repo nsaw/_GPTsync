@@ -2010,4 +2010,5 @@ D  yarn.lock
 ?? scripts/utils/runShell.js
 ?? scripts/validators/
 ?? scripts/visual-validation-summarize.sh
+?? src/utils/shell.ts
 ?? tests/playwright/
