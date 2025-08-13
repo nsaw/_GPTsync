@@ -1095,6 +1095,7 @@
 ./scripts/deploy-slack-app-manifest.sh 1042 1755028630
 ./scripts/filename-concatenator.js.bak 2606 1755028629
 ./scripts/role-aware-router.js.bak 207 1755028629
+./scripts/tail-log.js 1890 1755049196
 ./scripts/validate-summary-writes.sh 359 1755028630
 ./scripts/patch-executor-simple.js 2816 1755028633
 ./scripts/health-aggregator.js.bak 1265 1755028628
