@@ -1682,7 +1682,7 @@ M  scripts/validate-performance.sh
 A  scripts/validate-pm2-restart-heartbeats.js
 M  scripts/validate-roles.sh
 A  scripts/validate-rotation-slack-watchdog-main-cyops.js
-M  scripts/validate-runtime.sh
+MM scripts/validate-runtime.sh
 A  scripts/validate-simlogs.sh
 M  scripts/validate-summary-writes.sh
 M  scripts/validate/clock-drift-check.sh
@@ -2004,6 +2004,9 @@ D  webhook-handler.js
 D  yarn.lock
 ?? config/STRICT_TICKER.json
 ?? public/g2o-monitor.html
+?? scripts/find-timeout-disown.js
+?? scripts/nb
+?? scripts/nb.js
 ?? scripts/p0/
 ?? scripts/pm2/
 ?? scripts/probes/
@@ -2014,3 +2017,4 @@ D  yarn.lock
 ?? scripts/visual-validation-summarize.sh
 ?? src/utils/shell.ts
 ?? tests/playwright/
+?? validations/
