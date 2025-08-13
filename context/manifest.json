@@ -3056,8 +3056,8 @@
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/runner-daemon-error.log",
-    "size": 24471888,
-    "mtime": 1755049243
+    "size": 24472336,
+    "mtime": 1755049283
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/logs/comprehensive-monitoring.log",
@@ -3185,6 +3185,11 @@
     "mtime": 1753057849
   },
   {
+    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.gitkeep-validations",
+    "size": 75,
+    "mtime": 1755049259
+  },
+  {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/FIREBASE_SETUP.md",
     "size": 3947,
     "mtime": 1753742332
@@ -3217,7 +3222,7 @@
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/.DS_Store",
     "size": 20484,
-    "mtime": 1755048981
+    "mtime": 1755049260
   },
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/get-sha1.sh",
@@ -39992,11 +39997,6 @@
   {
     "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryObserver.cjs",
     "size": 17658,
-    "mtime": 1754636780
-  },
-  {
-    "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/node_modules/@tanstack/query-core/build/modern/queryClient.cjs",
-    "size": 11076,
     "mtime": 1754636780
   }
 ]

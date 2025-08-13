@@ -259,7 +259,7 @@
 ./.tarignore 366 1755029397
 ./fix_linting_errors.sh.bak 3990 1755028625
 ./scan-results/README.md 1916 1754031827
-./validations/migration-report.md 202326 1755048915
+./validations/migration-report.md 307426 1755049237
 ./.env.development.backup.20250810_213302 4692 1754886782
 ./README.md 3382 1754193655
 ./fix_dev_env_urls.sh 2812 1755028629
@@ -341,7 +341,7 @@
 ./logs/error-2025-07-27.log 0 1753650899
 ./logs/dashboard-uplink.log 36723 1754347679
 ./logs/ghost-viewer-combined-2.log 14709 1754888989
-./logs/watchdog-tunnel.log 13751321 1755049173
+./logs/watchdog-tunnel.log 13751613 1755049238
 ./logs/error-2025-07-23.log 0 1753288963
 ./logs/ngrok-python.log 102 1754676162
 ./logs/super_autolinter.log 195322 1753311902
@@ -1095,7 +1095,7 @@
 ./scripts/deploy-slack-app-manifest.sh 1042 1755028630
 ./scripts/filename-concatenator.js.bak 2606 1755028629
 ./scripts/role-aware-router.js.bak 207 1755028629
-./scripts/tail-log.js 1890 1755049196
+./scripts/tail-log.js 1890 1755049248
 ./scripts/validate-summary-writes.sh 359 1755028630
 ./scripts/patch-executor-simple.js 2816 1755028633
 ./scripts/health-aggregator.js.bak 1265 1755028628
