@@ -118,7 +118,7 @@ if not debug_mode:
         return jsonify({"error": "Invalid signature"}), 401
 ```
 
-##***REMOVED*** Required
+### Environment Variables Required
 - `SLACK_SIGNING_SECRET` ✅ (Set)
 - `DEBUG_MODE` ✅ (Now set to "true")
 

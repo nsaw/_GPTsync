@@ -47,7 +47,7 @@ PID File: pids/python-runner.pid
 
 ### **Port Configuration**
 ```bash
-***REMOVED***
+# Environment Variables
 export PYTHON_PORT=5556
 
 # Process Startup

@@ -251,7 +251,7 @@ The ultra validation script integrates with these existing validation scripts:
 
 ## Configuration
 
-##***REMOVED***
+### Environment Variables
 - `ROOT_DIR`: Project root directory
 - `LOG_DIR`: Log output directory
 - `VALIDATION_DIR`: Validation results directory

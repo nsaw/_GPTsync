@@ -40,7 +40,7 @@
 - **Environment Config**: dotenv for loading environment variables
 - **Port Configuration**: Default port 3000, configurable via SLACK_PORT
 
-#***REMOVED*** Required
+## Environment Variables Required
 - **SLACK_SIGNING_SECRET**: For verifying Slack request signatures
 - **SLACK_BOT_TOKEN**: For making Slack API calls
 - **SLACK_PORT**: Optional, defaults to 3000

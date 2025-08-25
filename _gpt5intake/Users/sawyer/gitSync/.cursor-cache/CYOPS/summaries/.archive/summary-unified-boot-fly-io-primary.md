@@ -20,7 +20,7 @@
 5. **Conditional Local Start**: Only starts local services if Fly.io fails
 6. **Environment Variables**: Sets Fly.io URLs as primary endpoints
 
-##***REMOVED*** Added
+### Environment Variables Added
 ```bash
 export FLY_DEPLOYMENT=true
 export RUNNER_URL="https://gpt-cursor-runner.fly.dev"

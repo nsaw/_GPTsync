@@ -104,7 +104,7 @@ SLACK_SIGNING_SECRET=your-slack-signing-secret-here
 SLACK_CLIENT_ID=your-slack-client-id-here
 SLACK_CLIENT_SECRET=your-slack-client-secret-here
 
-***REMOVED***
+# Webhook URLs
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
 
 # Personal References
@@ -789,7 +789,7 @@ open http://localhost:5555/dashboard
 
 ## Configuration Options
 
-##***REMOVED***
+### Environment Variables
 
 | Variable | Description | Default |
 |----------|-------------|---------|

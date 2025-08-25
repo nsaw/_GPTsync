@@ -1,6 +1,6 @@
 {
   "ts": "2025-01-27T20:30:00Z",
-  "domain": "CYOPS",
+  "domain": "MAIN",
   "executor": { 
     "running": false, 
     "lastConsumeAgeSec": null, 
@@ -26,7 +26,8 @@
   },
   "notes": [
     "SoT enforced; HTTP inbox fallback preferred until Slack verified",
-    "Bridge parity audit completed - MAIN-SYNC structure mirrored",
+    "MAIN domain: tm-mobile-cursor focus",
+    "Bridge parity audit completed - structure now mirrors CYOPS-SYNC",
     "All symlinks resolving correctly",
     "Provenance hardening next step"
   ]

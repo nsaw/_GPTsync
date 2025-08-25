@@ -85,7 +85,7 @@ validate() {
 }
 ```
 
-##***REMOVED***
+### Environment Variables
 
 - **Legacy Mode**: `EXPO_PUBLIC_USE_LEGACY=true EXPO_PUBLIC_DUAL_MOUNT=false`
 - **NextGen Mode**: `EXPO_PUBLIC_USE_LEGACY=false EXPO_PUBLIC_DUAL_MOUNT=false`

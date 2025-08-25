@@ -123,7 +123,7 @@ The backend supports multiple authentication methods:
 
 ## 🔧 Configuration
 
-##***REMOVED***
+### Environment Variables
 
 Create a `.env` file in the backend directory:
 

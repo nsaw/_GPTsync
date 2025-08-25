@@ -1,0 +1,1 @@
+/Users/sawyer/gitSync/gpt-cursor-runner/scripts/g2o/g2o_status_index_once.js

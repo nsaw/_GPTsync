@@ -93,7 +93,7 @@ interface TelemetryEnvironmentConfig {
 12. **GET** `/api/v1/config` - Configuration
 13. **WebSocket** `/api/v1/ws/updates` - Real-time updates
 
-##***REMOVED*** Supported
+### Environment Variables Supported
 
 **API Configuration**:
 - `TELEMETRY_API_PORT` - API server port

@@ -1,7 +1,7 @@
-# Bridge Memory - CYOPS Domain
+# Bridge Memory - MAIN Domain
 
 **Last Updated**: 2025-01-27  
-**Domain**: CYOPS  
+**Domain**: MAIN  
 **Status**: ACTIVE
 
 ## 🎯 **EXECUTOR STACK CONFIGURATION**
@@ -69,7 +69,7 @@
 ```bash
 curl -X POST -H "Content-Type: application/json" \
   -d @patch.json \
-  "http://localhost:5556/patch/inbox?domain=CYOPS"
+  "http://localhost:5556/patch/inbox?domain=MAIN"
 ```
 
 ### **Response Format**
@@ -77,16 +77,16 @@ curl -X POST -H "Content-Type: application/json" \
 {
   "success": true,
   "message": "Patch successfully ingested",
-  "domain": "CYOPS",
-  "filename": "patch-2025-08-25T07-16-30-489Z-CYOPS.json",
-  "filepath": "/Users/sawyer/gitSync/.cursor-cache/CYOPS/patches/SPOOL/incoming/patch-2025-08-25T07-16-30-489Z-CYOPS.json",
-  "timestamp": "2025-08-25T07:16:30.490Z"
+  "domain": "MAIN",
+  "filename": "patch-2025-08-25T07-16-38-715Z-MAIN.json",
+  "filepath": "/Users/sawyer/gitSync/.cursor-cache/MAIN/patches/SPOOL/incoming/patch-2025-08-25T07-16-38-715Z-MAIN.json",
+  "timestamp": "2025-08-25T07:16:38.717Z"
 }
 ```
 
 ### **Patch Directory Structure**
 ```
-/Users/sawyer/gitSync/.cursor-cache/CYOPS/patches/
+/Users/sawyer/gitSync/.cursor-cache/MAIN/patches/
 ├── SPOOL/
 │   └── incoming/          # Patch ingestion directory
 ├── .completed/            # Successfully processed patches
@@ -112,15 +112,15 @@ curl -X POST -H "Content-Type: application/json" \
     "Quarantine overflow: 52 > 10"
   ],
   "domains": {
-    "CYOPS": {
-      "domain": "CYOPS",
+    "MAIN": {
+      "domain": "MAIN",
       "healthy": false,
-      "violations": ["Quarantine overflow: 119 > 10"],
+      "violations": ["Quarantine overflow: 52 > 10"],
       "stats": {
         "queueDepth": 2,
         "spoolDepth": 1,
-        "quarantineDepth": 119,
-        "queueSize": 3968,
+        "quarantineDepth": 52,
+        "queueSize": 1824,
         "spoolSize": 96
       }
     }
@@ -220,10 +220,10 @@ curl http://localhost:5557/health
 # Send test patch
 curl -X POST -H "Content-Type: application/json" \
   -d @test-patch.json \
-  "http://localhost:5556/patch/inbox?domain=CYOPS"
+  "http://localhost:5556/patch/inbox?domain=MAIN"
 
 # Check quarantine status
-curl http://localhost:5557/status/watchdogSLA | jq '.data.domains.CYOPS'
+curl http://localhost:5557/status/watchdogSLA | jq '.data.domains.MAIN'
 ```
 
 ## 🎯 **COMPLIANCE STATUS**

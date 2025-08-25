@@ -76,7 +76,7 @@ This guide shows you how to deploy your Slack app using GitHub's infrastructure 
 3. **Access Dashboard**:
    - URL: `https://your-username.github.io/gpt-cursor-runner/`
 
-#***REMOVED***
+## Environment Variables
 
 Create a `.env` file or add to GitHub Secrets:
 

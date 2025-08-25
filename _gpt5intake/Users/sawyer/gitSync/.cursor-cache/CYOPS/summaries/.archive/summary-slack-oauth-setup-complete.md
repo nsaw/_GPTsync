@@ -57,7 +57,7 @@ The OAuth callback now properly:
 3. Stores the bot token in environment variables
 4. Logs the successful installation
 
-##***REMOVED*** Needed
+### Environment Variables Needed
 - ✅ `SLACK_CLIENT_ID` - Set to `9175632787408.9309361245590`
 - ❌ `SLACK_CLIENT_SECRET` - **NEEDS TO BE SET**
 - ✅ `DEBUG_MODE` - Set to `true` for development

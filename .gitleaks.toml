@@ -1,0 +1,88 @@
+# Gitleaks configuration for secret detection
+[global]
+# Global regex patterns
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key"
+regex = '''(?i)(api[_-]?key|apikey|secret)["\s]*(?::|=>|=)["\s]*([a-zA-Z0-9]{16,64})'''
+tags = ["key", "api", "generic"]
+
+[[rules]]
+id = "openai-api-key"
+description = "OpenAI API Key"
+regex = '''sk-[a-zA-Z0-9]{48}'''
+tags = ["key", "openai", "api"]
+
+[[rules]]
+id = "firebase-api-key"
+description = "Firebase API Key"
+regex = '''AIzaSy[a-zA-Z0-9]{35}'''
+tags = ["key", "firebase", "api"]
+
+[[rules]]
+id = "sendgrid-api-key"
+description = "SendGrid API Key"
+regex = '''SG\.[a-zA-Z0-9]{22}\.[a-zA-Z0-9]{43}'''
+tags = ["key", "sendgrid", "api"]
+
+[[rules]]
+id = "stripe-test-key"
+description = "Stripe Test Key"
+regex = '''sk_test_[a-zA-Z0-9]{24}'''
+tags = ["key", "stripe", "test"]
+
+[[rules]]
+id = "stripe-live-key"
+description = "Stripe Live Key"
+regex = '''sk_live_[a-zA-Z0-9]{24}'''
+tags = ["key", "stripe", "live"]
+
+[[rules]]
+id = "private-key"
+description = "Private Key"
+regex = '''-----BEGIN PRIVATE KEY-----'''
+tags = ["key", "private"]
+
+[[rules]]
+id = "rsa-private-key"
+description = "RSA Private Key"
+regex = '''-----BEGIN RSA PRIVATE KEY-----'''
+tags = ["key", "rsa", "private"]
+
+# Allowlist patterns
+[[allowlist]]
+description = "Allowlisted files"
+files = [
+    '''\.md$''',
+    '''\.txt$''',
+    '''\.json$''',
+    '''\.toml$''',
+    '''\.yaml$''',
+    '''\.yml$''',
+    '''\.example$''',
+    '''\.template$''',
+    '''\.sample$''',
+    '''\.bak$''',
+    '''\.backup$''',
+    '''\.old$''',
+    '''\.tmp$''',
+    '''\.temp$''',
+    '''\.log$''',
+    '''\.git/''',
+    '''node_modules/''',
+    '''dist/''',
+    '''build/''',
+    '''\.cache/''',
+    '''cache/''',
+    '''logs/''',
+    '''log/''',
+    '''tmp/''',
+    '''temp/''',
+    '''\.tmp/''',
+    '''\.temp/''',
+    '''\.vscode/''',
+    '''\.idea/''',
+    '''\.DS_Store$''',
+    '''Thumbs\.db$''',
+    '''Desktop\.ini$''',
+]

@@ -81,7 +81,7 @@ $ python3 braun_patch_processor.py
 
 ## Configuration
 
-##***REMOVED***
+### Environment Variables
 ```bash
 export PATCHES_DIRECTORY="/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/tasks/patches"
 ```

@@ -18,7 +18,7 @@ This project has successfully migrated from ngrok to Cloudflare tunnels for impr
 
 ## 🔧 Updated Configuration
 
-##***REMOVED***
+### Environment Variables
 ```bash
 # Cloudflare Tunnel URLs
 RUNNER_URL=https://runner.thoughtmarks.app

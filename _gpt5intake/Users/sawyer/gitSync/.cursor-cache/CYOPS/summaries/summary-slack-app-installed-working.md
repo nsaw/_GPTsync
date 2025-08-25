@@ -54,7 +54,7 @@ os.environ["DEBUG_MODE"] = "true"
 - **Channel**: #thoughtpilot (C0955JLTKJ4)
 - **Bot User ID**: U099CVD152Q
 
-##***REMOVED*** Set:
+### Environment Variables Set:
 - ✅ `SLACK_CLIENT_ID`: 9175632787408.9309361245590
 - ✅ `SLACK_CLIENT_SECRET`: 0b34092432ad01fa305028966b9fa422
 - ✅ `SLACK_SIGNING_SECRET`: aaaed6a9db711589c3d2c17a3495b0f3

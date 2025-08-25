@@ -93,7 +93,7 @@ curl -X POST https://gpt-cursor-runner.fly.dev/slack/commands \
 ### Files Modified
 - `gpt_cursor_runner/main.py` - All syntax errors fixed
 
-##***REMOVED*** Set
+### Environment Variables Set
 - ✅ `PYTHON_PORT=5555` - Fixed port configuration
 - ✅ `PUBLIC_RUNNER_URL=https://gpt-cursor-runner.fly.dev` - Correct domain
 - ✅ `PUBLIC_URL=https://gpt-cursor-runner.fly.dev` - Correct domain

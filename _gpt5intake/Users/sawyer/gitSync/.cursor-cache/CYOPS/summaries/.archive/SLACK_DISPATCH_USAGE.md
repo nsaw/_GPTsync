@@ -231,7 +231,7 @@ def cursor_code_review(code_changes):
             print(f"Failed to post code change: {result['error']}")
 ```
 
-#***REMOVED***
+## Environment Variables
 
 Required environment variables:
 ```bash

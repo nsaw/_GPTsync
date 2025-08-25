@@ -38,7 +38,7 @@ Successfully configured shell enforcement for the tm-mobile-cursor project to en
 2. `/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh`
 3. `/Users/sawyer/gitSync/.cursor-cache`
 
-#***REMOVED*** Set
+## Environment Variables Set
 
 ### Project Paths
 - `TM_MOBILE_CURSOR_PROJECT_ROOT`

@@ -67,7 +67,7 @@ Successfully updated Cursor configuration files to enforce zsh or bash shell usa
 - **Profile Override**: Forces shell selection regardless of system defaults
 - **Working Directory**: Sets appropriate project directories
 
-##***REMOVED***
+### Environment Variables
 - `SHELL` environment variable set to `/bin/zsh`
 - Inherits environment variables from parent shell
 - Project-specific environment setup

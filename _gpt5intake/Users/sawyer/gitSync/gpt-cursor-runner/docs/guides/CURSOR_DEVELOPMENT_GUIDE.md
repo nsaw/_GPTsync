@@ -41,7 +41,7 @@ python3 scripts/test_slack_ping.py
 
 ## 🔧 Configuration
 
-##***REMOVED***
+### Environment Variables
 - `RUNNER_URL`: Production runner URL (`https://runner.thoughtmarks.app`)
 - `RUNNER_DEV_URL`: Development runner URL (`https://runner.thoughtmarks.app`)
 - `ENDPOINT_URL`: Webhook endpoint for GPT

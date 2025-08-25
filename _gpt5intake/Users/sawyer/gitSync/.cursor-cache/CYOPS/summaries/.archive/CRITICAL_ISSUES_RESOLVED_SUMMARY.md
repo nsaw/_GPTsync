@@ -108,7 +108,7 @@ defaultConfig.server = {
 
 ## Environment Setup Verification
 
-##***REMOVED***:
+### Environment Variables:
 - **✅ EXPO_PUBLIC_USE_NEXTGEN:** true
 - **✅ EXPO_PUBLIC_ENVIRONMENT:** true
 - **✅ Dual-mount system:** Fully operational
