@@ -1,0 +1,53 @@
+{
+  "provenance": {
+    "timestamp": "2025-01-13T00:00:00Z",
+    "description": "SHA256 hashes for core SoT files - embedded for provenance verification and change tracking",
+    "files": {
+      "SoT-Roadmap.md": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Roadmap.md",
+        "sha256": "48c43288afd006bf063e93c4b33df27247fbbac28a14bd7f82f6cfa641c12c64",
+        "description": "Core roadmap document defining SoT implementation steps"
+      },
+      "SoT-Glossary.md": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Glossary.md",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "description": "Human-readable definitions for core design system concepts"
+      },
+      "GPT-BRIDGE.md": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/GPT-BRIDGE.md",
+        "sha256": "7ddde64b37b353339dc1a8271b24a8b705cbf63740357503b5eecaa0a5adc0f0",
+        "description": "Blueprint document for the GPT bridge implementation"
+      },
+      "foundations.json": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/tokens/foundations.json",
+        "sha256": "d18eb02b3f66d450b9ed9a97c9a1553c3e8f112c09cee8d3fb1621e89c83ac80",
+        "description": "Base design tokens and foundations"
+      },
+      "ui-map.yml": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/ui-map/ui-map.yml",
+        "sha256": "57f86abf7ca2fea801f3ca07f3e68fa125b1be72762813a214f7aa8d55595c5f",
+        "description": "Declarative screen structure and component definitions"
+      },
+      "icon-map.yml": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/iconography/icon-map.yml",
+        "sha256": "494ceb59b11d73eb6efbfc79ed1fd252c3abfe282db9071354fd9aa17dbd9a76",
+        "description": "Icon mappings and Lucide/Ionicons policy"
+      },
+      "validate-runtime.cjs": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/scripts/ci/validate-runtime.cjs",
+        "sha256": "0c68f1a65c4d5906ef200e2062d4c0c79865ec714b05d482125dbdcb7cf62b9e",
+        "description": "Runtime validation script for Expo boot correctness"
+      },
+      "runtime-signals.json": {
+        "path": "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/runtime/runtime-signals.json",
+        "sha256": "9d729fe51d47e8be198c25dcb1924e2ecaf34fec1a68dde7454cd5e88682832d",
+        "description": "Runtime signals for bundle detection and error handling"
+      }
+    },
+    "validation": {
+      "purpose": "Provenance verification and change tracking",
+      "usage": "Compare hashes to detect unauthorized changes to core SoT files",
+      "verification": "Use 'shasum -a 256 <file>' to verify current file integrity"
+    }
+  }
+}
