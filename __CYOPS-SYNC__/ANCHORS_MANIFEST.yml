@@ -1,0 +1,10 @@
+anchors:
+  sot_execution_contract: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/execution-ops.yml"
+  sot_rubric: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/self_evaluation_rubric.yml"
+  pm2_allowlist: "/Users/sawyer/gitSync/gpt-cursor-runner/config/g2o-critical-allowlist.json"
+  unified_ecosystem: "/Users/sawyer/gitSync/gpt-cursor-runner/config/ecosystem.unified.json"
+  wrappers_dir: "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/g2o"
+  status_indexer: "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/g2o/g2o_status_index_once.js"
+notes:
+  - "Absolute paths only; SoT is authoritative."
+  - "Files are symbolic links to source project for live sync."
