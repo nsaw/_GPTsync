@@ -1,0 +1,11 @@
+pointer: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/self_evaluation_rubric.yml"
+sha256: "339bb497f447fe3b1ad0e3d3cc84c0857b652874f85e89eaa3b70c1007d23126"
+verified_at: "2025-01-27T20:30:00Z"
+policy: "Do not copy; always reference by absolute path; treat this as authoritative."
+description: "Strict evaluation standards and self-evaluation rubric for execution quality"
+version: "1.0.0"
+enforcement_level: "CRITICAL"
+scope: "GLOBAL"
+evaluation_mode: "STRICT"
+retry_policy: "FAILING_GRADE_CAUSES_RETRY"
+best_of_three: true

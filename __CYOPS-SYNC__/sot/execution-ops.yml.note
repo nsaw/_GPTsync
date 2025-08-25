@@ -1,0 +1,8 @@
+pointer: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/execution-ops.yml"
+sha256: "9811a5410d85e6355c071662064bb67327debff57f4427a1c94b61f83404636f"
+verified_at: "2025-01-27T20:30:00Z"
+policy: "Do not copy; always reference by absolute path; treat this as authoritative."
+description: "Operational command patterns and templates for SoT execution contract"
+version: "1.0.0"
+enforcement_level: "CRITICAL"
+scope: "OPERATIONAL"

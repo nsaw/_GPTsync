@@ -15,7 +15,13 @@
 - Check guards before execution
 - Foundation 95% complete, executor validation needed
 
-## Linked Files:
-- SoT files are symbolic links to source project
-- Ops files are symbolic links to live configs
-- Bridge files reference actual G2O scripts
+## Hybrid Architecture:
+- **Symbolic Links**: Keep files synchronized with source project
+- **Provenance Notes**: `.note` files contain SHA256 hashes for verification
+- **Cross-Environment**: Works on any host, not just mounted paths
+- **SoT Compliance**: Maintains authoritative reference while enabling portability
+
+## File Structure:
+- SoT files: Symbolic links + `.note` files with SHA256 provenance
+- Ops files: Symbolic links + `.note` files with SHA256 provenance  
+- Bridge files: Symbolic links + `.note` files with SHA256 provenance

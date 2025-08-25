@@ -1,0 +1,10 @@
+pointer: "/Users/sawyer/gitSync/gpt-cursor-runner/config/ecosystem.config.js"
+sha256: "aec8ae029ff0e49a9ecd086d32ccfc92567b821bcb0da092a053b533fe4d6f00"
+verified_at: "2025-01-27T20:30:00Z"
+policy: "Do not copy; always reference by absolute path; treat this as authoritative."
+description: "PM2 ecosystem configuration for all services and processes"
+version: "1.0.0"
+enforcement_level: "HIGH"
+scope: "PM2_SERVICES"
+last_modified: "2025-08-21T12:55:00Z"
+services_configured: ["g2o", "executor", "health-monitor", "watchdog"]

@@ -35,7 +35,9 @@
 
 ## Changelog
 - 2025-01-27T20:30:00Z: Bridge pack created with symbolic links
+- 2025-01-27T20:45:00Z: Hybrid architecture implemented (symbolic links + .note files)
 - Foundation: 95% complete (SoT/rubric/wrappers/PM2 freeze)
 - Next target: executor live validation
 - Drift: MODERATE (focus shifted from executor to hygiene)
-- Architecture: Symbolic links to source project files for live sync
+- Architecture: Hybrid approach with symbolic links + SHA256 provenance notes
+- Cross-environment: Bridge pack now works on any host, not just mounted paths
