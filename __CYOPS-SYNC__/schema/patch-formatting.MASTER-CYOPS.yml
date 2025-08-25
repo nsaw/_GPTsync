@@ -1,0 +1,21 @@
+# Patch Formatting Schema - CYOPS
+
+## Structure
+```yaml
+id: "patch-vX.Y.ZZ(PN.MM.SS)_slug"
+title: "Patch description"
+domains: ["CYOPS"]
+kind: "feature|smoke|fix"
+priority: "high|medium|low"
+execution_contract: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/execution-ops.yml"
+mutations:
+  - path: "/path/to/file"
+    insertAfter: "// marker"
+    contents: "// new content"
+```
+
+## Validation
+- Schema compliance required
+- SoT contract enforcement
+- Non-blocking patterns
+- Absolute paths only

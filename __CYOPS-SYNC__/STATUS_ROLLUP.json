@@ -1,0 +1,18 @@
+{
+  "ts": "2025-01-27T20:30:00Z",
+  "domain": "CYOPS",
+  "executor": { 
+    "running": false, 
+    "lastConsumeAgeSec": null, 
+    "queueDepth": null 
+  },
+  "pm2": { 
+    "allowlistGreen": null, 
+    "drift": null 
+  },
+  "health": { 
+    "dashboard200": null 
+  },
+  "lastPatches": [],
+  "notes": ["SoT enforced; HTTP inbox fallback preferred until Slack verified"]
+}

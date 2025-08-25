@@ -1,0 +1,10 @@
+id: "patch-v1.4.1076(P6.5.01)_example"
+title: "Example patch"
+domains: ["CYOPS"]
+kind: "feature"
+priority: "medium"
+execution_contract: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/execution-ops.yml"
+mutations:
+  - path: "/path/to/file"
+    insertAfter: "// marker"
+    contents: "// new content"
