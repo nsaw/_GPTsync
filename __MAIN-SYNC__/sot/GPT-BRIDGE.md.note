@@ -1,0 +1,13 @@
+# GPT-BRIDGE.md - Provenance Note
+
+**File**: GPT-BRIDGE.md
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/GPT-BRIDGE.md
+**SHA256**: 7ddde64b37b353339dc1a8271b24a8b705cbf63740357503b5eecaa0a5adc0f0
+**Description**: Blueprint document for the GPT bridge implementation
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/GPT-BRIDGE.md
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/docs/GPT-BRIDGE.md

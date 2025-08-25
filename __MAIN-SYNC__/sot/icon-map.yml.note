@@ -1,0 +1,13 @@
+# icon-map.yml - Provenance Note
+
+**File**: icon-map.yml
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/iconography/icon-map.yml
+**SHA256**: 494ceb59b11d73eb6efbfc79ed1fd252c3abfe282db9071354fd9aa17dbd9a76
+**Description**: Icon mappings and Lucide/Ionicons policy
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/iconography/icon-map.yml
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/iconography/icon-map.yml

@@ -1,0 +1,13 @@
+# runtime-signals.json - Provenance Note
+
+**File**: runtime-signals.json
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/runtime/runtime-signals.json
+**SHA256**: 9d729fe51d47e8be198c25dcb1924e2ecaf34fec1a68dde7454cd5e88682832d
+**Description**: Runtime signals for bundle detection and error handling
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/runtime/runtime-signals.json
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/runtime/runtime-signals.json

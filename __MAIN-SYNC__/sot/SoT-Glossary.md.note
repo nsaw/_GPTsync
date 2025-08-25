@@ -1,0 +1,13 @@
+# SoT-Glossary.md - Provenance Note
+
+**File**: SoT-Glossary.md
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Glossary.md
+**SHA256**: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
+**Description**: Human-readable definitions for core design system concepts
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Glossary.md
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/docs/SoT-Glossary.md
