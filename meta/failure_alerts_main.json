@@ -1,17 +1,17 @@
 {
-  "ts": "2025-08-12T22:21:37.3NZ",
-  "failed": 23,
+  "ts": "2025-08-21T16:36:43.3NZ",
+  "failed": 30,
   "rising_edge": 0,
   "last10": [
+    "patch-v1.4.1001(P6.5.14)_typescript-cleanup-critical-fixes.json",
+    "patch-v1.4.704(P0.00.05)_nb-runner-fix_and_rules-migration.json",
+    "patch-v1.4.703(P0.00.04)_universal-nb-runner-braun.json",
+    "patch-v1.4.6517(P6.5.00.04)_comprehensive-log-tail-optimization.json",
+    "patch-v1.4.701(P0.00.02)_nonblocking-bounded-validation.json",
+    "patch-v1.4.505(P0.00.01)_unified-validation-nonblocking.json",
+    "patch-v1.4.6516(P6.5.00.03)_fix-shell-execution-patterns.json",
     "patch-v1.4.6514(P6.5.00.01)_validation-hardening-and-simlog-fix.json",
     "patch-v1.4.523(P4.03.02)_autoroleview-prop-fix-comprehensive.json",
-    "patch-v1.4.9999(P4.99.00)_validation-critical-remediation.json",
-    "patch-v1.4.1000(P10.01.01)_ui-interaction-tests.json",
-    "patch-v1.4.514(P3.99.93)_script-syntax-finalizer-hotpatch.json",
-    "patch-v1.4.514(P3.99.93)_zero-error-hardblock-script-fixes.json",
-    "patch-v1.4.600(P5.01.01)_eslint-typescript-critical-fixes.json",
-    "patch-v1.4.415(P2.2.04)_performance-optimization-implementation.json",
-    "patch-v1.4.230(P0.2.13)_multi-slot-injection-parallel-grid.json",
-    "test-verification.json"
+    "patch-v1.4.9999(P4.99.00)_validation-critical-remediation.json"
   ]
 }

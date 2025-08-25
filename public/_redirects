@@ -1,0 +1,4 @@
+
+307: /monitor   /monitor.html 200
+308: /dashboard/monitor   /monitor.html 200
+309: /dashboard   /monitor.html 302

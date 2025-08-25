@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-12T22:45:16Z",
-  "patch": "patch-v2.0.998(P0.00.24)_lane-keeper_inline-guarded-baton-and-core-gates.json",
+  "ts": "2025-08-16T03:21:16Z",
+  "patch": "patch-v2.0.190(P1.01.40)_p1-hardened-manual-first-loop.json",
   "error": "missing-or-empty-summary"
 }
