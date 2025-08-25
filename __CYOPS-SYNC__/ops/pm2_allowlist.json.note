@@ -1,0 +1,10 @@
+pointer: "/Users/sawyer/gitSync/gpt-cursor-runner/config/g2o-critical-allowlist.json"
+sha256: "d46c2525eab42b43881eff58b42cd0ce2e6016da6b94c552fe6e92251e765ab8"
+verified_at: "2025-01-27T20:30:00Z"
+policy: "Do not copy; always reference by absolute path; treat this as authoritative."
+description: "PM2 allowlist configuration for critical services and processes"
+version: "1.0.0"
+enforcement_level: "HIGH"
+scope: "PM2_ALLOWLIST"
+last_modified: "2025-08-21T12:55:00Z"
+allowed_services: ["g2o", "executor", "health-monitor", "watchdog"]

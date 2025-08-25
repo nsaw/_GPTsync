@@ -2,9 +2,21 @@ anchors:
   sot_execution_contract: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/execution-ops.yml"
   sot_rubric: "/Users/sawyer/gitSync/gpt-cursor-runner/__SoT__/self_evaluation_rubric.yml"
   pm2_allowlist: "/Users/sawyer/gitSync/gpt-cursor-runner/config/g2o-critical-allowlist.json"
-  unified_ecosystem: "/Users/sawyer/gitSync/gpt-cursor-runner/config/ecosystem.unified.json"
+  ecosystem_config: "/Users/sawyer/gitSync/gpt-cursor-runner/config/ecosystem.config.js"
   wrappers_dir: "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/g2o"
   status_indexer: "/Users/sawyer/gitSync/gpt-cursor-runner/scripts/g2o/g2o_status_index_once.js"
+
+provenance:
+  execution_ops_sha256: "9811a5410d85e6355c071662064bb67327debff57f4427a1c94b61f83404636f"
+  rubric_sha256: "339bb497f447fe3b1ad0e3d3cc84c0857b652874f85e89eaa3b70c1007d23126"
+  contract_sha256: "2686559f602932362093fed036dc1e314e4917b7686916d1b87692b5b9ebf3cf"
+  alignment_sha256: "eeae4e8ddec8b9f4db3056ed620e870d31c59d537c380df13d83f3a4f35e5d50"
+  allowlist_sha256: "d46c2525eab42b43881eff58b42cd0ce2e6016da6b94c552fe6e92251e765ab8"
+  ecosystem_sha256: "aec8ae029ff0e49a9ecd086d32ccfc92567b821bcb0da092a053b533fe4d6f00"
+  status_indexer_sha256: "da7552c3925a4938ae2ec219b9109faf385956fda25e8531c1189b3b92a24f90"
+
 notes:
   - "Absolute paths only; SoT is authoritative."
-  - "Files are symbolic links to source project for live sync."
+  - "Hybrid approach: Symbolic links + .note files with SHA256 provenance"
+  - "Cross-environment compatibility: Works on any host"
+  - "Provenance verification: SHA256 hashes in .note files"
