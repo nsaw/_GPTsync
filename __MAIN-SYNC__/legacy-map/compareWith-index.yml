@@ -1,0 +1,83 @@
+# Legacy Map Comparison Index
+# Maps NextGen screens/sections to Legacy counterparts for behavior parity
+
+screens:
+  compose:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/screens/compose/ComposeScreen.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/screens/ComposeScreen.tsx"
+    sections:
+      - header: "Compose header with title and actions"
+      - form: "Main compose form with input fields"
+      - toolbar: "Editor toolbar with formatting options"
+      - actions: "Bottom action buttons"
+
+  dashboard:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/screens/dashboard/DashboardScreen.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/screens/DashboardScreen.tsx"
+    sections:
+      - header: "Dashboard header with search and filters"
+      - content: "Main content area with cards/list"
+      - navigation: "Bottom navigation with FAB"
+
+  detail:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/screens/detail/DetailScreen.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/screens/DetailScreen.tsx"
+    sections:
+      - header: "Detail header with back button and actions"
+      - content: "Main detail content"
+      - actions: "Action buttons and controls"
+
+  search:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/screens/search/SearchScreen.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/screens/SearchScreen.tsx"
+    sections:
+      - search_bar: "Search input and filters"
+      - results: "Search results list"
+      - filters: "Filter options and controls"
+
+  bins:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/screens/bins/BinsScreen.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/screens/BinsScreen.tsx"
+    sections:
+      - header: "Bins header with organization options"
+      - content: "Bins content and categorization"
+      - actions: "Bin management actions"
+
+components:
+  navigation:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/components/navigation/TabBar.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/components/TabBar.tsx"
+
+  cards:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/components/cards/Card.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/components/Card.tsx"
+
+  forms:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/components/forms/FormField.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/components/FormField.tsx"
+
+  buttons:
+    nextgen: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/components/buttons/Button.tsx"
+    legacy: "/Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-reference/components/Button.tsx"
+
+# Behavior parity validation targets
+validation:
+  interactions:
+    - tap: "Button and link interactions"
+    - scroll: "Content scrolling behavior"
+    - navigation: "Screen transitions and routing"
+    - forms: "Form input and validation"
+    - animations: "Motion and transitions"
+    - responsiveness: "Screen adaptation"
+
+  data_flow:
+    - state_management: "Component state and props"
+    - api_calls: "Data fetching and updates"
+    - caching: "Data persistence and caching"
+    - error_handling: "Error states and recovery"
+
+  performance:
+    - render_time: "Component rendering performance"
+    - memory_usage: "Memory consumption patterns"
+    - bundle_size: "JavaScript bundle size"
+    - startup_time: "App startup and loading" 
