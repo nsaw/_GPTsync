@@ -1,0 +1,9 @@
+{
+  "ts": "2025-08-13T10:03:31.762Z",
+  "phase": "P0",
+  "marker": "P0.COMPLETE",
+  "backup": {
+    "path": "/Users/sawyer/gitSync/_backups/gpt-cursor-runner/backup-v2.0.007_g2o-phase-0-freeze.tar.gz",
+    "bytes": 79467259
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2025-08-13T18:55:12.668Z",
+  "gates": {
+    "plane8787": true,
+    "plane5051": true,
+    "pm2": true,
+    "pw_install": true,
+    "visual": false,
+    "tsc": false,
+    "eslint": false
+  },
+  "pm2_bad": [],
+  "pass": false
+}

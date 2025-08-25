@@ -1,0 +1,41 @@
+<!doctype html><html><head>
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0"><meta charset='utf-8'><title>G2o Monitor (Static)</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<style>
+  :root{--bg:#232529;--fg:#cfe7ff;--card:#1a1c22;--line:#445;--alert:#b00020}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--fg)}
+  #g2o-banner{display:none;position:sticky;top:0;left:0;right:0;background:var(--alert);color:#fff;padding:10px 16px;z-index:999}
+  .wrap{padding:16px;display:grid;gap:16px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--card)}
+  .title{font-weight:700;margin:0 0 6px}
+  #g2o-compact-line{display:none;padding:10px 16px;border-bottom:1px solid var(--line);background:#15171c;position:sticky;top:0;z-index:998}
+  body.compact .card{display:none}
+  body.compact #g2o-compact-line{display:block}
+</style></head>
+<body>
+  <div id='g2o-banner'>🚨 G2o Alert: failures rising or dashboard not healthy</div>
+  <div id='g2o-compact-line'>loading…</div>
+  <div class='wrap'>
+    <div class='card'><p class='title'>CYOPS</p><pre id='g2o-counters-cyops'>loading…</pre></div>
+    <div class='card'><p class='title'>MAIN</p><pre id='g2o-counters-main'>loading…</pre></div>
+    <div class='card'><p class='title'>COMBINED</p><pre id='g2o-counters-combined'>loading…</pre></div>
+    <div class='card'><p class='title'>Snapshot Info</p><pre id='g2o-meta-ts'></pre></div>
+  </div>
+<script>
+// Embedded data (snapshot at build time)
+const EMBED = { cc: {}, fa: {}, fam: {"ts":"2025-08-13T10:02:41.3NZ","failed":29,"rising_edge":0,"last10":["patch-v1.4.704(P0.00.05)_nb-runner-fix_and_rules-migration.json","patch-v1.4.703(P0.00.04)_universal-nb-runner-braun.json","patch-v1.4.6517(P6.5.00.04)_comprehensive-log-tail-optimization.json","patch-v1.4.701(P0.00.02)_nonblocking-bounded-validation.json","patch-v1.4.505(P0.00.01)_unified-validation-nonblocking.json","patch-v1.4.6516(P6.5.00.03)_fix-shell-execution-patterns.json","patch-v1.4.6514(P6.5.00.01)_validation-hardening-and-simlog-fix.json","patch-v1.4.523(P4.03.02)_autoroleview-prop-fix-comprehensive.json","patch-v1.4.9999(P4.99.00)_validation-critical-remediation.json","patch-v1.4.1000(P10.01.01)_ui-interaction-tests.json"]}, ds: {}, ts: "2025-08-15T04:11:27.3NZ" };
+function qs(){const p=new URLSearchParams(location.search);return {banner:p.get('banner'),compact:p.get('compact')}}
+function asBool(v,def){if(v===null||v===undefined||v==='') return def; const s=String(v).toLowerCase(); return ['1','true','yes','on'].includes(s)}
+function row(m){return }
+function applyFlags(){const {banner,compact}=qs();const showBanner=asBool(banner, true);const isCompact=asBool(compact, false);document.body.classList.toggle('compact', isCompact);const b=document.getElementById('g2o-banner');if(b) b.style.display=showBanner?'block':'none'}
+function paint(){const full=EMBED.cc||{}, cy=full.cyops||{}, mn=full.main||{}, cb=full.combined||{};function set(id,txt){const el=document.getElementById(id); if(el) el.textContent=txt}
+  set('g2o-counters-cyops', row(cy)); set('g2o-counters-main', row(mn)); set('g2o-counters-combined', row(cb)); set('g2o-meta-ts', EMBED.ts);
+  const warn = (EMBED.ds && ((+EMBED.ds.local_8787||0)!==200 || (+EMBED.ds.edge_dashboard||0)!==200 || (+EMBED.ds.edge_user||0)!==200)) || (EMBED.fa && (+EMBED.fa.rising_edge===1)) || (EMBED.fam && (+EMBED.fam.rising_edge===1));
+  if(warn){const b=document.getElementById('g2o-banner'); if(b) b.style.display='block'}
+  if(document.body.classList.contains('compact')){const one=document.getElementById('g2o-compact-line'); if(one) one.textContent=}
+}
+applyFlags(); paint();
+</script>
+</body></html>
