@@ -1,0 +1,13 @@
+# ui-map.yml - Provenance Note
+
+**File**: ui-map.yml
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/ui-map/ui-map.yml
+**SHA256**: 57f86abf7ca2fea801f3ca07f3e68fa125b1be72762813a214f7aa8d55595c5f
+**Description**: Declarative screen structure and component definitions
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/ui-map/ui-map.yml
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/ui-map/ui-map.yml

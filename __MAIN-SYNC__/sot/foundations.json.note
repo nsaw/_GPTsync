@@ -1,0 +1,13 @@
+# foundations.json - Provenance Note
+
+**File**: foundations.json
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/tokens/foundations.json
+**SHA256**: d18eb02b3f66d450b9ed9a97c9a1553c3e8f112c09cee8d3fb1621e89c83ac80
+**Description**: Base design tokens and foundations
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/tokens/foundations.json
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/tokens/foundations.json

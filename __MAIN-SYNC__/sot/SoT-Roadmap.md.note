@@ -1,0 +1,13 @@
+# SoT-Roadmap.md - Provenance Note
+
+**File**: SoT-Roadmap.md
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Roadmap.md
+**SHA256**: 48c43288afd006bf063e93c4b33df27247fbbac28a14bd7f82f6cfa641c12c64
+**Description**: Core roadmap document defining SoT implementation steps
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/src-nextgen/design-system/docs/SoT-Roadmap.md
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/docs/Objective.md

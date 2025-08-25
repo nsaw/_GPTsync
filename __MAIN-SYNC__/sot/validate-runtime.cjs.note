@@ -1,0 +1,13 @@
+# validate-runtime.cjs - Provenance Note
+
+**File**: validate-runtime.cjs
+**Path**: /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/scripts/ci/validate-runtime.cjs
+**SHA256**: 0c68f1a65c4d5906ef200e2062d4c0c79865ec714b05d482125dbdcb7cf62b9e
+**Description**: Runtime validation script for Expo boot correctness
+
+**Verification**: 
+```bash
+shasum -a 256 /Users/sawyer/gitSync/tm-mobile-cursor/mobile-native-fresh/scripts/ci/validate-runtime.cjs
+```
+
+**Status**: ✅ Live-synced via symbolic link in __MAIN-SYNC__/scripts/ci/validate-runtime.cjs
